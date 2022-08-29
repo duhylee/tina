@@ -1,0 +1,1 @@
+LICHEE_KERN_DEFCONF := sun8iw7p1smp_dragonboard_defconfig

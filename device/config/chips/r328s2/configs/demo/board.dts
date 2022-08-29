@@ -1,0 +1,73 @@
+/*
+ * Allwinner Technology CO., Ltd. sun8iw18p1 soc board.
+ *
+ * soc board support.
+ */
+
+/dts-v1/;
+
+#include "sun8iw18p1.dtsi"
+
+/{
+	soc@03000000 {
+		keyboard0:keyboard {
+			compatible = "allwinner,keyboard_1350mv";
+			reg = <0x0 0x05070800 0x0 0x400>;
+			interrupts = <GIC_SPI 50 IRQ_TYPE_NONE>;
+			status = "okay";
+			key_cnt = <5>;
+			key0 = <164 115>;
+			key1 = <415 114>;
+			key2 = <646 248>;
+			key3 = <900 164>;
+			key4 = <1157 116>;
+		};
+	};
+
+	cpu_opp_l_table0: opp_l_table0 {
+		/* compatible = "operating-points-v2"; */
+		compatible = "allwinner,opp_l_table0";
+		opp_count = <3>;
+		opp-shared;
+
+		opp00 {
+			opp-hz = /bits/ 64 <720000000>;
+			opp-microvolt = <820000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+
+		opp01 {
+			opp-hz = /bits/ 64 <1008000000>;
+			opp-microvolt = <900000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+
+		opp02 {
+			opp-hz = /bits/ 64 <1200000000>;
+			opp-microvolt = <1000000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+
+		/*opp03 {
+			opp-hz = /bits/ 64 <1512000000>;
+			opp-microvolt = <1100000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};*/
+
+	};
+
+	/*pwm config, use pwm to adapt volt; please cancel the comment
+	 *polarity-> 0:NORMAL 1:INVERSED*/
+	/*pwm_dvfs_info {
+		period_ns = <50000>;
+		polarity  = <0>;
+		pwm_id    = <7>;
+		vol_base  = <831000>;
+		vol_max   = <1102000>;
+	};*/
+
+};

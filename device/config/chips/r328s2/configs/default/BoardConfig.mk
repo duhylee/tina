@@ -1,0 +1,9 @@
+LICHEE_ARCH:=arm
+LICHEE_BRANDY_VER:=2.0
+LICHEE_KERN_VER:=4.9
+LICHEE_KERN_DEFCONF:=sun8iw18p1smp_defconfig
+LICHEE_BUILDING_SYSTEM:=buildroot
+LICHEE_BR_VER:=201611
+LICHEE_BR_DEFCONF:=sun8i_defconfig
+LICHEE_COMPILER_TAR:=gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi.tar.xz
+LICHEE_ROOTFS:=target-arm-linaro-5.3.tar.bz2

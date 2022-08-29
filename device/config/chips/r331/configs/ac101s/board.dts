@@ -1,0 +1,64 @@
+/*
+ * Allwinner Technology CO., Ltd. sunivw1p1 evb board.
+ * Modified by czy
+ * evb board support.
+ */
+
+/dts-v1/;
+#include "sun8iw8p1.dtsi"
+
+/ {
+	aliases {
+		spinand = &spinand;
+	};
+
+	spinand: spi@01c68000 {
+		compatible = "allwinner,sunxi-spinand";
+		device_type = "spinand";
+		reg = <0x0 0x01c68000 0x0 0x1000>;
+		interrupts = <GIC_SPI 65 IRQ_TYPE_LEVEL_HIGH>;
+		clocks = <&clk_pll_periph0>, <&clk_spi0>;
+		pinctrl-names = "default", "sleep";
+		pinctrl-0 = <&spi0_pins_a &spi0_pins_b>;
+		pinctrl-1 = <&spi0_pins_c>;
+		nand0_regulator1 = "vcc-nand";
+		nand0_regulator2 = "none";
+		nand0_cache_level = <0x55aaaa55>;
+		nand0_flush_cache_num = <0x55aaaa55>;
+		nand0_capacity_level = <0x55aaaa55>;
+		nand0_id_number_ctl = <0x55aaaa55>;
+		nand0_print_level = <0x55aaaa55>;
+		nand0_p0 = <0x55aaaa55>;
+		nand0_p1 = <0x55aaaa55>;
+		nand0_p2 = <0x55aaaa55>;
+		nand0_p3 = <0x55aaaa55>;
+		status = "okay";
+	};
+
+	soc@01c00000 {
+	twi1: twi@0x01c2b000 {
+		status = "okay";
+		ac102: ac102@0{
+			compatible = "ac102_0";
+			reg = <0x33>;
+			status = "okay";
+		};
+	};
+
+	snddaudio0:sound@1 {
+		daudio_select = <0x01>;
+		daudio_master = <0x04>;
+		audio_format = <0x01>;
+		signal_inversion = <0x01>;
+		status = "okay";
+		sunxi,snddaudio-codec = "ac102.1-0033";
+		sunxi,snddaudio-codec-dai = "ac102-pcm0";
+	};
+
+	daudio0:daudio@0x01c22000 {
+		compatible        = "allwinner,sunxi-daudio";
+		pcm_lrck_period   = <0x40>;
+		status            = "okay";
+	};
+	};
+};

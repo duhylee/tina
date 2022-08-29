@@ -1,0 +1,57 @@
+software =
+{
+	version = "0.1.0";
+	description = "Firmware update for Tina Project";
+
+	stable = {
+		boot = {
+			images: (
+				{
+					filename = "boot_initramfs_recovery.img"
+					device = "/dev/by-name/recovery";
+				},
+				{
+					filename = "boot_package.fex"
+					type = "awuboot";
+				},
+				{
+					filename = "boot0_sdcard.fex"
+					type = "awboot0";
+				}
+
+			);
+
+			bootenv: (
+				{
+					name = "boot_partition";
+					value = "recovery";
+				}
+			);
+		};
+
+		recovery = {
+			images: (
+				{
+					filename = "boot.img";
+					device = "/dev/by-name/boot";
+				},
+				{
+					filename = "rootfs.img";
+					device = "/dev/by-name/rootfs";
+				}
+			);
+			bootenv: (
+				{
+					name = "boot_partition";
+					value = "boot";
+				},
+				{
+					name = "swupdate_cmd";
+					value = "";
+				}
+			);
+		};
+	};
+}
+
+
