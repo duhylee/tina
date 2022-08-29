@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/mad-demo/Makefile
+Package: mad-demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: MAD demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     MAD/VAD demo
+
+@@
+
+

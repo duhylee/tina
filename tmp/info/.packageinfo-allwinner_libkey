@@ -1,0 +1,63 @@
+Source-Makefile: package/allwinner/libkey/Makefile
+Package: libsec_key
+Menu: 1
+Default: 1
+Version: 1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: secure key for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: secure key for allwinner
+
+@@
+Config:
+config SUNXI_SUPPORT_PRIVATE_KEY
+	bool "support private key"
+	depends on PACKAGE_libsec_key
+	default n
+if SUNXI_SUPPORT_PRIVATE_KEY
+choice
+prompt "private bare key mode"
+	default SUNXI_SUPPORT_PRIVATE_BARE_FIRST_8K
+	help
+	select the store mode of private bare
+
+config SUNXI_SUPPORT_PRIVATE_BARE_FIRST_8K
+	bool "Enable private bare key first 8K support"
+
+config SUNXI_SUPPORT_PRIVATE_BARE_TAIL_8K
+	bool "Enable private bare key tail 8K support"
+
+endchoice
+endif
+
+config SUNXI_SUPPORT_SECURE_STORAGE_KEY
+	bool "Enable secure storage key support"
+	default n
+	depends on PACKAGE_libsec_key
+
+@@
+
+Package: libsec_key-demo
+Version: 1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libsec_key +libsec_key
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: secure key demo for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: secure key demo for allwinner
+
+@@
+
+

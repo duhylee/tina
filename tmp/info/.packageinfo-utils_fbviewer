@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/fbviewer/Makefile
+Package: fbviewer
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @DISPLAY_SUPPORT +libpng +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Frame buffer viewer image
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Frame buffer viewer image
+
+@@
+
+

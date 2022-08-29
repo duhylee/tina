@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/tconfigs/Makefile
+Package: tconfigs
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +rapidjson +alsa-lib +libev +PACKAGE_tutuclear-lib:tutuclear-lib +googletest
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina Config Utils
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Tina Config Utils
+
+@@
+
+

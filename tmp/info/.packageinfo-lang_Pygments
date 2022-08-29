@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/Pygments/Makefile
+Package: python-Pygments
+Submenu: Python
+Version: 2.3.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python Pygments/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-Pygments
+Maintainer: 
+Source: Pygments-2.3.1.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/Pygments
+
+@@
+
+

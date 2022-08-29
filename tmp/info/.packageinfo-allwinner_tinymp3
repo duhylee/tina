@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/tinymp3/Makefile
+Package: tinymp3
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libmad +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: tiny mp3 player
+Maintainer: 
+Source: 
+Type: ipkg
+Description: tiny mp3 player
+
+@@
+
+

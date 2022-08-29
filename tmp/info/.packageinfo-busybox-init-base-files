@@ -1,0 +1,25 @@
+Source-Makefile: package/busybox-init-base-files/Makefile
+Package: busybox-init-base-files
+Menu: 1
+Version: 167-1646892196
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +SIGNED_PACKAGES:usign @SYSTEM_INIT_BUSYBOX
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: usign/host
+Section: base
+Category: Base system
+Title: Busybox init base system
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:  This package contains a busybox init base filesystem and system scripts for OpenWrt.
+http://openwrt.org/
+
+@@
+Config:
+	source "package/busybox-init-base-files/Config.in"
+@@
+
+

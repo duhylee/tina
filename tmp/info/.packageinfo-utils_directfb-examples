@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/directfb-examples/Makefile
+Package: directfb-examples
+Version: 1.7.0-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +directfb
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: directfb examples
+Maintainer: 
+Source: DirectFB-examples-1.7.0.tar.gz
+Type: ipkg
+Description: 	directfb examples
+http://www.mucross.com/downloads/tonga-demo/sources/GPL/directfb-examples/
+
+@@
+
+

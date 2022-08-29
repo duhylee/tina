@@ -1,0 +1,18 @@
+Source-Makefile: package/qt/qt-washing-machine/Makefile
+Package: qt-washing-machine
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +qt5-gui +qt5-core +qt5-qml +qt5-quick-2 +qt5-quick-window +qt5-drivers-touchscreen +qt5-quick-controls-2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Qt
+Category: Qt
+Title: qt-washing-machine
+Maintainer: anruliu<anruliu@allwinnertech.com>
+Source: 
+Type: ipkg
+Description:   The qt washing-machine application for Demo
+anruliu<anruliu@allwinnertech.com>
+@@
+
+

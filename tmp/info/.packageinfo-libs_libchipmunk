@@ -1,0 +1,19 @@
+Source-Makefile: package/libs/libchipmunk/Makefile
+Package: libchipmunk
+Version: 5.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: libchipmunk
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libchipmunk-5.3.1.tar.gz
+Type: ipkg
+Description:   The minigui mdolphin test case
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

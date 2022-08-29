@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/civetweb/Makefile
+Package: civetweb
+Version: 1.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: civetweb
+Maintainer: 
+Source: civetweb-1.9.zip
+License: MIT
+Type: ipkg
+Description: Civetweb is a small footprint HTTP Server with optional Lua and SQLite support written in C.
+It can be embedded into C/C++ applications or used as stand alone web server for Windows, Linux, BSD or Mac-OS.
+This project is based on the Mongoose web server, but maintains the MIT license and is free from GPL licenses.
+
+@@
+
+

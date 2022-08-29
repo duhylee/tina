@@ -1,0 +1,18 @@
+Source-Makefile: package/minigui/r11-board/Makefile
+Package: r11-board
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +alsa-utils +tslib +libcedarx +libuapi +libmgi +libmgplus +mgncs4touch +libmgncs +wifimanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: r11-board
+Maintainer: hyx<huangyixiu@allwinnertech.com>
+Source: 
+Type: ipkg
+Description:   The minigui application for r11-board
+hyx<huangyixiu@allwinnertech.com>
+@@
+
+

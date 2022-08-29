@@ -1,0 +1,29 @@
+Source-Makefile: target/allwinner/t7-perf1/Makefile
+Target: t7-perf1
+Target-Board: t7-perf1
+Target-Name: t7-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

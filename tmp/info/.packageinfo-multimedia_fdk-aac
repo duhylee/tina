@@ -1,0 +1,24 @@
+Source-Makefile: package/multimedia/fdk-aac/Makefile
+Package: fdk-aac
+Version: 0.1.6-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @BUILD_PATENTED
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: Fraunhofer FDK AAC Codec Library
+Maintainer: Ted Hess <thess@kitschensync.net>
+Source: fdk-aac-0.1.6.tar.gz
+License: Fraunhofer-FDK-AAC-for-Android
+LicenseFiles: NOTICE
+Type: ipkg
+Description:   Port of the Fraunhofer FDK AAC Codec Library for Android
+https://sourceforge.net/projects/opencore-amr/
+Ted Hess <thess@kitschensync.net>
+@@
+Config:
+	source "package/multimedia/fdk-aac/Config.in"
+@@
+
+

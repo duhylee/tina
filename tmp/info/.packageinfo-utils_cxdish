@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/cxdish/Makefile
+Package: cxdish
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: cxdish tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: cxdish tool
+
+@@
+
+

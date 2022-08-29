@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/libdisplay/Makefile
+Package: libdisplay
+Menu: 1
+Default: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: display testcase for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: display testcase for allwinner
+
+@@
+
+Package: libdisplay-demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libdisplay +libdisplay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: display testcase demo for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: display testcase demo for allwinner
+
+@@
+
+

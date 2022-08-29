@@ -1,0 +1,27 @@
+Source-Makefile: package/testtools/tinatest/Makefile
+Package: tinatest
+Menu: 1
+Version: 1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libjson-c +TINATEST_SYS_GLOBAL_INFO_OUTLOG_DRAGONMAT:libsocket_db
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: TestTools
+Title: Test Platform For TinaSDK
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Tinatest is a test platform for function/specification/stress test.
+  It is customized in menuconfig and give birth to tinatest.json which control
+  how tinatest run.
+  It will also collect system info by collectd while running testcases.
+  Tinatest is a strong tool to test applications but also to test tinalinux.
+  You can use it to daily automated test, production function test and so on.
+
+@@
+Config:
+	source "package/testtools/tinatest/config/Config.in"
+@@
+
+

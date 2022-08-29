@@ -1,0 +1,21 @@
+Source-Makefile: package/minigui/libmgncs/Makefile
+Package: libmgncs
+Version: 1.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmgutils +libsqlite3 +libxml2 +libstdcpp +libmgplus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libmgncs
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libmgncs-1.2.0.tar.gz
+Type: ipkg
+Description:   mGNCS provides a new control set for MiniGUI
+  application. By using mGNCS, you can use miniStudio
+  to develop MiniGUI application in WYSIWYG way.
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

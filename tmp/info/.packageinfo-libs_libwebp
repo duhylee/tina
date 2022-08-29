@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/libwebp/Makefile
+Package: libwebp
+Version: 0.4.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_libjpeg:libjpeg +PACKAGE_libtiff:libtiff +PACKAGE_libpng:libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: webp libraries
+Maintainer: 
+Source: libwebp-0.4.3.tar.gz
+Type: ipkg
+Description: webp libraries
+
+@@
+Config:
+source "package/libs/libwebp/Config.in"
+@@
+
+

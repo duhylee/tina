@@ -1,0 +1,29 @@
+Source-Makefile: target/allwinner/r30-perf2/Makefile
+Target: r30-perf2
+Target-Board: r30-perf2
+Target-Name: r30-perf2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

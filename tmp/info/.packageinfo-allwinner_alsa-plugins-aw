@@ -1,0 +1,31 @@
+Source-Makefile: package/allwinner/alsa-plugins-aw/Makefile
+Package: alsa-plugins-aw
+Version: 1.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: ALSA plugins from Allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: ALSA plugins from Allwinner
+
+@@
+Config:
+	menu "Customize plugins"
+		depends on PACKAGE_alsa-plugins-aw
+
+	config ALSA_PLUGINS_AW_AWRATE
+		bool "awrate"
+		default y
+	config ALSA_PLUGINS_AW_AWEQUAL
+		bool "awequal"
+		default y
+
+	endmenu
+@@
+
+

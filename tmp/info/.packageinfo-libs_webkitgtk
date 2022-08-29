@@ -1,0 +1,25 @@
+Source-Makefile: package/libs/webkitgtk/Makefile
+Package: webkitgtk
+Menu: 1
+Submenu: WebkitGtk
+Version: 2.18.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ruby/host +flex/host +bison/host +gperf/host +enchant +harfbuzz +icu +libjpeg +libgtk3 +libsecret +libsoup +libxml2 +libxslt +libsqlite3 +libegl +PACKAGE_libgles:libgles +libwebp +libgles +lcms2 +libtasn1 +CONFIG_WEBKITGTK_MULTIMEDIA:gstreamer1 +CONFIG_WEBKITGTK_MULTIMEDIA:gst1-libav +CONFIG_WEBKITGTK_MULTIMEDIA:gst1-plugins-base +CONFIG_WEBKITGTK_MULTIMEDIA:gst1-plugins-good +CONFIG_WEBKITGTK_MULTIMEDIA:gst1-plugins-ugly +CONFIG_WEBKITGTK_MULTIMEDIA:gst1-plugins-bad
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: WebkitGtk is a port for webkit base on Gtk
+Maintainer: Karl Palsson <karlp@remake.is>
+Source: webkitgtk-2.18.6.tar.xz
+License: LGPLv2.1+, BSD-2c
+Type: ipkg
+Description: WebkitGtk is a port
+https://www.cairographics.org/
+Karl Palsson <karlp@remake.is>
+@@
+Config:
+source "package/libs/webkitgtk/Config.in"
+@@
+
+

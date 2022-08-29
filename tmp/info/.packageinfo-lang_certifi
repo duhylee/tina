@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/certifi/Makefile
+Package: python-certifi
+Submenu: Python
+Version: 2019.3.9
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python certifi/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-certifi
+Maintainer: 
+Source: certifi-2019.3.9.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/certifi
+
+@@
+
+

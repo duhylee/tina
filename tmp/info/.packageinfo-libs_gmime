@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/gmime/Makefile
+Package: gmime
+Submenu: gnome
+Version: 3.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 ++BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: libs
+Category: Libraries
+Title: An extremely robust high-performance parser
+Maintainer: 
+Source: gmime-3.0.1.tar.xz
+Type: ipkg
+Description:   GMime is a C/C++ library which may be used for the creation and parsing of messages using the Multipurpose
+  Internet Mail Extension (MIME) as defined by [numerous IETF specifications](https://github.com/jstedfast/gmime/blob/master/RFCs.md).
+
+@@
+
+

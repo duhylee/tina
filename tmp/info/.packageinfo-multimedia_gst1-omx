@@ -1,0 +1,18 @@
+Source-Makefile: package/multimedia/gst1-omx/Makefile
+Package: gst-omx
+Version: 1.10.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gstreamer1 +gstreamer1-plugins-base +libgst1video +libgst1audio +libgst1pbutils +libcedarx +PACKAGE_libgst1gl:libgst1gl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: gst openmax lib
+Maintainer: 
+Source: gst-omx-1.10.4.tar.xz
+Type: ipkg
+Description:  GStreamer openmax API
+
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-paramiko/Makefile
+Package: python-paramiko
+Submenu: Python
+Version: 1.18.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +python/host +python-paramiko/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python paramiko
+Maintainer: 
+Source: paramiko-1.18.1.zip
+License: LGPL
+Type: ipkg
+Description: The leading native Python SSHv2 protocol library.
+http://www.paramiko.org/
+
+@@
+
+

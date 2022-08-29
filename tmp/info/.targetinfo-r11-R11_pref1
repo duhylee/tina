@@ -1,0 +1,29 @@
+Source-Makefile: target/allwinner/r11-R11_pref1/Makefile
+Target: r11-R11_pref1
+Target-Board: r11-R11_pref1
+Target-Name: r11-R11_pref1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

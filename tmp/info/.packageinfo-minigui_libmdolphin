@@ -1,0 +1,19 @@
+Source-Makefile: package/minigui/libmdolphin/Makefile
+Package: libmdolphin
+Version: 3.0.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libc-ares +libcurl +libxml2 +libxslt +libopenssl +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: mDolphin-core
+Maintainer: xielinfei <xielinfei@allwinnertech.com>
+Source: libmdolphin-3.0.5.tar.gz
+Type: ipkg
+Description:   The mDolphin Core Lib
+http://www.minigui.org/
+xielinfei <xielinfei@allwinnertech.com>
+@@
+
+

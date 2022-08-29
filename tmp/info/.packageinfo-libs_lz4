@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/lz4/Makefile
+Package: lz4
+Version: 1.8.3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Extremely Fast Compression algorithm
+Maintainer: 
+Source: lz4-1.8.3.zip
+License: BSD
+Type: ipkg
+Description: LZ4 is lossless compression algorithm, providing compression speed > 500 MB/s per core, scalable with multi-cores CPU. It features an extremely fast decoder, with speed in multiple GB/s per core, typically reaching RAM speed limits on multi-core systems.
+https://github.com/lz4/lz4/tree/v1.8.3
+
+@@
+
+

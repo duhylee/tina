@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/mtdbadblk/Makefile
+Package: mtdbadblk
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: get bad block infomation of mtd block device
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The tools to search bad block infomation of mtd block device.
+
+@@
+
+

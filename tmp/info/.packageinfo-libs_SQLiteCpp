@@ -1,0 +1,47 @@
+Source-Makefile: package/libs/SQLiteCpp/Makefile
+Package: SQLiteCpp
+Version: 2.0.0-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: C++ SQLite3 wrapper library
+Maintainer: 
+Source: SQLiteCpp-2.0.0.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:   SQLiteC++ offers an encapsulation around the native C APIs of SQLite,
+  with a few intuitive and well documented C++ classes.
+https://srombauts.github.com/SQLiteCpp
+
+@@
+Config:
+menu "Configuration"
+	depends on PACKAGE_SQLiteCpp
+
+config SQLITECPP_USE_INTERNAL_SQLITE
+	bool
+	default y
+	prompt "Add the internal SQLite3 source to the project."
+
+config SQLITECPP_BUILD_EXAMPLES
+	bool
+	default n
+	prompt "Build examples"
+
+config SQLITE_ENABLE_ASSERT_HANDLER
+	bool
+	default n
+	prompt "Enable the user defintion of a assertion_failed() handler"
+
+config SQLITE_ENABLE_COLUMN_METADATA
+	bool
+	default y
+	prompt "Enable Column::getColumnOriginName(). Require support from sqlite3 library"
+
+endmenu
+@@
+
+

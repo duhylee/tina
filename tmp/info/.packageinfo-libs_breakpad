@@ -1,0 +1,36 @@
+Source-Makefile: package/libs/breakpad/Makefile
+Package: breakpad-libs
+Version: cb94b71d28d0c12ba9edbbead8c152d29061e140
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Libraries of breakpad
+Maintainer: 
+Source: breakpad-cb94b71d28d0c12ba9edbbead8c152d29061e140.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:  A set of client and server components which implement a crash-reporting system
+
+@@
+
+Package: breakpad-utils
+Version: cb94b71d28d0c12ba9edbbead8c152d29061e140
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +breakpad-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Utilities provided by breakpad
+Maintainer: 
+Source: breakpad-cb94b71d28d0c12ba9edbbead8c152d29061e140.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:  A set of client and server components which implement a crash-reporting system
+
+@@
+
+

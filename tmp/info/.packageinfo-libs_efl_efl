@@ -1,0 +1,37 @@
+Source-Makefile: package/libs/efl/efl/Makefile
+Package: efl
+Menu: 1
+Submenu: EFL
+Version: 1.20.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libxkbcommon +libmount +libpng +libjpeg +bullet +zlib +luajit +libcurl +libfreetype +eudev +dbus +libinput +libopenssl +EFL_GLIB:glib2 +EFL_GSTREAMER1:gstreamer1-libs +EFL_GSTREAMER1:gstreamer1-plugins-base +EFL_PIXMAN:libpixman +EFL_FRIBIDI:libfribidi +EFL_FONT_CONFIG:fontconfig +EFL_TSLIB:tslib +EFL_WAYLAND:wayland +EFL_WAYLAND:wayland-protocols +EFL_WAYLAND:weston +EFL_DRM:libdrm +EFL_AUDIO:libsndfile
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: EFL_BUILD_HOST:efl/host
+Build-Depends/host: luajit/host libfreetype/host dbus/host lua/host libpng/host libjpeg/host
+Build-Types: host
+Section: libs
+Category: Libraries
+Title: Enlightenment Foundation Libraries
+Maintainer: enlightenment-devel@lists.sourceforge.net
+Source: efl-1.20.6.tar.xz
+Type: ipkg
+Description: EFL, or the Enlightenment Foundation Libraries, powers millions of systems from mobile phones to set-top boxes,
+desktops, laptops, game systems and more. EFL is recognized for its forward-thinking approach which allows
+product designers and developers to offer more than the run-of-the-mill user experience of the past.
+This is where EFL excels.
+
+Free.fr has shipped millions of set top boxes in France powered by EFL.
+The Openmoko Freerunner project also sold thousands of devices using EFL and Enlightenment.
+
+EFL powers Samsung Galaxy Gear smartwatches and is behind Samsung Smart Televisions
+such as the Class Q9F QLED 4K TV and refrigerators such as the Samsung Family Hub Refrigerator,
+which are based on Tizen. GPS devices such as the Coyote also run EFL.
+https://www.enlightenment.org/start
+enlightenment-devel@lists.sourceforge.net
+@@
+Config:
+  source "package/libs/efl/efl/Config.in"
+@@
+
+

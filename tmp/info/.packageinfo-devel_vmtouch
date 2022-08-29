@@ -1,0 +1,23 @@
+Source-Makefile: package/devel/vmtouch/Makefile
+Package: vmtouch
+Version: 1.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Title: the Virtual Memory Toucher
+Maintainer: 
+Source: vmtouch-1.3.1.tar.gz
+License: BSD
+Type: ipkg
+Description:   Portable file system cache diagnostics and control.
+
+  vmtouch is a tool for learning about and controlling the file system
+cache of unix and unix-like systems. It is BSD licensed so you can
+basically do whatever you want with it.
+
+@@
+
+

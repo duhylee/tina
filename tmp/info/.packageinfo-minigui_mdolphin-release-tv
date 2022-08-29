@@ -1,0 +1,19 @@
+Source-Makefile: package/minigui/mdolphin-release-tv/Makefile
+Package: mdolphin-release-tv
+Version: 2.0.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmdolphin +libmgutils +libmgplus +libxml2 +libmgi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: mdolphin-release-tv
+Maintainer: tracewong <tracewong@outlook.com>
+Source: mdolphin-release-tv-2.0.4.tar.gz
+Type: ipkg
+Description:   The minigui mdolphin test case
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

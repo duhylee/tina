@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/test_r58_linein/Makefile
+Package: test_r58_linein
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @DISPLAY_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: linein plug testing tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: linein plug testing tool
+
+@@
+
+

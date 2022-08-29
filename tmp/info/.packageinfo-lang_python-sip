@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-sip/Makefile
+Package: python-sip
+Submenu: Python
+Version: 4.19.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python python-sip/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python sip
+Maintainer: 
+Source: sip-4.19.13.tar.gz
+License: GPL v2
+Type: ipkg
+Description: Python extension module generator for C and C++ libraries
+https://pypi.org/project/SIP/
+
+@@
+
+

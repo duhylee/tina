@@ -1,0 +1,315 @@
+Source-Makefile: package/firmware/linux-firmware/Makefile
+Package: xr829-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Xradio xr829 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Xradio xr829 firmware
+Trace Wong
+@@
+
+Package: rtl8821cs-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: RealTek RTL8821CS firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: RealTek RTL8821CS firmware
+Trace Wong
+@@
+
+Package: ap6256-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6256 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6256 firmware
+Trace Wong
+@@
+
+Package: mrvl8977-firmware-cfgfile
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Marvell 8977 firmware & cfgfile
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Marvell 8977 firmware & cfgfile
+Trace Wong
+@@
+
+Package: r8822cs-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: RealTek RTL8822CS firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: RealTek RTL8822CS firmware
+Trace Wong
+@@
+
+Package: ap6212z-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6212z firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6212z firmware
+Trace Wong
+@@
+
+Package: ap6356s-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6356S firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6356S firmware
+Trace Wong
+@@
+
+Package: r8723ds-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: RealTek RTL8723DS firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: RealTek RTL8723DS firmware
+Trace Wong
+@@
+
+Package: ap6255-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6255 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6255 firmware
+Trace Wong
+@@
+
+Package: qca9377-firmware-cfgfile
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Qualcom qca9377 firmware & cfgfile
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Qualcom qca9377 firmware & cfgfile
+Trace Wong
+@@
+
+Package: ap6236-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6236 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6236 firmware
+Trace Wong
+@@
+
+Package: ap6335-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6335 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6335 firmware
+Trace Wong
+@@
+
+Package: ap6212a-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6212A firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6212A firmware
+Trace Wong
+@@
+
+Package: xr819a-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Xradio xr819a firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Xradio xr819a firmware
+Trace Wong
+@@
+
+Package: ap6330-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6330 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6330 firmware
+Trace Wong
+@@
+
+Package: cyw43438-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: cypress 43438 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: cypress 43438 firmware
+Trace Wong
+@@
+
+Package: ap6212-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6212 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6212 firmware
+Trace Wong
+@@
+
+Package: esp8089-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: esp8089 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: esp8089 firmware
+Trace Wong
+@@
+
+Package: xr819-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Xradio xr819 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Xradio xr819 firmware
+Trace Wong
+@@
+
+Config:
+  config FIRMWARE_PATH
+  string
+  prompt "Firmware's directory"
+  default "/lib/firmware/"
+  help
+     Configure the location of firmware for system.
+@@
+
+

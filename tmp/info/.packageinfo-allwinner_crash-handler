@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/crash-handler/Makefile
+Package: crash-handler
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libunwind +libunwind-arm +libunwind-ptrace +elfutils +libdw +libelf +libstdcpp +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina crash hanndler
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Tina crash hanndler
+
+@@
+
+

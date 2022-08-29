@@ -1,0 +1,1190 @@
+Source-Makefile: package/qt/qt5/Makefile
+Package: qt5-core
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +zlib +libstdcpp +libinput +libpthread +glib2 @!LINUX_2_6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 core
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 core
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-gui
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-dbus +libinput +tslib +mtdev +glib2 +fontconfig +libump +PACKAGE_qt5-gui:libpng +PACKAGE_qt5-gui:libfreetype +PACKAGE_qt5-gui:libjpeg +mali400-um @DISPLAY_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 gui(eglfs)
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 gui(eglfs)
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-multimedia
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-network +qt5-quick +qt5-quick +qt5-opengl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 multimedia
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 multimedia
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-network
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 network
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 network
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-qml
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-gui +qt5-remoteobjects
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 qml
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 qml
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-remoteobjects
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 remoteobjects
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 remoteobjects
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-gui +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-2
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick.2
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick.2
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-controls
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-controls
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-controls
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-controls-2
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick-2 +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-controls-2
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-controls-2
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-dialogs
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-dialogs
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-dialogs
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-extras
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-extras
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-extras
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-layouts
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-layouts
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-layouts
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-localstorage
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-network +qt5-qml +qt5-sql
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-localstorage
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-localstorage
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-particles
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick +qt5-quickparticles
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-particles.2
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-particles.2
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-privatewidgets
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-privatewidgets
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-privatewidgets
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-scene3d
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick +qt5-3d +qt5-concurrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-scene3d
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-scene3d
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-window
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-window.2
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-window.2
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quick-xmllistmodel
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-network +qt5-xml +qt5-xmlpatterns +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quick-xmllistmodel
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quick-xmllistmodel
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-sql
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +libsqlite3 +sqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 sql(sqlite)
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 sql(sqlite)
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-test
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 test
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 test
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-enginio
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 enginio
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 enginio
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-widgets
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 widgets
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 widgets
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-bluetooth
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-concurrent +qt5-dbus +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 bluetooth
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 bluetooth
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-concurrent
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 concurrent
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 concurrent
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-dbus
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +PACKAGE_qt5-dbus:libdbus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 dbus
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 dbus
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-location
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-gui +qt5-qml +qt5-quick +qt5-positioning
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 location
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 location
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-nfc
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-dbus +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 nfc
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 nfc
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-opengl
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 opengl
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 opengl
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-positioning
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 positioning
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 positioning
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-printsupport
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 printsupport
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 printsupport
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quickwidgets
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-gui +qt5-qml +qt5-quick +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quickwidgets
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quickwidgets
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-script
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 script
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 script
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-scripttools
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-qml +qt5-gui +qt5-quick +qt5-widgets +qt5-script
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 scripttools
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 scripttools
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-sensors
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 sensors
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 sensors
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-serialport
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +eudev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 serialport
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 serialport
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-svg
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 svg
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 svg
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-webchannel
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-qml +qt5-gui +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 webchannel
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 webchannel
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-webengine
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 webengine
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 webengine
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-websocket
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 websocket
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 websocket
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-xml
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 xml
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 xml
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-xmlpatterns
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 xmlpatterns
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 xmlpatterns
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-serialbus
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-network +qt5-serialport +eudev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 serialbus
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 serialbus
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-help
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-widgets +qt5-sql +qt5-network +qt5-clucene
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 help
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 help
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-clucene
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 clucene
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 clucene
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-labstemplates
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-quick +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 labstemplates
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 labstemplates
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-quickparticles
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-quick +qt5-network +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 quickparticles
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 quickparticles
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-3d
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-quick +qt5-network +qt5-qml +qt5-concurrent +qt5-gamepad
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 3d
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 3d
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-charts
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-opengl +qt5-gui +qt5-qml +qt5-quick +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 charts
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 charts
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-speech
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 charts
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 charts
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-scxml
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-qml +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 scxml
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 scxml
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-purchasing
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-opengl +qt5-gui +qt5-qml +qt5-network qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 purchasing
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 purchasing
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-datavis3d
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-opengl +qt5-qml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 datavis3d
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 datavis3d
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-examples
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-3d +qt5-svg +qt5-sql +qt5-network +qt5-quick +qt5-quickwidgets +qt5-multimedia +qt5-network +qt5-qml +qt5-quick +qt5-quick-2 +qt5-sql +qt5-test +qt5-widgets +qt5-bluetooth +qt5-concurrent +qt5-dbus +qt5-location +qt5-nfc +qt5-opengl +qt5-positioning +qt5-printsupport +qt5-quickwidgets +qt5-script +qt5-scripttools +qt5-sensors +qt5-serialport +qt5-svg +qt5-webchannel +qt5-websocket +qt5-enginio +qt5-xml +qt5-xmlpatterns +qt5-serialbus +qt5-help +qt5-clucene +qt5-labstemplates +qt5-quickparticles +qt5-charts +qt5-datavis3d +qt5-network +qt5-purchasing +qt5-quick-2 +qt5-scxml +qt5-speech +qt5-bluetooth +qt5-remoteobjects +qt5-script
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 examples
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 examples
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-wayland
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-dbus +qt5-network +qt5-qml +qt5-quick +qt5-wayland:weston +qt5-wayland:wayland
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 wayland
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 wayland
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-gamepad
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-core +qt5-gui +qt5-network +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 gamepad
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 gamepad
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-mouse
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core qt5-gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-mouse
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-mouse
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-keyboard
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core qt5-gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-keyboard
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-keyboard
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-touchscreen
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +PACKAGE_qt5-drivers-touchscreen:tslib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-touchscreen(tslib)
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-touchscreen(tslib)
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-linuxfb
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core qt5-gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-linuxfb
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-linuxfb
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-audio
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-network +qt5-multimedia +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-audio(alsa)
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-audio(alsa)
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-customwidget
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-customwidget
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-customwidget
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-worldtimeclock
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-worldtimeclock
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-worldtimeclock
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-drivers-imageformats
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-svg +qt5-widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 drivers-imageformats
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 drivers-imageformats
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-graphicaleffects
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-network +qt5-qml +qt5-quick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 graphicaleffects
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 graphicaleffects
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+Package: qt5-gsttools
+Version: 5.10.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread qt5-core +qt5-gui +qt5-multimedia +qt5-multimediawidgets +qt5-network +qt5-widgets +alsa-lib +gstreamer1-plugins-base +gstreamer1-libs +gst1-plugins-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +libstdcpp
+Section: Qt
+Category: Qt
+Title: qt5 gsttools
+Maintainer: TraceWong <tracewong@outlook.org>
+Source: qt-everywhere-opensource-src-5.10.1-prebuilt.tar.bz2
+Type: ipkg
+Description: qt5 gsttools
+http://qt-project.org
+TraceWong <tracewong@outlook.org>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/security/optee-test/Makefile
+Package: optee-test
+Submenu: OPTEE
+Version: 2.5.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base +optee-client +optee-os-dev-kit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Security
+Title: optee-test
+Maintainer: 
+Source: 2.5.0.tar.gz
+License: GPL-2.0 & BSD 2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This component provides the TEE sanity testsuite in Linux using the ARM(R) TrustZone(R) technology.
+
+@@
+
+

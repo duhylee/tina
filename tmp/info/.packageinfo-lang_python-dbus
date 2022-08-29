@@ -1,0 +1,21 @@
+Source-Makefile: package/lang/python-dbus/Makefile
+Package: dbus-python
+Submenu: Python
+Version: 1.2.8-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-expat +libdbus-glib +dbus +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: lang
+Category: Languages
+Title: Python bindings for dbus
+Maintainer: 
+Source: dbus-python-1.2.8.tar.gz
+Type: ipkg
+Description:   Python bindings for dbus.
+http://dbus.freedesktop.org/
+
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/eyesee-mpp/V316SdvDragonBoard/Makefile
+Package: eyesee-mpp-V316SdvDragonBoard
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-framework +eyesee-mpp-external +libjpeg +libpng +eyesee-minigui +tslib +libnl-tiny
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-V316SdvDragonBoard
+Category: Allwinner
+Title: eyesee-mpp-V316SdvDragonBoard for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-V316SdvDragonBoard is our solutions for v316 sdv dragonboard. It mainly use eyesee-mpp-framework to implement
+  multimedia function.
+AW-PDC-PD5
+@@
+Config:
+#source "package/allwinner/eyesee-mpp/V316SdvDragonBoard/Config.in"
+@@
+
+

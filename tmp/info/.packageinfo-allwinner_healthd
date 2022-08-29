@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/healthd/Makefile
+Package: healthd
+Menu: 1
+Default: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libuci +liballwinner-base +HEALTHD_BROADCAST_INFO:dbus +HEALTHD_CHARGE_ANIMATION:libminui +HEALTHD_CHARGE_ANIMATION:libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Battery Daemon for tina linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina Battery Daemon, refer to the Android Healthd
+
+@@
+Config:
+  source "package/allwinner/healthd/Config.in"
+@@
+
+

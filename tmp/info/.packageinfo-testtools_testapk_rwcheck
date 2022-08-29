@@ -1,0 +1,19 @@
+Source-Makefile: package/testtools/testapk/rwcheck/Makefile
+Package: rwcheck
+Submenu: testapk
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: TestTools
+Title: do read/write check(CRC16)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: rwcheck to check read and write by CRC, just data correctness but not performance.
+
+@@
+
+

@@ -1,0 +1,18 @@
+Source-Makefile: package/libs/atk/Makefile
+Package: atk
+Version: 2.22.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Accesibility library for gtk+ apps
+Maintainer: 
+Source: atk-2.22.0.tar.xz
+Type: ipkg
+Description: Accesibility library for gtk+ apps
+
+@@
+
+

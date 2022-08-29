@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/wayland-ivi-extension/Makefile
+Package: libwayland-ivi-extension
+Version: 1.13.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Wayland-ivi-extension
+Maintainer: 
+Source: wayland-ivi-extension-1.13.0.tar.gz
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description: Wayland-ivi-extension
+http://github.com/GENIVI/wayland-ivi-extension
+
+@@
+
+

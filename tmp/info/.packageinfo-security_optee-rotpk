@@ -1,0 +1,19 @@
+Source-Makefile: package/security/optee-rotpk/Makefile
+Package: optee-rotpk
+Submenu: OPTEE
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base +optee-client +optee-os-dev-kit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Security
+Title: OPTEE rotpk read write
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	rotpk read/write TA & CA demo source code!
+
+@@
+
+

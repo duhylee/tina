@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/tina_multimedia_demo/encodertest/Makefile
+Package: encodertest
+Submenu: tina_multimedia_demo
+Version: 2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcedarx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: encode test
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	CedarX2.8 encodertest
+
+@@
+
+

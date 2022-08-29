@@ -1,0 +1,24 @@
+Source-Makefile: package/libs/efl/ephoto/Makefile
+Package: ephoto
+Submenu: EFL
+Version: 1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +efl +eudev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A comprehensive image viewer written using the core EFL
+Maintainer: Houston <smhouston88@gmail.com>
+Source: ephoto-1.5.tar.xz
+Type: ipkg
+Description: Ephoto is an image viewer and editor written with a focus on simplicity and ease of use
+while taking full advantage of EFL's speed and tiny memory footprint.
+Browse images via thumbnail, single view with editing features, or display a moving slideshow.
+There are neat filters to try, from Gaussian blurs to intricate sketches.
+Ephoto is extremely versatile, in that it can act as both a simple viewer and an advanced image editor.
+http://www.smhouston.us/ephoto/
+Houston <smhouston88@gmail.com>
+@@
+
+

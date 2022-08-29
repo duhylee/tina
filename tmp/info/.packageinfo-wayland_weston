@@ -1,0 +1,26 @@
+Source-Makefile: package/wayland/weston/Makefile
+Package: weston
+Menu: 1
+Version: 2.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwebp +libxkbcommon +libpixman +libpng +libjpeg +mtdev +eudev +libcairo +libinput +wayland +wayland-protocols +WESTON_DRM:libdrm +WESTON_OPENGL_ES:libump +WESTON_DBUS:dbus +WESTON_LAUNCH:libpam +WESTON_LIBXML2:libxml2 +WESTON_SYSTEMD:systemd +WESTON_LCMS2:lcms2 +WESTON_LIBVA:libva +pango
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Wayland
+Title: Weston is the reference implementation of a Wayland compositor
+Maintainer: <wayland-devel@lists.freedesktop.org>
+Source: weston-2.0.0.tar.xz
+Type: ipkg
+Description:   Weston is the reference implementation of a Wayland
+compositor, and a useful compositor in its own right.
+Weston has various backends that lets it run on Linux kernel
+modesetting and evdev input as well as under X11.
+https://wayland.freedesktop.org/
+<wayland-devel@lists.freedesktop.org>
+@@
+Config:
+  source "package/wayland/weston/Config.in"
+@@
+
+

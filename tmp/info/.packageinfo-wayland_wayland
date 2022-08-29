@@ -1,0 +1,24 @@
+Source-Makefile: package/wayland/wayland/Makefile
+Package: wayland
+Version: 1.13.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libffi +libxml2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libexpat libffi libxml2 wayland/host
+Build-Depends/host: libexpat/host libffi/host libxml2/host
+Build-Types: host
+Section: gui
+Category: Wayland
+Title: wayland
+Maintainer: <wayland-devel@lists.freedesktop.org>
+Source: wayland-1.13.0.tar.xz
+Type: ipkg
+Description: Wayland is a project to define a protocol for a compositor
+to talk to its clients as well as a library implementation
+of the protocol.
+https://wayland.freedesktop.org/
+<wayland-devel@lists.freedesktop.org>
+@@
+
+

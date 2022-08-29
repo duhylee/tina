@@ -1,0 +1,24 @@
+Source-Makefile: package/libs/libxkbcommon/Makefile
+Package: libxkbcommon
+Version: 0.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +xkeyboard-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: xkbcommon is a library to handle keyboard descriptions
+Maintainer: Ran Benita<ran234@gmail.com>
+Source: libxkbcommon-0.6.1.tar.xz
+License: MIT/X11
+Type: ipkg
+Description:   xkbcommon is a library to handle keyboard descriptions, including loading them from disk,
+parsing them and handling their state. It's mainly meant for client toolkits, window systems,
+and other system applications; currently that includes Wayland, kmscon, GTK+, Qt, Clutter,
+KWin and more. It is also used by some XCB applications for proper keyboard support.
+
+https://xkbcommon.org/
+Ran Benita<ran234@gmail.com>
+@@
+
+

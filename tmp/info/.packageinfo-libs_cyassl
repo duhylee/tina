@@ -1,0 +1,26 @@
+Source-Makefile: package/libs/cyassl/Makefile
+Package: libcyassl
+Submenu: SSL
+Version: 4.1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv
+Section: libs
+Category: Libraries
+Title: CyaSSL library
+Maintainer: 
+Source: wolfssl-4.1.0.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: CyaSSL is an SSL library optimized for small footprint, both on disk and for
+memory use.
+http://www.wolfssl.com/
+
+@@
+Config:
+source "package/libs/cyassl/Config.in"
+@@
+
+

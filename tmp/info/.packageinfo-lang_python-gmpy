@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-gmpy/Makefile
+Package: python-gmpy
+Submenu: Python
+Version: 1.17-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgmp +python-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: python-gmpy
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: gmpy-1.17.zip
+License: LGPL-2.1+
+LicenseFiles: lgpl-2.1.txt
+Type: ipkg
+Description: gmpy is a C-coded Python extension module that provides access to the
+GMP (or MPIR) multiple-precision arithmetic library.
+http://code.google.com/p/gmpy/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/wayland/glmark2/Makefile
+Package: glmark2
+Version: 7215c0f337dae0b232535549c37fca441747a891-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpng +libjpeg +libump +GLMARK2_WAYLAND:wayland
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Wayland
+Title: glmark2 is an OpenGL 2.0 and ES 2.0 benchmark
+Maintainer: 
+Source: glmark2-7215c0f337dae0b232535549c37fca441747a891.tar.gz
+License: GPLv3+ SGIv1
+LicenseFiles: COPYING COPYING.SGI
+Type: ipkg
+Description:   glmark2 is developed by Alexandros Frantzis and Jesse Barker based on the
+original glmark benchmark by Ben Smith.
+https://launchpad.net/glmark2/
+
+@@
+Config:
+  source "package/wayland/glmark2/Config.in"
+@@
+
+

@@ -1,0 +1,36 @@
+	config FEED_packages
+		bool "Enable feed packages"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"packages\" feed at https://github.com/openwrt/packages.git.
+
+	config FEED_luci
+		bool "Enable feed luci"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"luci\" feed at https://github.com/openwrt/luci.git.
+
+	config FEED_routing
+		bool "Enable feed routing"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"routing\" feed at https://github.com/openwrt-routing/packages.git.
+
+	config FEED_telephony
+		bool "Enable feed telephony"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"telephony\" feed at https://github.com/openwrt/telephony.git.
+
+	config FEED_management
+		bool "Enable feed management"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"management\" feed at https://github.com/openwrt-management/packages.git.
+
+	config FEED_targets
+		bool "Enable feed targets"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"targets\" feed at https://github.com/openwrt/targets.git.
+

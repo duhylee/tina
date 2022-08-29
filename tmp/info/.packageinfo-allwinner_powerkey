@@ -1,0 +1,20 @@
+Source-Makefile: package/allwinner/powerkey/Makefile
+Package: powerkey
+Menu: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: powerkey for allwinner
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   powerkey for Allwinner
+
+@@
+
+

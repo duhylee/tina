@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-cython/Makefile
+Package: python-cython
+Submenu: Python
+Version: 0.29.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python python-cython/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python Cython
+Maintainer: 
+Source: Cython-0.29.2.tar.gz
+License: Apache
+Type: ipkg
+Description: Cython is an optimising static compiler for both the Python programming language and the extended Cython programming language (based on Pyrex).
+https://cython.org/
+
+@@
+
+

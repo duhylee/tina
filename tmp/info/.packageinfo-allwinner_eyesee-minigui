@@ -1,0 +1,21 @@
+Source-Makefile: package/allwinner/eyesee-minigui/Makefile
+Package: eyesee-minigui
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +tslib +libjpeg +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-minigui
+Category: Allwinner
+Title: eyesee-minigui for Tina Linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   eyesee-minigui is a GUILib for eyesee project.
+
+@@
+Config:
+source "package/allwinner/eyesee-minigui/Config.in"
+@@
+
+

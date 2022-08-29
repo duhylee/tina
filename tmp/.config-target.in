@@ -1,0 +1,3226 @@
+choice
+	prompt "Target System"
+	default TARGET_sunxi
+	reset if !DEVEL
+	
+config TARGET_c200s_F1C200s
+	bool "c200s-F1C200s"
+	select LINUX_3_10
+	select PLATFORM_c200s
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_c600_cuckoo
+	bool "c600-cuckoo"
+	select LINUX_3_10
+	select PLATFORM_c600
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_g102_perf1
+	bool "g102-perf1"
+	select LINUX_3_10
+	select PLATFORM_g102
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_g102_pro
+	bool "g102-pro"
+	select LINUX_3_10
+	select PLATFORM_g102
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_h3_p1
+	bool "h3-p1"
+	select LINUX_4_4
+	select PLATFORM_h3
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_h6_p1
+	bool "h6-p1"
+	select LINUX_4_9
+	select PLATFORM_h6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+
+
+config TARGET_mr112_robots
+	bool "mr112-robots"
+	select LINUX_4_9
+	select PLATFORM_mr112
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_mr115_robots
+	bool "mr115-robots"
+	select LINUX_4_4
+	select PLATFORM_mr115
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_mr133_perf1
+	bool "mr133-perf1"
+	select LINUX_4_9
+	select PLATFORM_mr133
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_mr133_robots
+	bool "mr133-robots"
+	select LINUX_4_9
+	select PLATFORM_mr133
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_r11_GW
+	bool "r11-GW"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_R11_pref1
+	bool "r11-R11_pref1"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_R11_sc3866r
+	bool "r11-R11_sc3866r"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_dh
+	bool "r11-dh"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_kudrone
+	bool "r11-kudrone"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_mic
+	bool "r11-mic"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r11_perf1
+	bool "r11-perf1"
+	select LINUX_3_4
+	select PLATFORM_r11
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_dm
+	bool "r16-dm"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_dm2
+	bool "r16-dm2"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_evb
+	bool "r16-evb"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_noma
+	bool "r16-noma"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_parrot
+	bool "r16-parrot"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r16_spk
+	bool "r16-spk"
+	select LINUX_3_4
+	select PLATFORM_r16
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r18_d1
+	bool "r18-d1"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_d1nor
+	bool "r18-d1nor"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_hena
+	bool "r18-hena"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_m64
+	bool "r18-m64"
+	select LINUX_3_10
+	select PLATFORM_r18
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_mozart
+	bool "r18-mozart"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_noma
+	bool "r18-noma"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_pine64
+	bool "r18-pine64"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r18_sgw
+	bool "r18-sgw"
+	select LINUX_4_4
+	select PLATFORM_r18
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r30_carp
+	bool "r30-carp"
+	select LINUX_4_9
+	select PLATFORM_r30
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r30_perf1
+	bool "r30-perf1"
+	select LINUX_4_4
+	select PLATFORM_r30
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r30_perf2
+	bool "r30-perf2"
+	select LINUX_4_4
+	select PLATFORM_r30
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r30_std
+	bool "r30-std"
+	select LINUX_4_9
+	select PLATFORM_r30
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+config TARGET_r311_perf1
+	bool "r311-perf1"
+	select LINUX_4_9
+	select PLATFORM_r311
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_r328s2_demo
+	bool "r328s2-demo"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_demo_ui
+	bool "r328s2-demo_ui"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_perf1
+	bool "r328s2-perf1"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_perf2_xr829
+	bool "r328s2-perf2_xr829"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_qa
+	bool "r328s2-qa"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_std
+	bool "r328s2-std"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s2_ubidemo
+	bool "r328s2-ubidemo"
+	select LINUX_4_9
+	select PLATFORM_r328s2
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USES_SQUASHFS
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s3_std
+	bool "r328s3-std"
+	select LINUX_4_9
+	select PLATFORM_r328s3
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r328s3_std_xr829
+	bool "r328s3-std_xr829"
+	select LINUX_4_9
+	select PLATFORM_r328s3
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r331_ac100
+	bool "r331-ac100"
+	select LINUX_4_9
+	select PLATFORM_r331
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r331_ac101s
+	bool "r331-ac101s"
+	select LINUX_4_9
+	select PLATFORM_r331
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r331_std
+	bool "r331-std"
+	select LINUX_4_9
+	select PLATFORM_r331
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r332_ac100
+	bool "r332-ac100"
+	select LINUX_4_9
+	select PLATFORM_r332
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r333_perf1
+	bool "r333-perf1"
+	select LINUX_4_9
+	select PLATFORM_r333
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_evb
+	bool "r40-evb"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_m2ultra
+	bool "r40-m2ultra"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_m2ultraservers
+	bool "r40-m2ultraservers"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_perf1
+	bool "r40-perf1"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_perf2
+	bool "r40-perf2"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r40_perf3
+	bool "r40-perf3"
+	select LINUX_3_10
+	select PLATFORM_r40
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r58_dev
+	bool "r58-dev"
+	select LINUX_3_4
+	select PLATFORM_r58
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r58_sch
+	bool "r58-sch"
+	select LINUX_3_4
+	select PLATFORM_r58
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_db
+	bool "r6-db"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_evb
+	bool "r6-evb"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_mic
+	bool "r6-mic"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_mic2
+	bool "r6-mic2"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_pd4
+	bool "r6-pd4"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_perf1
+	bool "r6-perf1"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_perf2
+	bool "r6-perf2"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r6_perf3
+	bool "r6-perf3"
+	select LINUX_3_10
+	select PLATFORM_r6
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r7_R7_pref1
+	bool "r7-R7_pref1"
+	select LINUX_3_4
+	select PLATFORM_r7
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_r7s_R7s
+	bool "r7s-R7s"
+	select LINUX_4_9
+	select PLATFORM_r7s
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_t7_chimera
+	bool "t7-chimera"
+	select LINUX_4_9
+	select PLATFORM_t7
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_t7_p1
+	bool "t7-p1"
+	select LINUX_4_9
+	select PLATFORM_t7
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_t7_perf1
+	bool "t7-perf1"
+	select LINUX_4_9
+	select PLATFORM_t7
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build multi-platform images for the ARMv7 instruction set architecture
+
+
+config TARGET_v133_scan
+	bool "v133-scan"
+	select LINUX_3_10
+	select PLATFORM_v133
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v163_sdv
+	bool "v163-sdv"
+	select LINUX_4_9
+	select PLATFORM_v163
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v306_h300
+	bool "v306-h300"
+	select LINUX_4_9
+	select PLATFORM_v306
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v313_sdv
+	bool "v313-sdv"
+	select LINUX_4_9
+	select PLATFORM_v313
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v316_SdvDragonBoard
+	bool "v316-SdvDragonBoard"
+	select LINUX_4_9
+	select PLATFORM_v316
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v316_perfnor
+	bool "v316-perfnor"
+	select LINUX_4_9
+	select PLATFORM_v316
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v316_sdv
+	bool "v316-sdv"
+	select LINUX_4_9
+	select PLATFORM_v316
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v316_sdvlpddr
+	bool "v316-sdvlpddr"
+	select LINUX_4_9
+	select PLATFORM_v316
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v459_perf1
+	bool "v459-perf1"
+	select LINUX_4_9
+	select PLATFORM_v459
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v459_pro_ipc
+	bool "v459-pro_ipc"
+	select LINUX_4_9
+	select PLATFORM_v459
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v459_qaqc
+	bool "v459-qaqc"
+	select LINUX_4_9
+	select PLATFORM_v459
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v5_dvb
+	bool "v5-dvb"
+	select LINUX_4_4
+	select PLATFORM_v5
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v5_lindeni
+	bool "v5-lindeni"
+	select LINUX_4_4
+	select PLATFORM_v5
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v533_cdr
+	bool "v533-cdr"
+	select LINUX_4_9
+	select PLATFORM_v533
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v536_CdrDragonboard
+	bool "v536-CdrDragonboard"
+	select LINUX_4_9
+	select PLATFORM_v536
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_v536_cdr
+	bool "v536-cdr"
+	select LINUX_4_9
+	select PLATFORM_v536
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+endchoice
+
+choice
+	prompt "Target Profile"
+
+config TARGET_c200s_F1C200s_ 
+	bool "tina"
+	depends on TARGET_c200s_F1C200s
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_c600_cuckoo_ 
+	bool "tina"
+	depends on TARGET_c600_cuckoo
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_g102_perf1_ 
+	bool "tina"
+	depends on TARGET_g102_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_g102_pro_ 
+	bool "tina"
+	depends on TARGET_g102_pro
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_h3_p1_ 
+	bool "tina"
+	depends on TARGET_h3_p1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_h6_p1_ 
+	bool "tina"
+	depends on TARGET_h6_p1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_mr112_robots_ 
+	bool "tina"
+	depends on TARGET_mr112_robots
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_mr115_robots_ 
+	bool "tina"
+	depends on TARGET_mr115_robots
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_mr133_perf1_ 
+	bool "tina"
+	depends on TARGET_mr133_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_mr133_robots_ 
+	bool "tina"
+	depends on TARGET_mr133_robots
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_GW_ 
+	bool "tina"
+	depends on TARGET_r11_GW
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_R11_pref1_ 
+	bool "tina"
+	depends on TARGET_r11_R11_pref1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_R11_sc3866r_ 
+	bool "tina"
+	depends on TARGET_r11_R11_sc3866r
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_dh_ 
+	bool "tina"
+	depends on TARGET_r11_dh
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_kudrone_ 
+	bool "tina"
+	depends on TARGET_r11_kudrone
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_mic_ 
+	bool "tina"
+	depends on TARGET_r11_mic
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r11_perf1_ 
+	bool "tina"
+	depends on TARGET_r11_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_dm_ 
+	bool "tina"
+	depends on TARGET_r16_dm
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_dm2_ 
+	bool "tina"
+	depends on TARGET_r16_dm2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_evb_ 
+	bool "tina"
+	depends on TARGET_r16_evb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_noma_ 
+	bool "tina"
+	depends on TARGET_r16_noma
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_parrot_ 
+	bool "tina"
+	depends on TARGET_r16_parrot
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r16_spk_ 
+	bool "tina"
+	depends on TARGET_r16_spk
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_d1_ 
+	bool "tina"
+	depends on TARGET_r18_d1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_d1nor_ 
+	bool "tina"
+	depends on TARGET_r18_d1nor
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_hena_ 
+	bool "tina"
+	depends on TARGET_r18_hena
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_m64_ 
+	bool "tina"
+	depends on TARGET_r18_m64
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_mozart_ 
+	bool "tina"
+	depends on TARGET_r18_mozart
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_noma_ 
+	bool "tina"
+	depends on TARGET_r18_noma
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_pine64_ 
+	bool "tina"
+	depends on TARGET_r18_pine64
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r18_sgw_ 
+	bool "tina"
+	depends on TARGET_r18_sgw
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r30_carp_ 
+	bool "tina"
+	depends on TARGET_r30_carp
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r30_perf1_ 
+	bool "tina"
+	depends on TARGET_r30_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r30_perf2_ 
+	bool "tina"
+	depends on TARGET_r30_perf2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r30_std_ 
+	bool "tina"
+	depends on TARGET_r30_std
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r311_perf1_ 
+	bool "tina"
+	depends on TARGET_r311_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_demo_ 
+	bool "tina"
+	depends on TARGET_r328s2_demo
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_demo_ui_ 
+	bool "tina"
+	depends on TARGET_r328s2_demo_ui
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_perf1_ 
+	bool "tina"
+	depends on TARGET_r328s2_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_perf2_xr829_ 
+	bool "tina"
+	depends on TARGET_r328s2_perf2_xr829
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_qa_ 
+	bool "tina"
+	depends on TARGET_r328s2_qa
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_std_ 
+	bool "tina"
+	depends on TARGET_r328s2_std
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s2_ubidemo_ 
+	bool "tina"
+	depends on TARGET_r328s2_ubidemo
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s3_std_ 
+	bool "tina"
+	depends on TARGET_r328s3_std
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r328s3_std_xr829_ 
+	bool "tina"
+	depends on TARGET_r328s3_std_xr829
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r331_ac100_ 
+	bool "tina"
+	depends on TARGET_r331_ac100
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r331_ac101s_ 
+	bool "tina"
+	depends on TARGET_r331_ac101s
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r331_std_ 
+	bool "tina"
+	depends on TARGET_r331_std
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r332_ac100_ 
+	bool "tina"
+	depends on TARGET_r332_ac100
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r333_perf1_ 
+	bool "tina"
+	depends on TARGET_r333_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_evb_ 
+	bool "tina"
+	depends on TARGET_r40_evb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_m2ultra_ 
+	bool "tina"
+	depends on TARGET_r40_m2ultra
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_m2ultraservers_ 
+	bool "tina"
+	depends on TARGET_r40_m2ultraservers
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_perf1_ 
+	bool "tina"
+	depends on TARGET_r40_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_perf2_ 
+	bool "tina"
+	depends on TARGET_r40_perf2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r40_perf3_ 
+	bool "tina"
+	depends on TARGET_r40_perf3
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r58_dev_ 
+	bool "tina"
+	depends on TARGET_r58_dev
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r58_sch_ 
+	bool "tina"
+	depends on TARGET_r58_sch
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_db_ 
+	bool "tina"
+	depends on TARGET_r6_db
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_evb_ 
+	bool "tina"
+	depends on TARGET_r6_evb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_mic_ 
+	bool "tina"
+	depends on TARGET_r6_mic
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_mic2_ 
+	bool "tina"
+	depends on TARGET_r6_mic2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_pd4_ 
+	bool "tina"
+	depends on TARGET_r6_pd4
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_perf1_ 
+	bool "tina"
+	depends on TARGET_r6_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_perf2_ 
+	bool "tina"
+	depends on TARGET_r6_perf2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r6_perf3_ 
+	bool "tina"
+	depends on TARGET_r6_perf3
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r7_R7_pref1_ 
+	bool "tina"
+	depends on TARGET_r7_R7_pref1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_r7s_R7s_ 
+	bool "tina"
+	depends on TARGET_r7s_R7s
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_t7_chimera_ 
+	bool "tina"
+	depends on TARGET_t7_chimera
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_t7_p1_ 
+	bool "tina"
+	depends on TARGET_t7_p1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_t7_perf1_ 
+	bool "tina"
+	depends on TARGET_t7_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v133_scan_ 
+	bool "tina"
+	depends on TARGET_v133_scan
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v163_sdv_ 
+	bool "tina"
+	depends on TARGET_v163_sdv
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v306_h300_ 
+	bool "tina"
+	depends on TARGET_v306_h300
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v313_sdv_ 
+	bool "tina"
+	depends on TARGET_v313_sdv
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v316_SdvDragonBoard_ 
+	bool "tina"
+	depends on TARGET_v316_SdvDragonBoard
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v316_perfnor_ 
+	bool "tina"
+	depends on TARGET_v316_perfnor
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v316_sdv_ 
+	bool "tina"
+	depends on TARGET_v316_sdv
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v316_sdvlpddr_ 
+	bool "tina"
+	depends on TARGET_v316_sdvlpddr
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v459_perf1_ 
+	bool "tina"
+	depends on TARGET_v459_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v459_pro_ipc_ 
+	bool "tina"
+	depends on TARGET_v459_pro_ipc
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v459_qaqc_ 
+	bool "tina"
+	depends on TARGET_v459_qaqc
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v5_dvb_ 
+	bool "tina"
+	depends on TARGET_v5_dvb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v5_lindeni_ 
+	bool "tina"
+	depends on TARGET_v5_lindeni
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v533_cdr_ 
+	bool "tina"
+	depends on TARGET_v533_cdr
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v536_CdrDragonboard_ 
+	bool "tina"
+	depends on TARGET_v536_CdrDragonboard
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_v536_cdr_ 
+	bool "tina"
+	depends on TARGET_v536_cdr
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_logd
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+endchoice
+
+config HAS_SUBTARGETS
+	bool
+
+config TARGET_BOARD
+	string
+
+		default "c200s-F1C200s" if TARGET_c200s_F1C200s
+		default "c600-cuckoo" if TARGET_c600_cuckoo
+		default "g102-perf1" if TARGET_g102_perf1
+		default "g102-pro" if TARGET_g102_pro
+		default "h3-p1" if TARGET_h3_p1
+		default "h6-p1" if TARGET_h6_p1
+		default "mr112-robots" if TARGET_mr112_robots
+		default "mr115-robots" if TARGET_mr115_robots
+		default "mr133-perf1" if TARGET_mr133_perf1
+		default "mr133-robots" if TARGET_mr133_robots
+		default "r11-GW" if TARGET_r11_GW
+		default "r11-R11_pref1" if TARGET_r11_R11_pref1
+		default "r11-R11_sc3866r" if TARGET_r11_R11_sc3866r
+		default "r11-dh" if TARGET_r11_dh
+		default "r11-kudrone" if TARGET_r11_kudrone
+		default "r11-mic" if TARGET_r11_mic
+		default "r11-perf1" if TARGET_r11_perf1
+		default "r16-dm" if TARGET_r16_dm
+		default "r16-dm2" if TARGET_r16_dm2
+		default "r16-evb" if TARGET_r16_evb
+		default "r16-noma" if TARGET_r16_noma
+		default "r16-parrot" if TARGET_r16_parrot
+		default "r16-spk" if TARGET_r16_spk
+		default "r18-d1" if TARGET_r18_d1
+		default "r18-d1nor" if TARGET_r18_d1nor
+		default "r18-hena" if TARGET_r18_hena
+		default "r18-m64" if TARGET_r18_m64
+		default "r18-mozart" if TARGET_r18_mozart
+		default "r18-noma" if TARGET_r18_noma
+		default "r18-pine64" if TARGET_r18_pine64
+		default "r18-sgw" if TARGET_r18_sgw
+		default "r30-carp" if TARGET_r30_carp
+		default "r30-perf1" if TARGET_r30_perf1
+		default "r30-perf2" if TARGET_r30_perf2
+		default "r30-std" if TARGET_r30_std
+		default "r311-perf1" if TARGET_r311_perf1
+		default "r328s2-demo" if TARGET_r328s2_demo
+		default "r328s2-demo_ui" if TARGET_r328s2_demo_ui
+		default "r328s2-perf1" if TARGET_r328s2_perf1
+		default "r328s2-perf2_xr829" if TARGET_r328s2_perf2_xr829
+		default "r328s2-qa" if TARGET_r328s2_qa
+		default "r328s2-std" if TARGET_r328s2_std
+		default "r328s2-ubidemo" if TARGET_r328s2_ubidemo
+		default "r328s3-std" if TARGET_r328s3_std
+		default "r328s3-std_xr829" if TARGET_r328s3_std_xr829
+		default "r331-ac100" if TARGET_r331_ac100
+		default "r331-ac101s" if TARGET_r331_ac101s
+		default "r331-std" if TARGET_r331_std
+		default "r332-ac100" if TARGET_r332_ac100
+		default "r333-perf1" if TARGET_r333_perf1
+		default "r40-evb" if TARGET_r40_evb
+		default "r40-m2ultra" if TARGET_r40_m2ultra
+		default "r40-m2ultraservers" if TARGET_r40_m2ultraservers
+		default "r40-perf1" if TARGET_r40_perf1
+		default "r40-perf2" if TARGET_r40_perf2
+		default "r40-perf3" if TARGET_r40_perf3
+		default "r58-dev" if TARGET_r58_dev
+		default "r58-sch" if TARGET_r58_sch
+		default "r6-db" if TARGET_r6_db
+		default "r6-evb" if TARGET_r6_evb
+		default "r6-mic" if TARGET_r6_mic
+		default "r6-mic2" if TARGET_r6_mic2
+		default "r6-pd4" if TARGET_r6_pd4
+		default "r6-perf1" if TARGET_r6_perf1
+		default "r6-perf2" if TARGET_r6_perf2
+		default "r6-perf3" if TARGET_r6_perf3
+		default "r7-R7_pref1" if TARGET_r7_R7_pref1
+		default "r7s-R7s" if TARGET_r7s_R7s
+		default "t7-chimera" if TARGET_t7_chimera
+		default "t7-p1" if TARGET_t7_p1
+		default "t7-perf1" if TARGET_t7_perf1
+		default "v133-scan" if TARGET_v133_scan
+		default "v163-sdv" if TARGET_v163_sdv
+		default "v306-h300" if TARGET_v306_h300
+		default "v313-sdv" if TARGET_v313_sdv
+		default "v316-SdvDragonBoard" if TARGET_v316_SdvDragonBoard
+		default "v316-perfnor" if TARGET_v316_perfnor
+		default "v316-sdv" if TARGET_v316_sdv
+		default "v316-sdvlpddr" if TARGET_v316_sdvlpddr
+		default "v459-perf1" if TARGET_v459_perf1
+		default "v459-pro_ipc" if TARGET_v459_pro_ipc
+		default "v459-qaqc" if TARGET_v459_qaqc
+		default "v5-dvb" if TARGET_v5_dvb
+		default "v5-lindeni" if TARGET_v5_lindeni
+		default "v533-cdr" if TARGET_v533_cdr
+		default "v536-CdrDragonboard" if TARGET_v536_CdrDragonboard
+		default "v536-cdr" if TARGET_v536_cdr
+
+config DEFAULT_TARGET_OPTIMIZATION
+	string
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_c200s_F1C200s
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_c600_cuckoo
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_g102_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_g102_pro
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_h3_p1
+	default "-Os -pipe -fno-caller-saves" if TARGET_h6_p1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_mr112_robots
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_mr115_robots
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_mr133_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_mr133_robots
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_GW
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_R11_pref1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_R11_sc3866r
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_dh
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_kudrone
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_mic
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r11_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_dm
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_dm2
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_evb
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_noma
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_parrot
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r16_spk
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_d1
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_d1nor
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_hena
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_m64
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_mozart
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_noma
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_pine64
+	default "-Os -pipe -fno-caller-saves" if TARGET_r18_sgw
+	default "-Os -pipe -fno-caller-saves" if TARGET_r30_carp
+	default "-Os -pipe -fno-caller-saves" if TARGET_r30_perf1
+	default "-Os -pipe -fno-caller-saves" if TARGET_r30_perf2
+	default "-Os -pipe -fno-caller-saves" if TARGET_r30_std
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r311_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_demo
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_demo_ui
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_perf2_xr829
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_qa
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_std
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s2_ubidemo
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s3_std
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r328s3_std_xr829
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r331_ac100
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r331_ac101s
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r331_std
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r332_ac100
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r333_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_evb
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_m2ultra
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_m2ultraservers
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_perf2
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r40_perf3
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r58_dev
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r58_sch
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_db
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_evb
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_mic
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_mic2
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_pd4
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_perf1
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_perf2
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_r6_perf3
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r7_R7_pref1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_r7s_R7s
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_t7_chimera
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_t7_p1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_t7_perf1
+	default "-Os -pipe -march=armv5te -mtune=arm926ej-s" if TARGET_v133_scan
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v163_sdv
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v306_h300
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v313_sdv
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v316_SdvDragonBoard
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v316_perfnor
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v316_sdv
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v316_sdvlpddr
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v459_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v459_pro_ipc
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v459_qaqc
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v5_dvb
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v5_lindeni
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v533_cdr
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v536_CdrDragonboard
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_v536_cdr
+	default "-Os -pipe -funit-at-a-time"
+
+config CPU_TYPE
+	string
+	default "arm926ej-s" if TARGET_c200s_F1C200s
+	default "arm926ej-s" if TARGET_c600_cuckoo
+	default "cortex-a7+neon" if TARGET_g102_perf1
+	default "cortex-a7+neon" if TARGET_g102_pro
+	default "cortex-a7+neon" if TARGET_h3_p1
+	default "armv8-a" if TARGET_h6_p1
+	default "cortex-a7+neon" if TARGET_mr112_robots
+	default "cortex-a7+neon" if TARGET_mr115_robots
+	default "cortex-a7+neon" if TARGET_mr133_perf1
+	default "cortex-a7+neon" if TARGET_mr133_robots
+	default "cortex-a7+neon" if TARGET_r11_GW
+	default "cortex-a7+neon" if TARGET_r11_R11_pref1
+	default "cortex-a7+neon" if TARGET_r11_R11_sc3866r
+	default "cortex-a7+neon" if TARGET_r11_dh
+	default "cortex-a7+neon" if TARGET_r11_kudrone
+	default "cortex-a7+neon" if TARGET_r11_mic
+	default "cortex-a7+neon" if TARGET_r11_perf1
+	default "cortex-a7+neon" if TARGET_r16_dm
+	default "cortex-a7+neon" if TARGET_r16_dm2
+	default "cortex-a7+neon" if TARGET_r16_evb
+	default "cortex-a7+neon" if TARGET_r16_noma
+	default "cortex-a7+neon" if TARGET_r16_parrot
+	default "cortex-a7+neon" if TARGET_r16_spk
+	default "armv8-a" if TARGET_r18_d1
+	default "armv8-a" if TARGET_r18_d1nor
+	default "armv8-a" if TARGET_r18_hena
+	default "armv8-a" if TARGET_r18_m64
+	default "armv8-a" if TARGET_r18_mozart
+	default "armv8-a" if TARGET_r18_noma
+	default "armv8-a" if TARGET_r18_pine64
+	default "armv8-a" if TARGET_r18_sgw
+	default "armv8-a" if TARGET_r30_carp
+	default "armv8-a" if TARGET_r30_perf1
+	default "armv8-a" if TARGET_r30_perf2
+	default "armv8-a" if TARGET_r30_std
+	default "cortex-a7+neon" if TARGET_r311_perf1
+	default "cortex-a7+neon" if TARGET_r328s2_demo
+	default "cortex-a7+neon" if TARGET_r328s2_demo_ui
+	default "cortex-a7+neon" if TARGET_r328s2_perf1
+	default "cortex-a7+neon" if TARGET_r328s2_perf2_xr829
+	default "cortex-a7+neon" if TARGET_r328s2_qa
+	default "cortex-a7+neon" if TARGET_r328s2_std
+	default "cortex-a7+neon" if TARGET_r328s2_ubidemo
+	default "cortex-a7+neon" if TARGET_r328s3_std
+	default "cortex-a7+neon" if TARGET_r328s3_std_xr829
+	default "cortex-a7+neon" if TARGET_r331_ac100
+	default "cortex-a7+neon" if TARGET_r331_ac101s
+	default "cortex-a7+neon" if TARGET_r331_std
+	default "cortex-a7+neon" if TARGET_r332_ac100
+	default "cortex-a7+neon" if TARGET_r333_perf1
+	default "cortex-a7+neon" if TARGET_r40_evb
+	default "cortex-a7+neon" if TARGET_r40_m2ultra
+	default "cortex-a7+neon" if TARGET_r40_m2ultraservers
+	default "cortex-a7+neon" if TARGET_r40_perf1
+	default "cortex-a7+neon" if TARGET_r40_perf2
+	default "cortex-a7+neon" if TARGET_r40_perf3
+	default "cortex-a7+neon" if TARGET_r58_dev
+	default "cortex-a7+neon" if TARGET_r58_sch
+	default "arm926ej-s" if TARGET_r6_db
+	default "arm926ej-s" if TARGET_r6_evb
+	default "arm926ej-s" if TARGET_r6_mic
+	default "arm926ej-s" if TARGET_r6_mic2
+	default "arm926ej-s" if TARGET_r6_pd4
+	default "arm926ej-s" if TARGET_r6_perf1
+	default "arm926ej-s" if TARGET_r6_perf2
+	default "arm926ej-s" if TARGET_r6_perf3
+	default "cortex-a7+neon" if TARGET_r7_R7_pref1
+	default "cortex-a7+neon" if TARGET_r7s_R7s
+	default "cortex-a7+neon" if TARGET_t7_chimera
+	default "cortex-a7+neon" if TARGET_t7_p1
+	default "cortex-a7+neon" if TARGET_t7_perf1
+	default "arm926ej-s" if TARGET_v133_scan
+	default "cortex-a7+neon" if TARGET_v163_sdv
+	default "cortex-a7+neon" if TARGET_v306_h300
+	default "cortex-a7+neon" if TARGET_v313_sdv
+	default "cortex-a7+neon" if TARGET_v316_SdvDragonBoard
+	default "cortex-a7+neon" if TARGET_v316_perfnor
+	default "cortex-a7+neon" if TARGET_v316_sdv
+	default "cortex-a7+neon" if TARGET_v316_sdvlpddr
+	default "cortex-a7+neon" if TARGET_v459_perf1
+	default "cortex-a7+neon" if TARGET_v459_pro_ipc
+	default "cortex-a7+neon" if TARGET_v459_qaqc
+	default "cortex-a7+neon" if TARGET_v5_dvb
+	default "cortex-a7+neon" if TARGET_v5_lindeni
+	default "cortex-a7+neon" if TARGET_v533_cdr
+	default "cortex-a7+neon" if TARGET_v536_CdrDragonboard
+	default "cortex-a7+neon" if TARGET_v536_cdr
+	default ""
+
+config LINUX_3_10
+	bool
+
+config LINUX_4_4
+	bool
+
+config LINUX_4_9
+	bool
+
+config LINUX_3_4
+	bool
+
+config PLATFORM_c200s
+	bool
+
+config PLATFORM_c600
+	bool
+
+config PLATFORM_g102
+	bool
+
+config PLATFORM_h3
+	bool
+
+config PLATFORM_h6
+	bool
+
+config PLATFORM_mr112
+	bool
+
+config PLATFORM_mr115
+	bool
+
+config PLATFORM_mr133
+	bool
+
+config PLATFORM_r11
+	bool
+
+config PLATFORM_r16
+	bool
+
+config PLATFORM_r18
+	bool
+
+config PLATFORM_r30
+	bool
+
+config PLATFORM_r311
+	bool
+
+config PLATFORM_r328s2
+	bool
+
+config PLATFORM_r328s3
+	bool
+
+config PLATFORM_r331
+	bool
+
+config PLATFORM_r332
+	bool
+
+config PLATFORM_r333
+	bool
+
+config PLATFORM_r40
+	bool
+
+config PLATFORM_r58
+	bool
+
+config PLATFORM_r6
+	bool
+
+config PLATFORM_r7
+	bool
+
+config PLATFORM_r7s
+	bool
+
+config PLATFORM_t7
+	bool
+
+config PLATFORM_v133
+	bool
+
+config PLATFORM_v163
+	bool
+
+config PLATFORM_v306
+	bool
+
+config PLATFORM_v313
+	bool
+
+config PLATFORM_v316
+	bool
+
+config PLATFORM_v459
+	bool
+
+config PLATFORM_v5
+	bool
+
+config PLATFORM_v533
+	bool
+
+config PLATFORM_v536
+	bool
+	config DEFAULT_base-files
+		bool
+
+	config DEFAULT_busybox
+		bool
+
+	config DEFAULT_dropbear
+		bool
+
+	config DEFAULT_fstools
+		bool
+
+	config DEFAULT_libc
+		bool
+
+	config DEFAULT_libgcc
+		bool
+
+	config DEFAULT_logd
+		bool
+
+	config DEFAULT_mtd
+		bool
+
+	config DEFAULT_netifd
+		bool
+
+	config DEFAULT_opkg
+		bool
+
+	config DEFAULT_uci
+		bool
+
+	config DEFAULT_uclient-fetch
+		bool
+

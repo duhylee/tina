@@ -1,0 +1,72 @@
+Source-Makefile: package/multimedia/pulseaudio/Makefile
+Package: pulseaudio-daemon
+Menu: 1
+Submenu: PulseAudio
+Version: 11.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsndfile +libatomic_ops +libspeexdsp +libltdl +libjson-c +alsa-lib +libcap +libopenssl +PACKAGE_eudev:eudev +PACKAGE_dbus:dbus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host
+Section: multimedia
+Category: Multimedia
+Title: PulseAudio
+Maintainer: 
+Require-User: pulse=51:pulse=51
+Source: pulseaudio-11.1.tar.xz
+License: LGPL-2.1+
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy
+  for your sound applications. It allows you to do advanced operations on
+  your sound data as it passes between your application and your hardware.
+http://www.pulseaudio.org
+
+@@
+Config:
+	source "package/multimedia/pulseaudio/Config.in"
+@@
+
+Package: pulseaudio-utils
+Submenu: PulseAudio
+Version: 11.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pulseaudio-daemon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host
+Section: multimedia
+Category: Multimedia
+Title: Utilities for Pulseaudio
+Maintainer: 
+Source: pulseaudio-11.1.tar.xz
+License: LGPL-2.1+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Utilities for Pulseaudio
+http://www.pulseaudio.org
+
+@@
+
+Package: pulseaudio-profiles
+Submenu: PulseAudio
+Version: 11.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pulseaudio-daemon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host
+Section: multimedia
+Category: Multimedia
+Title: Profiles for Pulseaudio
+Maintainer: 
+Source: pulseaudio-11.1.tar.xz
+License: LGPL-2.1+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Profiles for Pulseaudio
+http://www.pulseaudio.org
+
+@@
+
+

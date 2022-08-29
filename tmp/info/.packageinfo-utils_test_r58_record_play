@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/test_r58_record_play/Makefile
+Package: test_r58_record_play
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @DISPLAY_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: record play auto testing tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: record play auto testing tool
+
+@@
+
+

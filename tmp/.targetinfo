@@ -1,0 +1,2523 @@
+Source-Makefile: target/allwinner/c200s-F1C200s/Makefile
+Target: c200s-F1C200s
+Target-Board: c200s-F1C200s
+Target-Name: c200s-F1C200s
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/c600-cuckoo/Makefile
+Target: c600-cuckoo
+Target-Board: c600-cuckoo
+Target-Name: c600-cuckoo
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/g102-perf1/Makefile
+Target: g102-perf1
+Target-Board: g102-perf1
+Target-Name: g102-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/g102-pro/Makefile
+Target: g102-pro
+Target-Board: g102-pro
+Target-Name: g102-pro
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/h3-p1/Makefile
+Target: h3-p1
+Target-Board: h3-p1
+Target-Name: h3-p1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/h6-p1/Makefile
+Target: h6-p1
+Target-Board: h6-p1
+Target-Name: h6-p1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/mr112-robots/Makefile
+Target: mr112-robots
+Target-Board: mr112-robots
+Target-Name: mr112-robots
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/mr115-robots/Makefile
+Target: mr115-robots
+Target-Board: mr115-robots
+Target-Name: mr115-robots
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/mr133-perf1/Makefile
+Target: mr133-perf1
+Target-Board: mr133-perf1
+Target-Name: mr133-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/mr133-robots/Makefile
+Target: mr133-robots
+Target-Board: mr133-robots
+Target-Name: mr133-robots
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-GW/Makefile
+Target: r11-GW
+Target-Board: r11-GW
+Target-Name: r11-GW
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-R11_pref1/Makefile
+Target: r11-R11_pref1
+Target-Board: r11-R11_pref1
+Target-Name: r11-R11_pref1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-R11_sc3866r/Makefile
+Target: r11-R11_sc3866r
+Target-Board: r11-R11_sc3866r
+Target-Name: r11-R11_sc3866r
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-dh/Makefile
+Target: r11-dh
+Target-Board: r11-dh
+Target-Name: r11-dh
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-kudrone/Makefile
+Target: r11-kudrone
+Target-Board: r11-kudrone
+Target-Name: r11-kudrone
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-mic/Makefile
+Target: r11-mic
+Target-Board: r11-mic
+Target-Name: r11-mic
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r11-perf1/Makefile
+Target: r11-perf1
+Target-Board: r11-perf1
+Target-Name: r11-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-dm/Makefile
+Target: r16-dm
+Target-Board: r16-dm
+Target-Name: r16-dm
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-dm2/Makefile
+Target: r16-dm2
+Target-Board: r16-dm2
+Target-Name: r16-dm2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-evb/Makefile
+Target: r16-evb
+Target-Board: r16-evb
+Target-Name: r16-evb
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-noma/Makefile
+Target: r16-noma
+Target-Board: r16-noma
+Target-Name: r16-noma
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-parrot/Makefile
+Target: r16-parrot
+Target-Board: r16-parrot
+Target-Name: r16-parrot
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r16-spk/Makefile
+Target: r16-spk
+Target-Board: r16-spk
+Target-Name: r16-spk
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-d1/Makefile
+Target: r18-d1
+Target-Board: r18-d1
+Target-Name: r18-d1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-d1nor/Makefile
+Target: r18-d1nor
+Target-Board: r18-d1nor
+Target-Name: r18-d1nor
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-hena/Makefile
+Target: r18-hena
+Target-Board: r18-hena
+Target-Name: r18-hena
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-m64/Makefile
+Target: r18-m64
+Target-Board: r18-m64
+Target-Name: r18-m64
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-mozart/Makefile
+Target: r18-mozart
+Target-Board: r18-mozart
+Target-Name: r18-mozart
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-noma/Makefile
+Target: r18-noma
+Target-Board: r18-noma
+Target-Name: r18-noma
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-pine64/Makefile
+Target: r18-pine64
+Target-Board: r18-pine64
+Target-Name: r18-pine64
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r18-sgw/Makefile
+Target: r18-sgw
+Target-Board: r18-sgw
+Target-Name: r18-sgw
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r30-carp/Makefile
+Target: r30-carp
+Target-Board: r30-carp
+Target-Name: r30-carp
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r30-perf1/Makefile
+Target: r30-perf1
+Target-Board: r30-perf1
+Target-Name: r30-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r30-perf2/Makefile
+Target: r30-perf2
+Target-Board: r30-perf2
+Target-Name: r30-perf2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r30-std/Makefile
+Target: r30-std
+Target-Board: r30-std
+Target-Name: r30-std
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r311-perf1/Makefile
+Target: r311-perf1
+Target-Board: r311-perf1
+Target-Name: r311-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-demo/Makefile
+Target: r328s2-demo
+Target-Board: r328s2-demo
+Target-Name: r328s2-demo
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-demo_ui/Makefile
+Target: r328s2-demo_ui
+Target-Board: r328s2-demo_ui
+Target-Name: r328s2-demo_ui
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-perf1/Makefile
+Target: r328s2-perf1
+Target-Board: r328s2-perf1
+Target-Name: r328s2-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-perf2_xr829/Makefile
+Target: r328s2-perf2_xr829
+Target-Board: r328s2-perf2_xr829
+Target-Name: r328s2-perf2_xr829
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-qa/Makefile
+Target: r328s2-qa
+Target-Board: r328s2-qa
+Target-Name: r328s2-qa
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-std/Makefile
+Target: r328s2-std
+Target-Board: r328s2-std
+Target-Name: r328s2-std
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s2-ubidemo/Makefile
+Target: r328s2-ubidemo
+Target-Board: r328s2-ubidemo
+Target-Name: r328s2-ubidemo
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s3-std/Makefile
+Target: r328s3-std
+Target-Board: r328s3-std
+Target-Name: r328s3-std
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r328s3-std_xr829/Makefile
+Target: r328s3-std_xr829
+Target-Board: r328s3-std_xr829
+Target-Name: r328s3-std_xr829
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r331-ac100/Makefile
+Target: r331-ac100
+Target-Board: r331-ac100
+Target-Name: r331-ac100
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r331-ac101s/Makefile
+Target: r331-ac101s
+Target-Board: r331-ac101s
+Target-Name: r331-ac101s
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r331-std/Makefile
+Target: r331-std
+Target-Board: r331-std
+Target-Name: r331-std
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r332-ac100/Makefile
+Target: r332-ac100
+Target-Board: r332-ac100
+Target-Name: r332-ac100
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r333-perf1/Makefile
+Target: r333-perf1
+Target-Board: r333-perf1
+Target-Name: r333-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-evb/Makefile
+Target: r40-evb
+Target-Board: r40-evb
+Target-Name: r40-evb
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-m2ultra/Makefile
+Target: r40-m2ultra
+Target-Board: r40-m2ultra
+Target-Name: r40-m2ultra
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-m2ultraservers/Makefile
+Target: r40-m2ultraservers
+Target-Board: r40-m2ultraservers
+Target-Name: r40-m2ultraservers
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-perf1/Makefile
+Target: r40-perf1
+Target-Board: r40-perf1
+Target-Name: r40-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-perf2/Makefile
+Target: r40-perf2
+Target-Board: r40-perf2
+Target-Name: r40-perf2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r40-perf3/Makefile
+Target: r40-perf3
+Target-Board: r40-perf3
+Target-Name: r40-perf3
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r58-dev/Makefile
+Target: r58-dev
+Target-Board: r58-dev
+Target-Name: r58-dev
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r58-sch/Makefile
+Target: r58-sch
+Target-Board: r58-sch
+Target-Name: r58-sch
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-db/Makefile
+Target: r6-db
+Target-Board: r6-db
+Target-Name: r6-db
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-evb/Makefile
+Target: r6-evb
+Target-Board: r6-evb
+Target-Name: r6-evb
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-mic/Makefile
+Target: r6-mic
+Target-Board: r6-mic
+Target-Name: r6-mic
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-mic2/Makefile
+Target: r6-mic2
+Target-Board: r6-mic2
+Target-Name: r6-mic2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-pd4/Makefile
+Target: r6-pd4
+Target-Board: r6-pd4
+Target-Name: r6-pd4
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-perf1/Makefile
+Target: r6-perf1
+Target-Board: r6-perf1
+Target-Name: r6-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-perf2/Makefile
+Target: r6-perf2
+Target-Board: r6-perf2
+Target-Name: r6-perf2
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r6-perf3/Makefile
+Target: r6-perf3
+Target-Board: r6-perf3
+Target-Name: r6-perf3
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r7-R7_pref1/Makefile
+Target: r7-R7_pref1
+Target-Board: r7-R7_pref1
+Target-Name: r7-R7_pref1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/r7s-R7s/Makefile
+Target: r7s-R7s
+Target-Board: r7s-R7s
+Target-Name: r7s-R7s
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/t7-chimera/Makefile
+Target: t7-chimera
+Target-Board: t7-chimera
+Target-Name: t7-chimera
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/t7-p1/Makefile
+Target: t7-p1
+Target-Board: t7-p1
+Target-Name: t7-p1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/t7-perf1/Makefile
+Target: t7-perf1
+Target-Board: t7-perf1
+Target-Name: t7-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build multi-platform images for the ARMv7 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v133-scan/Makefile
+Target: v133-scan
+Target-Board: v133-scan
+Target-Name: v133-scan
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=arm926ej-s
+CPU-Type: arm926ej-s
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v163-sdv/Makefile
+Target: v163-sdv
+Target-Board: v163-sdv
+Target-Name: v163-sdv
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v306-h300/Makefile
+Target: v306-h300
+Target-Board: v306-h300
+Target-Name: v306-h300
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v313-sdv/Makefile
+Target: v313-sdv
+Target-Board: v313-sdv
+Target-Name: v313-sdv
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v316-SdvDragonBoard/Makefile
+Target: v316-SdvDragonBoard
+Target-Board: v316-SdvDragonBoard
+Target-Name: v316-SdvDragonBoard
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v316-perfnor/Makefile
+Target: v316-perfnor
+Target-Board: v316-perfnor
+Target-Name: v316-perfnor
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v316-sdv/Makefile
+Target: v316-sdv
+Target-Board: v316-sdv
+Target-Name: v316-sdv
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v316-sdvlpddr/Makefile
+Target: v316-sdvlpddr
+Target-Board: v316-sdvlpddr
+Target-Name: v316-sdvlpddr
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v459-perf1/Makefile
+Target: v459-perf1
+Target-Board: v459-perf1
+Target-Name: v459-perf1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v459-pro_ipc/Makefile
+Target: v459-pro_ipc
+Target-Board: v459-pro_ipc
+Target-Name: v459-pro_ipc
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v459-qaqc/Makefile
+Target: v459-qaqc
+Target-Board: v459-qaqc
+Target-Name: v459-qaqc
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v5-dvb/Makefile
+Target: v5-dvb
+Target-Board: v5-dvb
+Target-Name: v5-dvb
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v5-lindeni/Makefile
+Target: v5-lindeni
+Target-Board: v5-lindeni
+Target-Name: v5-lindeni
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.4.89
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v533-cdr/Makefile
+Target: v533-cdr
+Target-Board: v533-cdr
+Target-Name: v533-cdr
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v536-CdrDragonboard/Makefile
+Target: v536-CdrDragonboard
+Target-Board: v536-CdrDragonboard
+Target-Name: v536-CdrDragonboard
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/v536-cdr/Makefile
+Target: v536-cdr
+Target-Board: v536-cdr
+Target-Name: v536-cdr
+Target-Path: /02.data/14.temp/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

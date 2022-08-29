@@ -1,0 +1,20 @@
+Source-Makefile: package/minigui/libmgutils/Makefile
+Package: libmgutils
+Version: 1.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libmgutils
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libmgutils-1.2.0.tar.gz
+Type: ipkg
+Description:   mGUtils is a component of MiniGUI,
+  provides users with a number of common dialog templates.
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

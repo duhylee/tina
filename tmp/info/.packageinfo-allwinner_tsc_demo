@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/tsc_demo/Makefile
+Package: tsc_demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: tsc test demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	tsc_test_demo
+
+@@
+
+

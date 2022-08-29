@@ -1,0 +1,307 @@
+Source-Makefile: package/system/systemd/Makefile
+Package: systemd
+Menu: 1
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +@BUSYBOX_DEFAULT_SULOGIN +libcap +libmount +libkmod +dbus +agetty +PACKAGE_kmod-fs-autofs4 +@KERNEL_CGROUPS +@KERNEL_NET_CLS_CGROUP +@KERNEL_LXC_MISC +@KERNEL_DEVPTS_MULTIPLE_INSTANCES +@KERNEL_POSIX_MQUEUE +@KERNEL_NAMESPACES +@KERNEL_NET_NS +@KERNEL_DEVTMPFS +@KERNEL_FHANDLE +@KERNEL_FANOTIFY +@KERNEL_BLK_DEV_BSG
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: System and Service Manager
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description: systemd is a suite of basic building blocks for a Linux system
+This package contains the core systemd /sbin/init daemon and supporting tools.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-coredump
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd +@KERNEL_ELF_CORE
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd coredump support
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description: systemd is a suite of basic building blocks for a Linux system
+This package contains the systemd coredump support.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-nspawn
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd +libiptc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd namespace container support
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description: systemd is a suite of basic building blocks for a Linux system
+This package contains the systemd namespace container support.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-udev-hwdb
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +systemd-udevd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: System and Service Manager (udev hwdb)
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description: systemd is a suite of basic building blocks for a Linux system
+  This package contains the udev hardware database files.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-bootchart
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd bootchart tool
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd bootchart tool.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-hostnamed
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd hostname daemon
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd hostname daemon.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-localed
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd locale daemon
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd locale daemon.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-modules-load
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd +libkmod
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd module loader
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd module loader.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-networkd
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd +libiptc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd network daemon
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd network daemon.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-random-seed
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd randomseed tools
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd randomseed tools.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-resolved
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd name resolver
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd name resolver.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-rfkill
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd +@USE_RFKILL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd rfkill tools
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd rfkill tools.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-timedated
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd timedate daemon
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd timedate daemon.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-timesyncd
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd network time synchronization
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd network time synchronization.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-udevd
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd device manager
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd device manager.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+Package: systemd-update-utmp
+Version: 225-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread systemd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host gperf/host
+Section: base
+Category: Base system
+Title: systemd utmp/wtmp log handling
+Maintainer: Jeff Waugh <jdub@bethesignal.org>
+Source: systemd-225.tar.gz
+Type: ipkg
+Description:   systemd is a suite of basic building blocks for a Linux system
+  This package contains the systemd utmp/wtmp log handling.
+http://www.freedesktop.org/wiki/Software/systemd/
+Jeff Waugh <jdub@bethesignal.org>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/multimedia/bluez-alsa/Makefile
+Package: bluez-alsa
+Version: 20180913-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +bluez-daemon +glib2 +sbc +fdk-aac
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: Bluetooth Audio ALSA backend
+Maintainer: 
+Source: bluez-alsa-20180913.tar.gz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:   ALSA plugin supporting Bluetooth audio
+https://github.com/Arkq/bluez-alsa
+
+@@
+
+

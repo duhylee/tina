@@ -1,0 +1,40 @@
+Source-Makefile: package/libs/librsvg/Makefile
+Package: librsvg
+Version: 2.22.3-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cairo +libxml2 +glib2 +libcroco +pango
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Build-Types: host
+Section: libs
+Category: Libraries
+Title: SVG rendering library
+Maintainer: 
+Source: librsvg-2.22.3.tar.bz2
+Type: ipkg
+Description: librsvg is a high performance SVG rendering library associated with the Gnome Project.
+http://librsvg.sourceforge.net/
+
+@@
+
+Package: librsvg-pixbuf-loader
+Version: 2.22.3-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread librsvg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Build-Types: host
+Section: libs
+Category: Libraries
+Title: SVG rendering library
+Maintainer: 
+Source: librsvg-2.22.3.tar.bz2
+Type: ipkg
+Description: SVG rendering library
+http://librsvg.sourceforge.net/
+
+@@
+
+

@@ -1,0 +1,26 @@
+Source-Makefile: package/allwinner/camerademo/Makefile
+Package: camerademo
+Menu: 1
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ENABLE_VIN_ISP:libAWIspApi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: camerademo test sensor
+Maintainer: 
+Source: 
+Type: ipkg
+Description: camerademo test sensor
+
+@@
+Config:
+	if PACKAGE_camerademo
+		config ENABLE_VIN_ISP
+			bool "Enabel vin isp support"
+			default n
+	endif
+@@
+
+

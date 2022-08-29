@@ -1,0 +1,20 @@
+Source-Makefile: package/utils/sysbench/Makefile
+Package: sysbench
+Version: 0.5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpng +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: sysbench
+Maintainer: 
+Source: sysbench-0.5.zip
+License: GPL-2.0
+Type: ipkg
+Description: 	sysbench Package
+http://github.com/akopytov/sysbench
+
+@@
+
+

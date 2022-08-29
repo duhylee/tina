@@ -1,0 +1,19 @@
+Source-Makefile: package/testtools/testapk/rwdev/Makefile
+Package: rwdev
+Submenu: testapk
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: TestTools
+Title: do read/write for devices
+Maintainer: 
+Source: 
+Type: ipkg
+Description: rwdev do read/write directly to devices
+
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: package/allwinner/swupdate/Makefile
+Package: swupdate
+Menu: 1
+Version: 2019.04-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +SWUPDATE_CONFIG_LIBCONFIG:libconfig +SWUPDATE_CONFIG_CURL:curl +SWUPDATE_CONFIG_UBOOT:uboot-envtools +SWUPDATE_CONFIG_MTD:mtd-utils +SWUPDATE_CONFIG_AWBOOT_HANDLER:ota-burnboot +SWUPDATE_CONFIG_SURICATTA_HAWKBIT:libjson-c +SWUPDATE_CONFIG_HASH_VERIFY:libopenssl +SWUPDATE_CONFIG_RDIFFHANDLER:librsync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +zlib +SWUPDATE_DEFAULT_LIBCONFIG:libconfig +SWUPDATE_DEFAULT_CURL:curl +SWUPDATE_DEFAULT_UBOOT:uboot-envtools +SWUPDATE_DEFAULT_MTD:mtd-utils +SWUPDATE_DEFAULT_AWBOOT_HANDLER:ota-burnboot +SWUPDATE_DEFAULT_HASH_VERIFY:libopenssl +SWUPDATE_DEFAULT_RDIFFHANDLER:librsync
+Section: utils
+Category: Allwinner
+Title: software update for embedded system
+Maintainer: 
+Source: swupdate-2019.04.tar.xz
+Type: ipkg
+Description:   SWUpdate provides a reliable way to update the software on an embedded system.
+  Sources are hosted at https://github.com/sbabic/swupdate
+
+@@
+Config:
+	source "package/allwinner/swupdate/Config.in"
+@@
+
+

@@ -1,0 +1,60 @@
+Source-Makefile: package/allwinner/nativepower/Makefile
+Package: libscenemanager
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Libraries
+Title: scene mannager library
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Scene manager library
+  Detail scene config in uci config(/etc/config/***)
+
+@@
+
+Package: nativepower
+Menu: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +NATIVEPOWER_USE_DBUS:dbus +libscenemanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: nativepower for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Nativepower for Allwinner
+
+@@
+Config:
+if PACKAGE_nativepower
+config NATIVEPOWER_USE_DBUS
+    bool
+    prompt "nativepower communicate other process by dbus"
+    default n
+endif
+@@
+
+Package: nativepower_utils
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libscenemanager +PACKAGE_nativepower:nativepower
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: nativepower utilites
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Nativepower Utilites, set system scene
+
+@@
+
+

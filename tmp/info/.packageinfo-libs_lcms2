@@ -1,0 +1,26 @@
+Source-Makefile: package/libs/lcms2/Makefile
+Package: lcms2
+Version: 2.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_zlib:zlib +PACKAGE_libjpeg:libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Small-footprint color management engine, version 2
+Maintainer: 
+Source: lcms2-2.9.tar.gz
+License: MIT
+Type: ipkg
+Description: lcms is a Library OF CODE FOR PROGRAMMERS.
+lcms is FREE and does include SOURCE CODE.
+lcms deals with color management stuff.
+lcms is a CMM engine; it implements fast transforms between ICC profiles.
+lcms is a standalone engine; it doesn't need ICM or ColorSync to work.
+lcms intends to be PORTABLE across several platforms.
+lcms is distributed under the MIT license agreement.
+http://www.littlecms.com
+
+@@
+
+

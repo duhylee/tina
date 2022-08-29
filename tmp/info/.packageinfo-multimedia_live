@@ -1,0 +1,21 @@
+Source-Makefile: package/multimedia/live/Makefile
+Package: live
+Version: 2019.02.27
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: LIVE555 Streaming Media
+Maintainer: 
+Source: live.2019.02.27.tar.gz
+License: LGPL
+Type: ipkg
+Description:   This code forms a set of C++ libraries for multimedia streaming,
+using open standard protocols (RTP/RTCP, RTSP, SIP).
+http://www.live555.com/liveMedia/
+
+@@
+
+

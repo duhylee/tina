@@ -1,0 +1,70 @@
+Source-Makefile: package/allwinner/bluetooth/Makefile
+Package: common
+Submenu: bluetooth
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-daemon +bluez-alsa +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: common files
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     Bluetooth app
+
+@@
+
+Package: ampak
+Submenu: bluetooth
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +alsa-lib +resample +libuci +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: ampak bluetooth(bsa stack)
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     Bluetooth app
+
+@@
+
+Package: xradio
+Submenu: bluetooth
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +common +kmod-net-xrbtlpm +kmod-net-xr829 +xr829-firmware
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: xradio bluetooth
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     Bluetooth app
+
+@@
+
+Package: realtek
+Submenu: bluetooth
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +common +kmod-net-rtl8723ds +r8723ds-firmware
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: realtek bluetooth
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     Bluetooth app
+
+@@
+
+

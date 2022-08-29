@@ -1,0 +1,57 @@
+Source-Makefile: package/libs/ustream-ssl/Makefile
+Package: libustream-mbedtls
+Version: 2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Default-Variant: mbedtls
+Section: libs
+Category: Libraries
+Title: ustream SSL Library (mbedtls)
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ustream-ssl-2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75.tar.gz
+License: ISC
+Type: ipkg
+Description: ustream SSL Library (mbedtls)
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libustream-cyassl
+Version: 2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +PACKAGE_libustream-cyassl:libcyassl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: cyassl
+Section: libs
+Category: Libraries
+Title: ustream SSL Library (cyassl)
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ustream-ssl-2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75.tar.gz
+License: ISC
+Type: ipkg
+Description: ustream SSL Library (cyassl)
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libustream-openssl
+Version: 2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +PACKAGE_libustream-openssl:libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: libs
+Category: Libraries
+Title: ustream SSL Library (openssl)
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ustream-ssl-2016-02-21-6ba14990e63fc956e8aff3b0b09be1fd3aaa6d75.tar.gz
+License: ISC
+Type: ipkg
+Description: ustream SSL Library (openssl)
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+

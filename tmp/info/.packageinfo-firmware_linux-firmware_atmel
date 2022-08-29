@@ -1,0 +1,18 @@
+Source-Makefile: package/firmware/linux-firmware/atmel/Makefile
+Package: atmel_mxt224s-config
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-touchscreen-atmel-mxt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Atmel mxt224s config
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Atmel mxt224s config
+
+@@
+
+

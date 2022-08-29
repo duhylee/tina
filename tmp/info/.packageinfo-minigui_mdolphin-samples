@@ -1,0 +1,19 @@
+Source-Makefile: package/minigui/mdolphin-samples/Makefile
+Package: mdolphin-samples
+Version: 3.0.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmgutils +libmgplus +libcrypto +libcurl +libnghttp2 +libssl +libmdolphin
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: mdolphin-samples
+Maintainer: xielinfei<xielinfei@allwinnertech.com>
+Source: mdolphin-samples-3.0.4.tar.gz
+Type: ipkg
+Description:   The Mdolphin Test Case
+http://www.minigui.org/
+xielinfei<xielinfei@allwinnertech.com>
+@@
+
+

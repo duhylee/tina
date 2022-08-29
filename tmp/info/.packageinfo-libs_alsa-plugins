@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/alsa-plugins/Makefile
+Package: alsa-plugins
+Version: 1.1.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libsamplerate +PACKAGE_pulseaudio-daemon:pulseaudio-daemon +PACKAGE_libffmpeg-full:libffmpeg-full +PACKAGE_libspeexdsp:libspeexdsp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: ALSA (Advanced Linux Sound Architecture) plugins library
+Maintainer: 
+Source: alsa-plugins-1.1.4.tar.bz2
+License: LGPLv2.1 GPLv2
+LicenseFiles: COPYING aserver/COPYING
+Type: ipkg
+Description: ALSA (Advanced Linux Sound Architecture) plugins library
+http://www.alsa-project.org/
+
+@@
+
+

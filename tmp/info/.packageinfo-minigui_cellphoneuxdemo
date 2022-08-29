@@ -1,0 +1,19 @@
+Source-Makefile: package/minigui/cellphoneuxdemo/Makefile
+Package: cell-phone-ux-demo
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmgncs +libmgeff +libxml2 +libsqlite3 +libchipmunk +mgncs4touch
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: cellphoneuxdemo
+Maintainer: tracewong <tracewong@outlook.com>
+Source: cell-phone-ux-demo.tar.gz
+Type: ipkg
+Description:   The minigui test case
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

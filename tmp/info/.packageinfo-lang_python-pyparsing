@@ -1,0 +1,24 @@
+Source-Makefile: package/lang/python-pyparsing/Makefile
+Package: python-pyparsing
+Submenu: Python
+Version: 2.3.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python python-pyparsing/host
+Build-Depends/host: python/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: A Python Parsing Module
+Maintainer: 
+Source: pyparsing-pyparsing_2.3.0.zip
+License: MIT
+Type: ipkg
+Description: The pyparsing module is an alternative approach to creating and executing simple grammars, vs. the traditional lex/yacc approach, or the use of regular expressions. The pyparsing module provides a library of classes that client code uses to construct the grammar directly in Python code.
+https://github.com/pyparsing/pyparsing/tree/pyparsing_2.3.0
+
+@@
+
+

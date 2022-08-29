@@ -1,0 +1,64 @@
+Source-Makefile: package/allwinner/boot-play/Makefile
+Package: boot-play
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpng +libubox +tinymp3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: boot play
+Maintainer: 
+Source: 
+Type: ipkg
+Description: boot play
+
+@@
+Config:
+menu "Configuration"
+        depends on PACKAGE_boot-play
+config BOOT_PLAY_IN_PREINIT
+        bool
+        default n
+        prompt "Perform boot-play in preinit or not"
+config BOOT_PLAY_IN_PREINIT_AFTER_KMODLOADER
+	bool
+	default n
+	depends on BOOT_PLAY_IN_PREINIT
+	prompt "Perform boot-play in preinit but after kmodloader"
+config BOOT_ANIMATION_PRIORITY
+        int "boot animation process priority"
+        default -20
+        range -20 0
+config BOOT_MUSIC_PRIORITY
+        int "boot music process priority"
+        default -10
+        range -20 0
+config BOOT_ANIMATION_EACHLOAD_IMAGE
+	bool
+	default n
+	prompt "bootaniamtion image each-load"
+	help
+	Say Y here, means load image,show image,free image everytime
+choice
+	prompt "boot-play finish condiction"
+	default BOOT_PLAY_COMPLETE_ANIMATION
+	help
+	  Select boot-play complete condition.
+
+	config BOOT_PLAY_COMPLETE_ANIMATION
+		bool "animation complete or exit"
+	config BOOT_PLAY_COMPLETE_MUSIC
+		bool "music complete"
+	config BOOT_PLAY_COMPLETE_TIMEOUT
+		bool "boot-play timeout"
+endchoice
+config BOOT_PLAY_COMPLETE_TIMEOUT_VALUE
+	depends on BOOT_PLAY_COMPLETE_TIMEOUT
+	int "set boot-play timeout value"
+	default 5
+	range 1 10
+endmenu
+@@
+
+

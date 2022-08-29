@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/uart_led/Makefile
+Package: uart_led
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Uart Led demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	A test program for uart protcol
+
+@@
+
+

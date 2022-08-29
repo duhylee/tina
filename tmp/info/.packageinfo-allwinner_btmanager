@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/btmanager/Makefile
+Package: btmanager-core
+Submenu: btmanager
+Version: 2.1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +bluez-daemon +glib2 +sbc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: bluetooth manager core
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	bluetooth manager
+
+@@
+
+Package: btmanager-demo
+Submenu: btmanager
+Version: 2.1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +btmanager-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina btmanager app demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina btmanager app demo
+
+@@
+
+

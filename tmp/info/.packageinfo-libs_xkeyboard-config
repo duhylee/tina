@@ -1,0 +1,29 @@
+Source-Makefile: package/libs/xkeyboard-config/Makefile
+Package: xkeyboard-config
+Version: 2.19-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: intltool/host
+Section: libs
+Category: Libraries
+Title: keyboard configuration database for X
+Maintainer: 
+Source: xkeyboard-config-2.19.tar.bz2
+License: MIT
+LicenseFiles: COPYING
+Type: ipkg
+Description:    There are many X Window implementations which have very poor support for
+non-standard keyboards, national layouts and options.Open Source X Window
+System implementations (xfree86, x.org) currently have non-synchronized
+XKB configuration databases the bugs fixed in one repository are not reflected
+in the other, new configuration elements are added (in best case) separately
+and independently to both CVS trees - but usually only one tree gets them. Also,
+these implementations contain unbalanced and unstructured layout trees
+(very often one country/language have several layouts, each with its own set of variants).
+https://www.freedesktop.org/wiki/Software/XKeyboardConfig/
+
+@@
+
+

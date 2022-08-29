@@ -1,0 +1,20 @@
+Source-Makefile: package/wayland/wayland-protocols/Makefile
+Package: wayland-protocols
+Version: 1.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +wayland
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Wayland
+Title: wayland-protocols
+Maintainer: <wayland-devel@lists.freedesktop.org>
+Source: wayland-protocols-1.7.tar.xz
+Type: ipkg
+Description: Wayland protocols that adds functionality not available in
+the Wayland core protocol.
+https://wayland.freedesktop.org/
+<wayland-devel@lists.freedesktop.org>
+@@
+
+

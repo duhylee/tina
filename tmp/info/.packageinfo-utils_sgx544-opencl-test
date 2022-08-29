@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/sgx544-opencl-test/Makefile
+Package: sgx544-opencl-test
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-sgx544-km +sgx544-um
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: SGX544 OpenCL test
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	SGX544 OpenCL test
+
+@@
+
+

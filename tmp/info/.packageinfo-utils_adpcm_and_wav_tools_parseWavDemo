@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/adpcm_and_wav_tools/parseWavDemo/Makefile
+Package: parseWavDemo
+Submenu: adpcm_and_wav_tools
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: parseWavDemo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	parseWavDemo
+
+@@
+
+

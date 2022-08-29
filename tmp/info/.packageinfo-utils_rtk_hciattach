@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/rtk_hciattach/Makefile
+Package: rtk_hciattach
+Submenu: rtk_hciattach
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcutils +liblog +bluez-utils +brcm_patchram_plus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Realtek BT HCI UART initialization tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:       HCI UART initialization tool for realtek BT module
+
+@@
+
+

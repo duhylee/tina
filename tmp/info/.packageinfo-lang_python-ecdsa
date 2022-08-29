@@ -1,0 +1,27 @@
+Source-Makefile: package/lang/python-ecdsa/Makefile
+Package: ecdsa
+Submenu: Python
+Version: 0.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang-python
+Category: Languages
+Title: ecdsa
+Maintainer: Brian Warner
+Source: ecdsa-0.13.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This is an easy-to-use implementation of ECDSA cryptography (Elliptic Curve
+Digital Signature Algorithm), implemented purely in Python, released under
+the MIT license. With this library, you can quickly create keypairs (signing
+key and verifying key), sign messages, and verify the signatures. The keys
+and signatures are very short, making them easy to handle and incorporate
+into other protocols.
+http://www.pyecdsa.org/
+Brian Warner
+@@
+
+

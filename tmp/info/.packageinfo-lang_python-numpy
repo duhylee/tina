@@ -1,0 +1,24 @@
+Source-Makefile: package/lang/python-numpy/Makefile
+Package: python-numpy
+Submenu: Python
+Version: 1.16.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-cython
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python python-cython/host python-numpy/host
+Build-Depends/host: python python-cython/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python numpy
+Maintainer: 
+Source: numpy-1.16.0.zip
+License: BSD
+Type: ipkg
+Description: NumPy: array processing for numbers, strings, records, and objects.
+https://pypi.org/project/numpy/
+
+@@
+
+

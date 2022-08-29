@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-nose/Makefile
+Package: python-nose
+Submenu: Python
+Version: 1.3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +python/host +python-nose/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python nose
+Maintainer: 
+Source: nose-1.3.7.tar.gz
+License: LGPL
+Type: ipkg
+Description:   A powerful and robust templating system for Python.
+https://pypi.org/project/nose/
+
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/ShaderYUVtoRGB/Makefile
+Package: ShaderYUVtoRGB
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mali400-um +libuapi +libdrm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: OpenGLES demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	If you can't figure out what this program does, you're probably
+	brain-dead and need immediate medical attention.
+
+@@
+
+

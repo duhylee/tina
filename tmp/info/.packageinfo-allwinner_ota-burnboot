@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/ota-burnboot/Makefile
+Package: ota-burnboot
+Version: 0.1-0.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: burn boot0/uboot for ota.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   This package is used for ota to burn boot0/uboot.
+
+  Contains:
+   - ota-burnboot0
+   - ota-burnuboot
+   - libota-burnboot.so
+
+@@
+
+

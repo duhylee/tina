@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/MarkupSafe/Makefile
+Package: python-MarkupSafe
+Submenu: Python
+Version: 1.1.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python MarkupSafe/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-markupsafe
+Maintainer: 
+Source: MarkupSafe-1.1.1.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/MarkupSafe
+
+@@
+
+

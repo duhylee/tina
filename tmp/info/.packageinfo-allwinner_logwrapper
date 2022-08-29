@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/logwrapper/Makefile
+Package: logwrapper
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: logwrapper
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	"redirecting stdout and stderr to the tina logging system"
+
+@@
+
+

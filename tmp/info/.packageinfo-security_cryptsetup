@@ -1,0 +1,33 @@
+Source-Makefile: package/security/cryptsetup/Makefile
+Package: cryptsetup
+Submenu: Device Mapper
+Version: 1.7.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +@USE_DM_VERITY +libblkid +libuuid +libpopt +lvm2 +libdevmapper +@KERNEL_DIRECT_IO +CRYPTSETUP_OPENSSL:libopenssl +CRYPTSETUP_GCRYPT:libgcrypt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: cryptsetup/host
+Build-Depends/host: libpopt/host lvm2/host
+Build-Types: host
+Section: utils
+Category: Security
+Title: Cryptsetup
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: cryptsetup-1.7.5.tar.xz
+License: GPL-2.0+ LGPL-2.1+
+LicenseFiles: COPYING COPYING.LGPL
+Type: ipkg
+Description: 	Cryptsetup-luks
+	Cryptsetup is utility used to conveniently setup disk encryption based
+on DMCrypt kernel module.These include plain dm-crypt volumes, LUKS volumes,
+loop-AES and TrueCrypt (including VeraCrypt extension) format. Project also
+includes veritysetup utility used to conveniently setup DMVerity block
+integrity checking kernel module.
+http://code.google.com/p/cryptsetup/
+Daniel Golle <daniel@makrotopia.org>
+@@
+Config:
+source "package/security/cryptsetup/Config.in"
+@@
+
+

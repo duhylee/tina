@@ -1,0 +1,20 @@
+Source-Makefile: package/allwinner/alsa-conf-aw/Makefile
+Package: alsa-conf-aw
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: ALSA Configuration Files for Allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   ALSA configuration files for Allwinner R series Soc. This files contain some
+useful pcm devices, such as playback with speaker, playback with headphone,
+Loopback and so on.
+
+@@
+
+

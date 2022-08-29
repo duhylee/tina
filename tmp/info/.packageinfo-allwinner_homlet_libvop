@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/homlet/libvop/Makefile
+Package: libvop
+Submenu: Homlet
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Allwinner
+Title: Allwinner Homlet Video Output Port control API library.
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Allwinner Homlet Video Output Port control API library.
+
+@@
+
+

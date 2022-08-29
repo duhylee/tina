@@ -1,0 +1,20 @@
+Source-Makefile: package/utils/util-macros/Makefile
+Package: util-macros
+Version: 1.19.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: X.Org Autotools macros
+Maintainer: <xorg_security@x.org>
+Source: util-macros-1.19.0.tar.bz2
+Type: ipkg
+Description:   The util-macros package contains the m4 macros used by all of the Xorg packages.
+  This package is known to build and work properly using an LFS-8.1 platform.
+https://xorg.freedesktop.org/
+<xorg_security@x.org>
+@@
+
+

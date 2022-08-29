@@ -1,0 +1,22 @@
+Source-Makefile: package/utils/mtools/Makefile
+Package: mtools
+Menu: 1
+Version: 4.0.18
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Utilities to access DOS disks in Unix.
+Maintainer: 
+Source: mtools-4.0.18.tar.gz
+Type: ipkg
+Description: Utilities to access DOS disks in Unix.
+
+@@
+Config:
+	source "package/utils/mtools/Config.in"
+@@
+
+

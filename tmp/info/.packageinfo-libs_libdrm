@@ -1,0 +1,27 @@
+Source-Makefile: package/libs/libdrm/Makefile
+Package: libdrm
+Menu: 1
+Version: 2.4.80-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_valgrind:valgrind +PACKAGE_eudev:eudev +PACKAGE_libatomic:libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: libdrm provides a user space library for accessing the DRM
+Maintainer: <dri-devel@lists.freedesktop.org>
+Source: libdrm-2.4.80.tar.bz2
+License: MIT
+Type: ipkg
+Description:   libdrm provides a user space library for accessing the DRM, direct rendering manager,
+on operating systems that support the ioctl interface. libdrm is a low-level library,
+typically used by graphics drivers such as the Mesa DRI drivers, the X drivers,
+libva and similar projects.
+http://www.linuxfromscratch.org/blfs/view/svn/x/libdrm.html
+<dri-devel@lists.freedesktop.org>
+@@
+Config:
+	source "package/libs/libdrm/Config.in"
+@@
+
+

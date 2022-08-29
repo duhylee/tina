@@ -1,0 +1,21 @@
+Source-Makefile: package/allwinner/awsystrace/Makefile
+Package: awsystrace
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: AwDebug
+Category: Allwinner
+Title: awsystrace for Tina Linux
+Maintainer: AW-SWC-BPD
+Source: 
+Type: ipkg
+Description:   awsystrace base on android systrace, use ftrace to get running information.
+AW-SWC-BPD
+@@
+Config:
+source "package/allwinner/awsystrace/Config.in"
+@@
+
+

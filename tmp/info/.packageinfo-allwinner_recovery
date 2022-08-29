@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/recovery/Makefile
+Package: recovery
+Default: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libminui +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: recovery ui tina linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina recovery ui, refer to the Android 8.1
+
+@@
+
+

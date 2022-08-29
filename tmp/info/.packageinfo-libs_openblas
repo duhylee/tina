@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/openblas/Makefile
+Package: OpenBLAS
+Version: 0.2.19
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: an optimized BLAS library
+Maintainer: 
+Source: OpenBLAS-0.2.19.tar.gz
+License: BSD
+Type: ipkg
+Description: 	OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+	Please read the documents on OpenBLAS wiki pages http://github.com/xianyi/OpenBLAS/wiki.
+
+@@
+
+

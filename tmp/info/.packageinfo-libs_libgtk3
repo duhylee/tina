@@ -1,0 +1,26 @@
+Source-Makefile: package/libs/libgtk3/Makefile
+Package: libgtk3
+Menu: 1
+Submenu: gtk3
+Version: 3.22.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcairo +pango +libjpeg +atk +wayland +glib2 +libpcre +libepoxy +gdk-pixbuf +libxkbcommon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +pkgconf/host +gettext-full/host +atk +glib2 +libcairo +pango +gdk-pixbuf +libepoxy +libxkbcommon +libpixman +libinput +wayland +wayland-protocols +udev +libdrm libtool libintl libiconv
+Section: libs
+Category: Libraries
+Title: GTK+ 3.22.10 package
+Maintainer: 
+Source: gtk+-3.22.10.tar.xz
+License: LGPLv2.1+
+Type: ipkg
+Description: GTK+ 3.22.10 package
+http://ftp.gnome.org/pub/gnome/sources/gtk+/
+
+@@
+Config:
+source "package/libs/libgtk3/Config.in"
+@@
+
+

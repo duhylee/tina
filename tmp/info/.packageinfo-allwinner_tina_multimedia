@@ -1,0 +1,21 @@
+Source-Makefile: package/allwinner/tina_multimedia/Makefile
+Package: libcedarx
+Version: 2.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libuapi +zlib +alsa-lib +libxml2 +libopenssl +libstdcpp +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: libcedarx  for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	libcedarx
+
+@@
+Config:
+source "package/allwinner/tina_multimedia/Config.in"
+@@
+
+

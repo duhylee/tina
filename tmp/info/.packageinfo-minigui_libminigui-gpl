@@ -1,0 +1,70 @@
+Source-Makefile: package/minigui/libminigui-gpl/Makefile
+Package: libminigui-gpl
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +libpng +libjpeg +libfreetype +libuapi +tslib +minigui-res-be +kmod-sunxi-disp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libminigui-gpl
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libminigui-gpl-3.2.tar.gz
+Type: ipkg
+Description:   The ligminigui library of GUI Core
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+Config:
+if PACKAGE_libminigui-gpl
+choice
+prompt "Preferred Minigui Run Mode"
+	default MINIGUI_THS
+	help
+	Select the preferred minigui running mode.
+config MINIGUI_THS
+	bool "ths"
+config MINIGUI_PROC
+	bool "proc"
+endchoice
+config TTF2_SUPPORT
+    bool "Enabel truetype font support"
+    default y
+        help
+          Enabling True type font support for minigui.
+          You need config the font path in MiniGUI.cfg.
+          And add font in res path.
+          Unless you know what you are doing, you should leave this as 'n'
+config TSLIB_SUPPORT
+    bool "Enabel tslib support for MiniGUI"
+    default n
+        help
+          Enabling tslib ial support for minigui.
+          You need config ialengine in MiniGUI.cfg.
+          And add pointercal in /etc directory.
+		  Unless you know what you are doing, you should leave this as 'n'
+config G2D_SUPPORT
+    bool "Enabel g2d support for MiniGUI"
+    default n
+        help
+        Enabling g2d support for minigui
+config CCW_SUPPORT
+    bool "Enabel coortrans cw support for MiniGUI"
+    default n
+        help
+          Enabling rotate support for minigui.
+          You need config system in MiniGUI.cfg.
+          And adjust the width and height.
+		  Unless you know what you are doing, you should leave this as 'n'
+config BUILD_LIB_MIN
+    bool "Enabel reduce size for MiniGUI"
+    default n
+        help
+          Reduce the unwanted function module of minigui.
+          You need config system in MiniGUI.cfg.
+          Adust the font config and reduce cursor resource.
+		  Unless you know what you are doing, you should leave this as 'n'
+endif
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/docutils/Makefile
+Package: python-docutils
+Submenu: Python
+Version: 0.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +python/host +python-docutils/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: Python Documentation Utilities
+Maintainer: 
+Source: docutils-0.14.tar.gz
+License: BSD
+Type: ipkg
+Description: Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.
+https://pypi.org/project/docutils/
+
+@@
+
+

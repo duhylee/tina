@@ -1,0 +1,22 @@
+Source-Makefile: package/allwinner/eyesee-mpp/middleware/Makefile
+Package: eyesee-mpp-middleware
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-system +zlib +alsa-lib +mpp_systrace:awsystrace
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-middleware
+Category: Allwinner
+Title: eyesee-mpp-middleware for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-middleware contain eyesee-mpp basic libraries.
+AW-PDC-PD5
+@@
+Config:
+source "package/allwinner/eyesee-mpp/middleware/Config.in"
+@@
+
+

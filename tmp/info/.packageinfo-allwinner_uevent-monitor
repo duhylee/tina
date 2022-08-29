@@ -1,0 +1,22 @@
+Source-Makefile: package/allwinner/uevent-monitor/Makefile
+Package: uevent-monitor
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: tina uevent monitor
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   tina uevent monitor demo, contains function:
+listen uevent
+handler usb connect/disconnect,sdcard plugin/plugout event
+mount/umount UDISK
+enable/disable usb gadget mass_storage
+
+@@
+
+

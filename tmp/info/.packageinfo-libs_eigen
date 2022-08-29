@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/eigen/Makefile
+Package: eigen
+Version: 3.3.7
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: eigen libs
+Maintainer: 
+Source: eigen-eigen-323c052e1731.tar.bz2
+License: LGPL3+
+Type: ipkg
+Description: Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+http://eigen.tuxfamily.org/index.php?title=Main_Page
+
+@@
+
+

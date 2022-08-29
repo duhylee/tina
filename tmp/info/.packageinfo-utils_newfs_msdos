@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/newfs_msdos/Makefile
+Package: newfs_msdos
+Submenu: Filesystem
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: The newfs_msdos is a fat filesystem format tool.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Newfs_msdos is a tool for formating msdos filesystem. (such as fat32, vfat),
+
+@@
+
+

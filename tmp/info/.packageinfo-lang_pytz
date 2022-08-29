@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/pytz/Makefile
+Package: python-pytz
+Submenu: Python
+Version: 2018.9
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python pytz/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-pytz
+Maintainer: 
+Source: pytz-2018.9.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/pytz
+
+@@
+
+

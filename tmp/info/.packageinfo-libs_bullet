@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/bullet/Makefile
+Package: bullet
+Version: 2.87-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python/host
+Section: libs
+Category: Libraries
+Title: Official C++ source code repository of the Bullet Physics SDK
+Maintainer: erwin.coumans@gmail.com
+Source: bullet3-2.87.tar.gz
+License: Zlib
+Type: ipkg
+Description: Real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc.
+http://github.com/bulletphysics/bullet3
+erwin.coumans@gmail.com
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-dateutil/Makefile
+Package: python-dateutil
+Submenu: Python
+Version: 2.7.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-six +python-setuptools +python-setuptools_scm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +python/host +python-dateutil/host +python-setuptools/host +python-setuptools_scm/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python dateutil
+Maintainer: 
+Source: python-dateutil-2.7.5.tar.gz
+License: BSD
+Type: ipkg
+Description: The dateutil module provides powerful extensions to the standard datetime module, available in Python.
+https://pypi.org/project/python-dateutil/
+
+@@
+
+

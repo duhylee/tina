@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/iozone/Makefile
+Package: iozone3
+Version: 444-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Iozone Filesystem Benchmark
+Maintainer: 
+Source: iozone3_444.tgz
+Type: ipkg
+Description:  iozone is a tool to test filesystem performance
+
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/Babel/Makefile
+Package: python-Babel
+Submenu: Python
+Version: 2.6.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python Babel/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-babel
+Maintainer: 
+Source: Babel-2.6.0.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/Babel
+
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: package/security/dm-crypt/Makefile
+Package: dm-crypt
+Submenu: Device Mapper
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base +cryptsetup
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Security
+Title: dm-verity demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	A demo shell scripts to show how to use dm-verity.
+
+@@
+
+

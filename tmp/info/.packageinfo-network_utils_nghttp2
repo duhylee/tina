@@ -1,0 +1,37 @@
+Source-Makefile: package/network/utils/nghttp2/Makefile
+Package: libnghttp2
+Version: 1.24.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: HTTP/2 C Library
+Maintainer: 
+Source: nghttp2-1.24.0.tar.bz2
+License: MIT
+Type: ipkg
+Description:   tools in nghttp2, eg: nghttp nghttpd nghttpx h2load
+  details see libnghttp2
+
+@@
+
+Package: nghttp-tools
+Version: 1.24.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libev +zlib +libcares +libnghttp2 +@OPENSSL_WITH_EC
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: tools in nghttp2
+Maintainer: 
+Source: nghttp2-1.24.0.tar.bz2
+License: MIT
+Type: ipkg
+Description: tools in nghttp2
+
+@@
+
+

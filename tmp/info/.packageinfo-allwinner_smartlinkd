@@ -1,0 +1,46 @@
+Source-Makefile: package/allwinner/smartlinkd/Makefile
+Package: smartlinkd-lib
+Submenu: smartlinkd
+Version: 0.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base +alsa-lib +libopenssl +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: smartlinkd-lib
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	smartlink for none input wifi direct platform
+
+@@
+Config:
+    config XRADIO_AIRKISS
+        bool "enable xradio airkiss support for lib"
+    config XRADIO_SMARTCONFIG
+        bool "enable xradio smartconfig support for lib"
+    config SOFT_AP
+        bool "enable soft ap support for lib"
+    config SOUND_WAVE
+        bool "enable sound wave support for lib"
+@@
+
+Package: smartlinkd-demo
+Submenu: smartlinkd
+Version: 0.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +smartlinkd-lib +wifimanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: smartlink demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	smartlink demo
+
+@@
+
+

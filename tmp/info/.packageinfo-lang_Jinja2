@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/Jinja2/Makefile
+Package: python-Jinja2
+Submenu: Python
+Version: 2.10.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python Jinja2/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-Jinja2
+Maintainer: 
+Source: Jinja2-2.10.1.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/Jinja2/
+
+@@
+
+

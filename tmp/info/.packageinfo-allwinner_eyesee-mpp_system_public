@@ -1,0 +1,22 @@
+Source-Makefile: package/allwinner/eyesee-mpp/system/public/Makefile
+Package: eyesee-mpp-system
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glog +liblua +eyesee-mpp-external
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-system
+Category: Allwinner
+Title: eyesee-mpp-system for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-system is as eyesee-mpp low level libraries.
+AW-PDC-PD5
+@@
+Config:
+source "package/allwinner/eyesee-mpp/system/public/Config.in"
+@@
+
+

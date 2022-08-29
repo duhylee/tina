@@ -1,0 +1,20 @@
+Source-Makefile: package/minigui/libmgi/Makefile
+Package: libmgi
+Version: 2.0.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libmgi
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libmgi-2.0.4.tar.gz
+Type: ipkg
+Description:   mGi is a component of MiniGUI, which provides 
+  support for input methods on MiniGUI.
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

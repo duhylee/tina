@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/pyyaml/Makefile
+Package: python-pyyaml
+Submenu: Python
+Version: 4.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python-pyyaml/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: Canonical source repository for PyYAML
+Maintainer: 
+Source: pyyaml-4.1.zip
+Type: ipkg
+Description: PyYAML - The next generation YAML parser and emitter for Python.
+https://github.com/yaml/pyyaml/tree/4.1
+
+@@
+
+

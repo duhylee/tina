@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/harfbuzz/Makefile
+Package: harfbuzz
+Version: 1.7.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcairo +libfreetype +libstdcpp +icu +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv libtool libintl libiconv libtool libintl libiconv
+Build-Types: host
+Section: libs
+Category: Libraries
+Title: harfbuzz-ng
+Maintainer: 
+Source: harfbuzz-1.7.4.tar.bz2
+Type: ipkg
+Description:   HarfBuzz is an OpenType text shaping engine.
+http://xorg.freedesktop.org/
+
+@@
+
+

@@ -1,0 +1,68 @@
+Source-Makefile: package/testtools/testapk/audiotest/Makefile
+Package: audiotest_wav_header
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: TestTools
+Title: Parse and print wav header
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     audiotest utilities: audiotest_wav_header
+
+@@
+
+Package: audiotest_wav_play_time
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: TestTools
+Title: Get wav playing time
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     audiotest utilities: audiotest_wav_play_time
+
+@@
+
+Package: audiotest
+Menu: 1
+Submenu: testapk
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: TestTools
+Title: Audio test utilities
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   It provides some utilities for audio test.
+
+@@
+Config:
+  if PACKAGE_audiotest
+
+      comment "Utilities"
+
+       config PACKAGE_audiotest_wav_header
+            prompt"audiotest_wav_header"
+
+        config PACKAGE_audiotest_wav_play_time
+            prompt"audiotest_wav_play_time"
+
+      
+  endif
+@@
+
+

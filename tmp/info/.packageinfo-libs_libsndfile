@@ -1,0 +1,23 @@
+Source-Makefile: package/libs/libsndfile/Makefile
+Package: libsndfile
+Version: 1.0.28-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A C library for reading and writing files containing sampled audio data
+Maintainer: Erik de Castro Lopo <erikd@mega-nerd.com>
+Source: libsndfile-1.0.28.tar.gz
+License: LGPL
+Type: ipkg
+Description: libsndfile is a widely used C library written by Erik de Castro Lopo for
+reading and writing audio files. It supports a wide variety of audio file formats
+and will convert automatically from one to another.
+It allows the programmer to ignore many details, such as endianness.
+http://kbs.cs.tu-berlin.de/~jutta/toast.html
+Erik de Castro Lopo <erikd@mega-nerd.com>
+@@
+
+

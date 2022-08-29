@@ -1,0 +1,70 @@
+Source-Makefile: package/utils/rftest/Makefile
+Package: broadcom-rftest
+Submenu: rf test tool
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcutils +liblog +bluez-utils +brcm_patchram_plus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: broadcom rf test tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   	RF test tools
+
+@@
+
+Package: xr819-rftest
+Submenu: rf test tool
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: xr819 rf test tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   	RF test tools
+
+@@
+
+Package: xr829-rftest
+Submenu: rf test tool
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: xr829 rf test tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   	RF test tools
+
+@@
+
+Package: realtek-rftest
+Submenu: rf test tool
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcutils +liblog +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: realtek rf test tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   	RF test tools
+
+@@
+
+

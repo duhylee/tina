@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/adpcm_and_wav_tools/createAdpcmAndWavDemo/Makefile
+Package: createAdpcmAndWavDemo
+Submenu: adpcm_and_wav_tools
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: createAdpcmAndWavDemo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	change the wav file which contains pcm to the wav file which contains adpcm
+
+@@
+
+

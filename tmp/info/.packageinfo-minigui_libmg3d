@@ -1,0 +1,22 @@
+Source-Makefile: package/minigui/libmg3d/Makefile
+Package: libmg3d
+Version: 1.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libmg3d
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libmg3d-1.0.2.tar.gz
+Type: ipkg
+Description:   mG3d is one of components of MiniGUI, 
+  which provides supports for 3d math
+  routines, polygon drawing and rendering,
+  scene redering etc.
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

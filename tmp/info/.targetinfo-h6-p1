@@ -1,0 +1,29 @@
+Source-Makefile: target/allwinner/h6-p1/Makefile
+Target: h6-p1
+Target-Board: h6-p1
+Target-Name: h6-p1
+Target-Path: /02.data/14.temp/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 4.9.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

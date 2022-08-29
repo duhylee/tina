@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/poco/Makefile
+Package: poco
+Version: 1.9.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: poco C++ libs
+Maintainer: 
+Source: poco-poco-1.9.0-release.zip
+License: BSL-1.0
+Type: ipkg
+Description: The POCO C++ Libraries are powerful cross-platform C++ libraries for building network- and internet-based applications that run on desktop, server, mobile, IoT, and embedded systems.
+https://github.com/pocoproject/poco/tree/poco-1.9.0-release
+
+@@
+
+

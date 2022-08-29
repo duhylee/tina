@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/uriparser/Makefile
+Package: uriparser
+Version: 0.8.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: uriparser
+Maintainer: 
+Source: uriparser-0.8.4.tar.bz2
+License: BSD-3-Clause
+Type: ipkg
+Description: uriparser is a strictly RFC 3986 compliant URI parsing and handling library written in C.
+uriparser is cross-platform, fast, supports Unicode and is licensed under the New BSD license.
+
+@@
+
+

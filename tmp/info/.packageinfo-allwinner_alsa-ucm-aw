@@ -1,0 +1,61 @@
+Source-Makefile: package/allwinner/alsa-ucm-aw/Makefile
+Package: alsa-ucm-aw-configs
+Submenu: ALSA UCM for Allwinner
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Allwinner ALSA UCM configurations
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     The ALSA UCM (Use Case Manager) works by configuring the sound card ALSA
+  kcontrols to change the hardware digital and analog audio routing to match
+  the requested device use case.
+
+@@
+
+Package: alsa-ucm-aw-lib
+Submenu: ALSA UCM for Allwinner
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +alsa-ucm-aw-configs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: A library to use Allwinner ALSA UCM configurations
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     The ALSA UCM (Use Case Manager) works by configuring the sound card ALSA
+  kcontrols to change the hardware digital and analog audio routing to match
+  the requested device use case.
+  This library provides upper APIs for Allwinner ALSA UCM users.
+
+@@
+
+Package: alsa-ucm-aw-utils
+Submenu: ALSA UCM for Allwinner
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-ucm-aw-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Utilities to use Allwinner ALSA UCM configurations
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     The ALSA UCM (Use Case Manager) works by configuring the sound card ALSA
+  kcontrols to change the hardware digital and analog audio routing to match
+  the requested device use case.
+  This package provides utilities for Allwinner ALSA UCM users.
+
+@@
+
+

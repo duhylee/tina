@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/pixman/Makefile
+Package: libpixman
+Version: 0.34.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Pixman is a low-level software library for pixel manipulation
+Maintainer: <pixman@lists.freedesktop.org>
+Source: pixman-0.34.0.tar.bz2
+License: MIT
+Type: ipkg
+Description: Pixman is a low-level software library for pixel manipulation
+https://cgit.freedesktop.org/pixman/
+<pixman@lists.freedesktop.org>
+@@
+
+

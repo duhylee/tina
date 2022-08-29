@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/yaml-cpp/Makefile
+Package: yaml-cpp
+Version: 0.6.2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: yaml-cpp libs
+Maintainer: 
+Source: yaml-cpp-yaml-cpp-0.6.2.zip
+License: MIT
+Type: ipkg
+Description: A YAML parser and emitter in C++
+https://github.com/jbeder/yaml-cpp/tree/yaml-cpp-0.6.2
+
+@@
+
+

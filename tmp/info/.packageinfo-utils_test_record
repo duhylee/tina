@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/test_record/Makefile
+Package: test_record
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libspeex +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: record resample 48k to 16k testing
+Maintainer: 
+Source: 
+Type: ipkg
+Description: record resample 48k to 16k testing
+
+@@
+
+

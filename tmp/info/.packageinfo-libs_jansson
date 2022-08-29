@@ -1,0 +1,23 @@
+Source-Makefile: package/libs/jansson/Makefile
+Package: libjansson
+Version: 2.11-34ffa583936aeb6938636c9c0a26a322b69b0d26
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A small library for encoding, decoding and manipulating JSON data
+Maintainer: 
+Source: jansson-2.11.tar.gz
+Type: ipkg
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data. It features:
+ Simple and intuitive API and data model
+ Comprehensive documentation
+ No dependencies on other libraries
+ Full Unicode support (UTF-8)
+ Extensive test suite
+
+@@
+
+

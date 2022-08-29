@@ -1,0 +1,19 @@
+Source-Makefile: package/security/optee-base64/Makefile
+Package: optee-base64
+Submenu: OPTEE
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base +optee-client +optee-os-dev-kit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Security
+Title: OPTEE base64 demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	base64 TA & CA demo source code!
+
+@@
+
+

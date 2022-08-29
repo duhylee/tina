@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-netifaces/Makefile
+Package: python-netifaces
+Submenu: Python
+Version: 0.10.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: +python/host +python-netifaces/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python netifaces
+Maintainer: 
+Source: netifaces-0.10.9.tar.gz
+License: MIT
+Type: ipkg
+Description: Portable network interface information.
+https://pypi.org/project/netifaces/
+
+@@
+
+

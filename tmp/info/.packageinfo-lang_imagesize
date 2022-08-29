@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/imagesize/Makefile
+Package: python-imagesize
+Submenu: Python
+Version: 1.1.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python imagesize/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-imagesize
+Maintainer: 
+Source: imagesize-1.1.0.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/imagesize
+
+@@
+
+

@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/tvd_demo/Makefile
+Package: tvd_demo
+Version: 2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: camera display
+Maintainer: 
+Source: 
+Type: ipkg
+Description: camera display
+
+@@
+
+

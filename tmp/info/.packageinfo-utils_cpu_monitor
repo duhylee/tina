@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/cpu_monitor/Makefile
+Package: cpu_monitor
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: cpu_monitor
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	monitor cpu load,freq and temp
+
+@@
+
+

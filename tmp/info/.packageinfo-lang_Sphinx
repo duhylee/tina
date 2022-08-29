@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/Sphinx/Makefile
+Package: python-Sphinx
+Submenu: Python
+Version: 1.5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-six +python-Jinja2 +python-Pygments +python-docutils +python-snowballstemmer +python-Babel +python-alabaster +python-certifi +python-urllib3 +python-idna +python-chardet +python-pytz +python-MarkupSafe +python-imagesize +python-requests
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python Sphinx/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-sphinx
+Maintainer: 
+Source: Sphinx-1.5.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/Sphinx
+
+@@
+
+

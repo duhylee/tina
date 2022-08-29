@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/python-setuptools/Makefile
+Package: python-setuptools
+Submenu: Python
+Version: 41.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends/host: python python/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: Tool for installing Python packages.
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: setuptools-41.4.0.zip
+Type: ipkg
+Description:   Easily download, build, install, upgrade, and uninstall Python packages
+https://bitbucket.org/pypa/setuptools
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+

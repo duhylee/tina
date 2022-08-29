@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/homlet/p2p_utils/Makefile
+Package: p2p_group_owner
+Submenu: Homlet
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Allwinner
+Title: Wifi P2P Group Owner 
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Wifi P2P Group Owner Test Utils
+
+@@
+
+Package: p2p_group_client
+Submenu: Homlet
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Allwinner
+Title: Wifi P2P Group Client 
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Wifi P2P Group Owner Test Utils
+
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/homlet/awcast/Makefile
+Package: awcast
+Submenu: Homlet
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libpthread +libjpeg +libpng +libm +libfreetype +libz +libpng12 +libfreetype +libpthread +libbz2 +libwifimg +libsmartlinkd_client +wifimanager +smartlinkd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Allwinner
+Title: Awcast Main Program Demo (with MiniGUI)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Awcast Main Program Demo (with MiniGUI)
+
+@@
+
+

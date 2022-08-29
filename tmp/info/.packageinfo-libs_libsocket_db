@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/libsocket_db/Makefile
+Package: libsocket_db
+Version: 0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +adb +libxml2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: library for socket_db
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Library for socket_db which base on adb.
+Devices can use it to communicate with PC which is running DragonMAT.
+If you are no sure, please say N.
+
+@@
+
+

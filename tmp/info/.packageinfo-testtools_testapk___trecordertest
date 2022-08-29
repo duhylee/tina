@@ -1,0 +1,19 @@
+Source-Makefile: package/testtools/testapk/__trecordertest/Makefile
+Package: __trecordertest
+Submenu: testapk
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcedarx +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: TestTools
+Title: test trecorder lib
+Maintainer: 
+Source: 
+Type: ipkg
+Description: test trecorder lib
+
+@@
+
+

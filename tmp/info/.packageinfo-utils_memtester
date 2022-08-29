@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/memtester/Makefile
+Package: memtester
+Version: 4.3.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Userspace utility for testing the memory subsystem for faults
+Maintainer: 
+Source: memtester-4.3.0.tar.gz
+Type: ipkg
+Description:  A userspace utility for testing the memory subsystem for faults.
+http://pyropus.ca/software/memtester/
+
+@@
+
+

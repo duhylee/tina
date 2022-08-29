@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/eyesee-mpp/V5SdvLindeni/Makefile
+Package: eyesee-mpp-V5SdvLindeni
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-framework +eyesee-mpp-external +libjpeg +libpng +eyesee-minigui +tslib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp
+Category: Allwinner
+Title: eyesee-mpp-V5SdvLindeni for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-V5SdvLindeni is designed for V5 Lindeni Board, using sdv app as demo. 
+  It mainly use eyesee-mpp-framework to implement multimedia function.
+AW-PDC-PD5
+@@
+Config:
+#source "package/allwinner/eyesee-mpp/V5SdvLindeni/Config.in"
+@@
+
+

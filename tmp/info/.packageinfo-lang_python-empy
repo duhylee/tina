@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/python-empy/Makefile
+Package: python-empy
+Submenu: Python
+Version: 3.3.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python/host PACKAGE_python-empy:python-empy/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python empy
+Maintainer: 
+Source: empy-latest.tar.gz
+License: LGPL
+Type: ipkg
+Description:   A powerful and robust templating system for Python.
+https://pypi.org/project/EmPy/
+
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: package/minigui/minigui-res-be/Makefile
+Package: minigui-res-be
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: glib2/host libpthread zlib libintl libffi
+Section: gui
+Category: Minigui
+Title: minigui-res-be
+Maintainer: tracewong <tracewong@outlook.com>
+Source: minigui-res-be-3.2.tar.gz
+Type: ipkg
+Description:   The minigui res library
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

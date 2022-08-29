@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/eyesee-mpp/custom_aw/Makefile
+Package: eyesee-mpp-custom_aw
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-framework +eyesee-mpp-external +libjpeg +libpng +eyesee-minigui +tslib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-custom_aw
+Category: Allwinner
+Title: eyesee-mpp-custom_aw for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-custom_aw is our solutions for some products. It mainly use eyesee-mpp-framework to implement
+  multimedia function.
+AW-PDC-PD5
+@@
+Config:
+#source "package/allwinner/eyesee-mpp/custom_aw/Config.in"
+@@
+
+

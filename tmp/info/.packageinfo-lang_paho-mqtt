@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/paho-mqtt/Makefile
+Package: paho-mqtt
+Submenu: Python
+Version: 1.2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libgmp +python-crypto
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang-python
+Category: Languages
+Title: paho-mqtt
+Maintainer: Roger Light
+Source: paho-mqtt-1.2.2.tar.gz
+License: Eclipse
+LicenseFiles: LICENSE
+Type: ipkg
+Description: The JavaScript Object Signing and Encryption (JOSE) technologies - JSON Web Signature (JWS), JSON Web Encryption (JWE), JSON Web Key (JWK), and JSON Web Algorithms (JWA) - collectively can be used to encrypt and/or sign content using a variety of algorithms. While the full set of permutations is extremely large, and might be daunting to some, it is expected that most applications will only use a small set of algorithms to meet their needs.
+http://www.pyjose.org/
+Roger Light
+@@
+
+

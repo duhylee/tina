@@ -1,0 +1,33 @@
+Source-Makefile: package/libs/cairo/Makefile
+Package: libcairo
+Menu: 1
+Submenu: cairo
+Version: 1.14.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpixman +libpng +zlib +fontconfig +PACKAGE_libfreetype:libfreetype +PACKAGE_glib2:glib2 +PACKAGE_liblzo:liblzo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: pkgconf/host
+Section: libs
+Category: Libraries
+Title: Cairo is a 2D graphics library
+Maintainer: Karl Palsson <karlp@remake.is>
+Source: cairo-1.14.6.tar.xz
+License: LGPLv2.1+
+Type: ipkg
+Description:   Cairo is a 2D graphics library with support for multiple output devices.
+Currently supported output targets include the X Window System (via both Xlib and XCB).
+Quartz, Win32, image buffers, PostScript, PDF, and SVG file output.
+Experimental backends include OpenGL, BeOS, OS/2, and DirectFB.
+
+Cairo is designed to produce consistent output on all output media while
+taking advantage of display hardware acceleration when available
+(eg. through the X Render Extension).
+https://www.cairographics.org/
+Karl Palsson <karlp@remake.is>
+@@
+Config:
+source "package/libs/cairo/Config.in"
+@@
+
+

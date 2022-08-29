@@ -1,0 +1,22 @@
+Source-Makefile: package/allwinner/eyesee-mpp/external/Makefile
+Package: eyesee-mpp-external
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +glog
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-external
+Category: Allwinner
+Title: eyesee-mpp-external for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-external contains some external libs which are needed by other mpp modules.
+AW-PDC-PD5
+@@
+Config:
+source "package/allwinner/eyesee-mpp/external/Config.in"
+@@
+
+

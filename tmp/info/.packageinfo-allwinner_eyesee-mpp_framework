@@ -1,0 +1,22 @@
+Source-Makefile: package/allwinner/eyesee-mpp/framework/Makefile
+Package: eyesee-mpp-framework
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-middleware
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-framework
+Category: Allwinner
+Title: eyesee-mpp-framework for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-framework wraps uses of eyesee-mpp-middleware, provide simple class interface to apps.
+AW-PDC-PD5
+@@
+Config:
+source "package/allwinner/eyesee-mpp/framework/Config.in"
+@@
+
+

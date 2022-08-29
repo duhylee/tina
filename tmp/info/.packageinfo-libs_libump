@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/libump/Makefile
+Package: libump
+Version: ec0680628744f30b8fac35e41a7bd8e23e59c39f-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: This library is a requirement for ARMs binary Mali driver
+Maintainer: 
+Source: libump-ec0680628744f30b8fac35e41a7bd8e23e59c39f.tar.gz
+License: Apache-2.0
+Type: ipkg
+Description:   The ARMs Universal Memory Provider userspace library.
+This library is a requirement for ARMs binary Mali driver.
+http://github.com/linux-sunxi/libump
+
+@@
+
+

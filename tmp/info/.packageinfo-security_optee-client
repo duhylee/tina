@@ -1,0 +1,21 @@
+Source-Makefile: package/security/optee-client/Makefile
+Package: optee-client
+Submenu: OPTEE
+Version: 2.5.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Security
+Title: optee-client
+Maintainer: 
+Source: optee-client-2.5.0-32d9b77918ee634d1a16299164b543d628291123.tar.gz
+License: BSD 2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This component provides the TEE Client API as defined by the GlobalPlatform TEE standard.
+
+@@
+
+

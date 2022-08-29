@@ -1,0 +1,24 @@
+Source-Makefile: package/libs/fribidi/Makefile
+Package: libfribidi
+Version: 1.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Free Implementation of the Unicode Bidirectional Algorithm
+Maintainer: Behdad Esfahbod <behdad@gnu.org>
+Source: fribidi-1.0.1.tar.bz2
+License: GPL
+Type: ipkg
+Description: One of the missing links stopping the penetration of free software in Middle
+East is the lack of support for the Arabic and Hebrew alphabets. In order to
+have proper Arabic and Hebrew support, the bidi algorithm needs to be implemented. It is
+our hope that this library will stimulate more free software in the Middle
+Eastern countries.
+https://github.com/fribidi/fribidi
+Behdad Esfahbod <behdad@gnu.org>
+@@
+
+

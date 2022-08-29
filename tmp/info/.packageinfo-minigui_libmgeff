@@ -1,0 +1,21 @@
+Source-Makefile: package/minigui/libmgeff/Makefile
+Package: libmgeff
+Version: 1.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmgplus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: libmgeff
+Maintainer: tracewong <tracewong@outlook.com>
+Source: libmgeff-1.2.0.tar.gz
+Type: ipkg
+Description:   mGEff provides an animation framework for
+  MiniGUI application. It also provides some 
+  popular UI/UE special effects.
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

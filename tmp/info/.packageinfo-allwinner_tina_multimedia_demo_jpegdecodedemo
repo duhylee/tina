@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/tina_multimedia_demo/jpegdecodedemo/Makefile
+Package: jpegdecodedemo
+Submenu: tina_multimedia_demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcedarx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: use jpegdecode interface in tina_multimedia
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	CedarX2.8 jpegdecodedemo
+
+@@
+
+

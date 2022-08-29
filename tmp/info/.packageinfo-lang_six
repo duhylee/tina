@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/six/Makefile
+Package: python-six
+Submenu: Python
+Version: 1.12.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python six/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-six
+Maintainer: 
+Source: six-1.12.0.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/six
+
+@@
+
+

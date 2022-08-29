@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/php5-pecl-dio/Makefile
+Package: php5-pecl-dio
+Submenu: PHP
+Version: 0.0.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php5
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: lang
+Category: Languages
+Title: Direct I/O functions
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Source: dio-0.0.7.tgz
+License: PHPv3.01
+Type: ipkg
+Description: Direct I/O functions
+http://pecl.php.net/
+Michael Heimpold <mhei@heimpold.de>
+@@
+
+

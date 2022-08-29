@@ -1,0 +1,24 @@
+Source-Makefile: package/libs/pango/Makefile
+Package: pango
+Version: 1.40.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcairo +glib2 +fontconfig +libfreetype +harfbuzz
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: libs
+Category: Libraries
+Title: Text layout and rendering library
+Maintainer: 
+Source: pango-1.40.3.tar.xz
+Type: ipkg
+Description: Pango is a library for layout and rendering of text, with an emphasis
+on internationalization. Pango can be used anywhere that text layout
+is needed; however, most of the work on Pango so far has been done using
+the GTK+ widget toolkit as a test platform. Pango forms the core of text
+and font handling for GTK+-2.x.
+http://www.pango.org/
+
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/allwinner/tina-upgrade/Makefile
+Package: tina-upgrade
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: upgrade tina
+Maintainer: 
+Source: 
+Type: ipkg
+Description: upgrade tina
+
+@@
+Config:
+  source "package/allwinner/tina-upgrade/Config.in"
+@@
+
+

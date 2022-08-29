@@ -1,0 +1,25 @@
+Source-Makefile: package/security/optee-os-dev-kit/Makefile
+Package: optee-os-dev-kit
+Submenu: OPTEE
+Version: 2.5.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python-crypto/host
+Section: utils
+Category: Security
+Title: optee-os-dev-kit
+Maintainer: 
+Source: 
+License: BSD 2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This component provides the TA development environment.
+
+@@
+Config:
+source "package/security/optee-os-dev-kit/Config.in"
+@@
+
+

@@ -1,0 +1,31 @@
+Source-Makefile: package/allwinner/mtop/Makefile
+Package: mtop
+Version: 0.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: mtop for tina linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	it comes from Android 4.2!!
+
+@@
+Config:
+	choice
+		prompt "mtop source type"
+		default C_CODE
+		help
+		  Mtop support two way compiling, from C code or bash script.
+
+		config C_CODE
+		    bool "C source code"
+		config SCRIPT_CODE
+		    bool "Bash script code"
+	endchoice
+@@
+
+

@@ -1,0 +1,42 @@
+Source-Makefile: package/libs/libwebsockets/Makefile
+Package: libwebsockets-openssl
+Version: 2.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl +libcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: libs
+Category: Libraries
+Title: libwebsockets (OpenSSL)
+Maintainer: Karl Palsson <karlp@remake.is>
+Source: libwebsockets-2.4.0.tar.gz
+License: LGPL-2.1+exception
+LicenseFiles: LICENSE
+Type: ipkg
+Description: libwebsockets (OpenSSL)
+https://libwebsockets.org
+Karl Palsson <karlp@remake.is>
+@@
+
+Package: libwebsockets-cyassl
+Version: 2.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcyassl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: cyassl
+Section: libs
+Category: Libraries
+Title: libwebsockets (CyaSSL)
+Maintainer: Karl Palsson <karlp@remake.is>
+Source: libwebsockets-2.4.0.tar.gz
+License: LGPL-2.1+exception
+LicenseFiles: LICENSE
+Type: ipkg
+Description: libwebsockets (CyaSSL)
+https://libwebsockets.org
+Karl Palsson <karlp@remake.is>
+@@
+
+

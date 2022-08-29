@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/procrank_linux/Makefile
+Package: procrank_linux
+Version: 2018-08-03-5aa6840b617ab2052c365c26b32ebc5fa96ad657
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @KERNEL_PROC_PAGE_MONITOR
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: A tool to display memory usage ported from Android
+Maintainer: 
+Source: procrank_linux-2018-08-03.tar.gz
+Type: ipkg
+Description: A tool to display memory usage ported from Android
+
+@@
+
+

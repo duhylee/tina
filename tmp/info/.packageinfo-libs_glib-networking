@@ -1,0 +1,22 @@
+Source-Makefile: package/libs/glib-networking/Makefile
+Package: glib-networking
+Submenu: gnome
+Version: 2.50.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libgnutls +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: libs
+Category: Libraries
+Title: The GLib Networking
+Maintainer: 
+Source: glib-networking-2.50.0.tar.xz
+Type: ipkg
+Description:   The GLib Networking package contains Network related gio modules for GLib.
+  This package is known to build and work properly using an LFS-8.0 platform.
+  `export GIO_USE_TLS=gnutls` to config & enable the module to gio
+
+@@
+
+

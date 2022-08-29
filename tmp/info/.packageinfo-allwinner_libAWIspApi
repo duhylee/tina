@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/libAWIspApi/Makefile
+Package: libAWIspApi
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: camera VIN ISP api for Allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   camera VIN ISP api for allwinner
+
+@@
+
+

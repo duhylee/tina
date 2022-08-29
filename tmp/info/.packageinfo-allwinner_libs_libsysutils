@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/libs/libsysutils/Makefile
+Package: libsysutils
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libcutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: libsysutils from Android L
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   libsysutils form Android L
+
+@@
+
+

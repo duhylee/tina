@@ -1,0 +1,73 @@
+Source-Makefile: package/network/snapcast/Makefile
+Package: snapserver
+Version: 0.10.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libavahi-client +libatomic +libogg +libflac +libvorbis
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: snapcast snapserver
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description: 		Synchronous audio player
+	Snapcast server
+
+@@
+
+Package: snapclient
+Version: 0.10.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libavahi-client +libatomic +libogg +libflac +alsa-lib +libvorbisidec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: snapcast
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description: 		Synchronous audio player
+	Snapcast client
+
+@@
+
+Package: snapcast
+Version: 0.10.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libavahi-client +libatomic +libogg +libflac
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: snapcast packages
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 		Synchronous audio player
+	Multi-room client-server audio player
+	Include Server and Client
+
+@@
+Config:
+ 	menu "Select snapcast Options"
+		depends on PACKAGE_snapcast
+		comment "Choose server or client to compile"
+		config PACKAGE_snapserver
+			prompt "Compile snapserver"
+			help
+				Compile Snapcast server
+			default n
+
+		config PACKAGE_snapclient
+			prompt "Compile snapclient"
+			help
+				Compile Snapcast client
+			default n
+	endmenu
+@@
+
+

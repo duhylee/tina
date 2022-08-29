@@ -1,0 +1,18 @@
+Source-Makefile: package/minigui/mg-mgncs-samples/Makefile
+Package: mg-mgncs-sample
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +alsa-utils +tslib +libuapi +libmgi +libmgplus +mgncs4touch +libmgncs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: mg-mgncs-sample
+Maintainer: 
+Source: 
+Type: ipkg
+Description: mg-mgncs-sample
+
+@@
+
+

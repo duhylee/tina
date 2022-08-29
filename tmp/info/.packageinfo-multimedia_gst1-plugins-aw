@@ -1,0 +1,141 @@
+Source-Makefile: package/multimedia/gst1-plugins-aw/Makefile
+Package: libgst1framebuffersink
+Version: 1.8.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libuapi +libgst1controller +libgst1video
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good linux !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: GStreamer sunxi fbdev support library (base)
+Maintainer: Harm Hanemaaijer<fenfb@yahoo.com>
+Source: gst-plugins-aw-1.8.2.tar.xz
+License: LGPLv2
+LicenseFiles: COPYING
+Type: ipkg
+Hidden: 1
+Description:     GStreamer open source multimedia framework
+   .
+   This package contains the GStreamer sunxi fbdev support library.
+http://gstreamer.freedesktop.org/
+Harm Hanemaaijer<fenfb@yahoo.com>
+@@
+
+Package: gst1-mod-fbdev2sink
+Version: 1.8.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libuapi +libuapi +libgstreamer1 +libgst1controller +libgst1framebuffersink +libgst1video
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good linux !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: GStreamer sunxi fbdev support plugin (aw)
+Maintainer: Harm Hanemaaijer<fenfb@yahoo.com>
+Source: gst-plugins-aw-1.8.2.tar.xz
+License: LGPLv2
+LicenseFiles: COPYING
+Type: ipkg
+Hidden: 1
+Description:     GStreamer open source multimedia framework
+   .
+   This package contains the GStreamer sunxi fbdev support plugin.
+http://gstreamer.freedesktop.org/
+Harm Hanemaaijer<fenfb@yahoo.com>
+@@
+
+Package: gst1-mod-sunxifbsink
+Version: 1.8.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libuapi +libuapi +libgstreamer1 +libgst1controller +libgst1framebuffersink +libgst1video
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good linux !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: GStreamer sunxi fbdev support plugin (aw)
+Maintainer: Harm Hanemaaijer<fenfb@yahoo.com>
+Source: gst-plugins-aw-1.8.2.tar.xz
+License: LGPLv2
+LicenseFiles: COPYING
+Type: ipkg
+Hidden: 1
+Description:     GStreamer open source multimedia framework
+   .
+   This package contains the GStreamer sunxi fbdev support plugin.
+http://gstreamer.freedesktop.org/
+Harm Hanemaaijer<fenfb@yahoo.com>
+@@
+
+Package: gstreamer1-plugins-aw
+Version: 1.8.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:gst1-plugins-aw +gstreamer1-plugins-base +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good linux !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: GStreamer plugins collection (aw)
+Maintainer: Harm Hanemaaijer<fenfb@yahoo.com>
+Source: gst-plugins-aw-1.8.2.tar.xz
+License: LGPLv2
+LicenseFiles: COPYING
+Type: ipkg
+Description: GStreamer plugins collection (aw)
+http://gstreamer.freedesktop.org/
+Harm Hanemaaijer<fenfb@yahoo.com>
+@@
+Config:
+    menu "Select GStreamer aw modules"
+      depends on PACKAGE_gstreamer1-plugins-aw
+
+
+    config gst1-plugins-aw-all
+      bool "Include all GStreamer aw plugins"
+      select PACKAGE_gst1-plugins-aw
+
+    comment "Modules"
+
+    config PACKAGE_gst1-mod-fbdev2sink
+      prompt "GStreamer fbdev2sink module"
+
+     config PACKAGE_gst1-mod-sunxifbsink
+      prompt "GStreamer sunxifbsink module"
+
+   
+
+    comment "Libraries"
+
+    config PACKAGE_libgst1framebuffersink
+      prompt "GStreamer framebuffersink library"
+
+   
+
+  endmenu
+
+@@
+
+Package: gst1-plugins-aw
+Version: 1.8.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +BUILD_NLS:libiconv-full +libuapi +libgst1framebuffersink +gst1-mod-fbdev2sink +gst1-mod-sunxifbsink +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good linux !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: GStreamer plugins collection (aw)
+Maintainer: Harm Hanemaaijer<fenfb@yahoo.com>
+Source: gst-plugins-aw-1.8.2.tar.xz
+License: LGPLv2
+LicenseFiles: COPYING
+Type: ipkg
+Hidden: 1
+Description: GStreamer plugins collection (aw)
+http://gstreamer.freedesktop.org/
+Harm Hanemaaijer<fenfb@yahoo.com>
+@@
+
+

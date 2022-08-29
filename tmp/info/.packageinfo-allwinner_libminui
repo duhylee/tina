@@ -1,0 +1,37 @@
+Source-Makefile: package/allwinner/libminui/Makefile
+Package: libminui
+Menu: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +zlib +libpng +PACKAGE_kmod-sunxi-drm:libdrm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: tiny miniui library
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tiny miniui library, refer to the android 9.0
+
+@@
+Config:
+if PACKAGE_libminui
+choice
+prompt "Choose the display rotation angle"
+	default MINUI_ROTATION_NONE
+	help
+		Choose the display rotation angle.
+config MINUI_ROTATION_NONE
+	bool "ROTATION_NONE"
+config MINUI_ROTATION_DOWN
+	bool "ROTATION_DOWN"
+config MINUI_ROTATION_RIGHT
+	bool "ROTATION_RIGHT"
+config MINUI_ROTATION_LEFT
+	bool "ROTATION_LEFT"
+endchoice
+endif
+@@
+
+

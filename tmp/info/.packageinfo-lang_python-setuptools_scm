@@ -1,0 +1,21 @@
+Source-Makefile: package/lang/python-setuptools_scm/Makefile
+Package: python-setuptools_scm
+Submenu: Python
+Version: 3.3.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends/host: python python/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: the blessed package to manage your versions by scm tags
+Maintainer: 
+Source: setuptools_scm-3.3.3.tar.gz
+Type: ipkg
+Description:   setuptools_scm handles managing your Python package versions in SCM metadata instead of declaring them as the version argument or in a SCM managed file.
+
+@@
+
+

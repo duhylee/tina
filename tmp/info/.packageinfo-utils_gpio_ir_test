@@ -1,0 +1,18 @@
+Source-Makefile: package/utils/gpio_ir_test/Makefile
+Package: gpio_ir_test
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: gpio ir test tool, include receive and send
+Maintainer: 
+Source: 
+Type: ipkg
+Description: gpio ir test tool, include receive and send
+
+@@
+
+

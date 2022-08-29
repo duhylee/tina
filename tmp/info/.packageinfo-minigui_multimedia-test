@@ -1,0 +1,18 @@
+Source-Makefile: package/minigui/multimedia-test/Makefile
+Package: multimedia-test
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +alsa-utils +tslib +libcedarx +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: multimedia-test
+Maintainer: arl<anruliu@allwinnertech.com>
+Source: 
+Type: ipkg
+Description:   The minigui application for multimedia-test.Compatible with R11, R16, R18, R40, F35 platform.
+arl<anruliu@allwinnertech.com>
+@@
+
+

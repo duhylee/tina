@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/urllib3/Makefile
+Package: python-urllib3
+Submenu: Python
+Version: 1.24.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python urllib3/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-urllib3
+Maintainer: 
+Source: urllib3-1.24.1.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/urllib3
+
+@@
+
+

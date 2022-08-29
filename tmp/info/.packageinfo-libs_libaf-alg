@@ -1,0 +1,18 @@
+Source-Makefile: package/libs/libaf-alg/Makefile
+Package: af-alg
+Version: 2012-02-29-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: AF_ALG for OpenSSL
+Maintainer: 
+Source: af-alg-2012-02-29.tar.bz2
+Type: ipkg
+Description:   AF_ALG for OpenSSL
+
+@@
+
+

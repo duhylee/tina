@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/libspeex-lite/Makefile
+Package: libspeex-lite
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: tiny speex resample library
+Maintainer: 
+Source: 
+Type: ipkg
+Description: tiny speex resample library
+
+@@
+
+

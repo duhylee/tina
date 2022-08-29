@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/homlet/hpplay-receiver/Makefile
+Package: hpplay-receiver
+Submenu: Homlet
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcedarx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: HappyCast for Linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	HappyCast for Linux
+
+@@
+
+

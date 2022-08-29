@@ -1,0 +1,23 @@
+Source-Makefile: package/lang/defusedxml/Makefile
+Package: python-defusedxml
+Submenu: Python
+Version: 0.5.0
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python python-defusedxml/host
+Build-Depends/host: python/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python defusedxml
+Maintainer: 
+Source: defusedxml-0.5.0.zip
+Type: ipkg
+Description: defusing XML bombs and other exploits
+https://pypi.org/project/defusedxml/
+
+@@
+
+

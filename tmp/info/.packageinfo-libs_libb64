@@ -1,0 +1,19 @@
+Source-Makefile: package/libs/libb64/Makefile
+Package: libb64
+Version: 1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Base64 Encoding/Decoding Routines
+Maintainer: 
+Source: libb64-1.2.src.zip
+Type: ipkg
+Description:   a library of ANSI C routines for fast encoding/decoding data into and from a
+  base64-encoded format.
+
+@@
+
+

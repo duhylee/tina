@@ -1,0 +1,23 @@
+Source-Makefile: package/allwinner/eyesee-mpp/awcdr/Makefile
+Package: eyesee-mpp-awcdr
+Submenu: eyesee-mpp
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +eyesee-mpp-framework +eyesee-mpp-external +libjpeg +libpng +eyesee-minigui +tslib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: eyesee-mpp-awcdr
+Category: Allwinner
+Title: eyesee-mpp-awcdr for Tina Linux
+Maintainer: AW-PDC-PD5
+Source: 
+Type: ipkg
+Description:   eyesee-mpp-awcdr is our solutions for CDR. It mainly use eyesee-mpp-framework to implement
+  multimedia function.
+AW-PDC-PD5
+@@
+Config:
+#source "package/allwinner/eyesee-mpp/awcdr/Config.in"
+@@
+
+

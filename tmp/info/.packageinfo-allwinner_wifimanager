@@ -1,0 +1,58 @@
+Source-Makefile: package/allwinner/wifimanager/Makefile
+Package: wifimanager
+Menu: 1
+Default: 1
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina wifimanager
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina wifi manager
+
+@@
+Config:
+config WIFIMANAGER_ENABLE_DAEMON
+	bool "Enable wifimanager daemon support"
+	depends on PACKAGE_wifimanager
+	default n
+@@
+
+Package: wifimanager-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread wifimanager +wifimanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina wifimanager app demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina wifimanager app demo
+
+@@
+
+Package: wifimanager-daemon-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread wifimanager +wifimanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina wifimanager daemon demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina wifimanager daemon demo
+
+@@
+
+

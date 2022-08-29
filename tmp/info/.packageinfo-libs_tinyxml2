@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/tinyxml2/Makefile
+Package: tinyxml2
+Version: 7.0.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: tinyxml2 library
+Maintainer: 
+Source: tinyxml2-7.0.1.zip
+License: BSD
+Type: ipkg
+Description:   TinyXML is a simple, small, C++ XML parser that can be easily integrating into other programs.
+https://github.com/leethomason/tinyxml2/tree/7.0.1
+
+@@
+
+

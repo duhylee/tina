@@ -1,0 +1,19 @@
+Source-Makefile: package/minigui/mg-samples/Makefile
+Package: mg-samples
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libmgeff +libmgncs +libmgutils +mgncs4touch
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: mg-smaples
+Maintainer: tracewong <tracewong@outlook.com>
+Source: mg-samples-3.2.tar.gz
+Type: ipkg
+Description:   The minigui test case
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

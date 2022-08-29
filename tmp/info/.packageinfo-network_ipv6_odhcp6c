@@ -1,0 +1,25 @@
+Source-Makefile: package/network/ipv6/odhcp6c/Makefile
+Package: odhcp6c
+Version: 16
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Embedded DHCPv6-client for OpenWrt
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Source: odhcp6c-d2e247d8d87ecf8c60fcf0acdad05667bd379521.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: Embedded DHCPv6-client for OpenWrt
+Hans Dedecker <dedeckeh@gmail.com>
+@@
+Config:
+  config PACKAGE_odhcp6c_ext_cer_id
+    int "CER-ID Extension ID (0 = disabled)"
+    depends on PACKAGE_odhcp6c
+    default 0
+@@
+
+

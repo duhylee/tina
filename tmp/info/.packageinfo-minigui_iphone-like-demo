@@ -1,0 +1,20 @@
+Source-Makefile: package/minigui/iphone-like-demo/Makefile
+Package: iphone-like-demo
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: iphone like demo
+Maintainer: tracewong <tracewong@outlook.com>
+Source: iphone-like-demo-1.0.0.tar.gz
+Type: ipkg
+Description:   iphone-like-demo is a component of MiniGUI, which provides 
+  support for advanced graphics function. 
+http://www.minigui.org/
+tracewong <tracewong@outlook.com>
+@@
+
+

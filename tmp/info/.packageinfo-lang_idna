@@ -1,0 +1,22 @@
+Source-Makefile: package/lang/idna/Makefile
+Package: python-idna
+Submenu: Python
+Version: 2.8
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python idna/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-idna
+Maintainer: 
+Source: idna-2.8.tar.gz
+Type: ipkg
+Description: Foreign
+https://pypi.org/project/idna
+
+@@
+
+

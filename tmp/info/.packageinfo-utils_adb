@@ -1,0 +1,50 @@
+Source-Makefile: package/utils/adb/Makefile
+Package: adb
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: adb for Tina Linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	it comes form Android 4.2!!
+
+@@
+
+Package: libawadbauth
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Allwinner
+Title: adb auth lib for Tina Linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: adb auth lib for Tina Linux
+
+@@
+
+Package: adbd_auth_service
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libawadbauth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: adb auth service for Tina Linux
+Maintainer: 
+Source: 
+Type: ipkg
+Description: adb auth service for Tina Linux
+
+@@
+
+

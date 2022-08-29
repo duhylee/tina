@@ -1,0 +1,19 @@
+Source-Makefile: package/allwinner/tina_multimedia_demo/trecorderdemo/Makefile
+Package: trecorderdemo
+Submenu: tina_multimedia_demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcedarx +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: use trecorder interface in tina_multimedia
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	CedarX2.8 recorder
+
+@@
+
+

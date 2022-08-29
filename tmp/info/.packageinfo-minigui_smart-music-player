@@ -1,0 +1,34 @@
+Source-Makefile: package/minigui/smart-music-player/Makefile
+Package: smart-music-player
+Menu: 1
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libminigui-gpl +alsa-utils +tslib +libcedarx +libuapi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: gui
+Category: Minigui
+Title: smart-music-player
+Maintainer: arl<anruliu@allwinnertech.com>
+Source: 
+Type: ipkg
+Description:   The minigui application for music-player. Compatible with R328 platform.
+  Adapt to screen resolutions of 240*320 and 320*480.
+arl<anruliu@allwinnertech.com>
+@@
+Config:
+if PACKAGE_smart-music-player
+choice
+prompt "Choose display resolution"
+	default SMART_MUSIC_PLAYER_320x480
+	help
+	Select application display resolution
+config SMART_MUSIC_PLAYER_240x320
+	bool "smart_music_player_240x320"
+config SMART_MUSIC_PLAYER_320x480
+	bool "smart_music_player_320x480"
+endchoice
+endif
+@@
+
+
