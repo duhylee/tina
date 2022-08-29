@@ -1,0 +1,34 @@
+#example
+avk_play={
+	"hw:audiocodec"
+}
+
+a2dp_pcm_buff_size={
+	"32000"
+}
+a2dp_pcm_period_size={
+	"400"
+}
+hw_max_volume_cmd={
+	"amixer -Dhw:audiocodec cset name='LINEOUT volume' 31"
+}
+hfp_pcm_rate={
+	"8000"
+}
+
+hfp_phone_to_dev_play={
+	"hw:audiocodec"
+}
+
+hfp_phone_to_dev_cap={
+	"hw:snddaudio2"
+}
+
+hfp_dev_to_phone_cap={
+	"hw:audiocodec"
+}
+
+hfp_dev_to_phone_play={
+	"hw:snddaudio2"
+}
+
