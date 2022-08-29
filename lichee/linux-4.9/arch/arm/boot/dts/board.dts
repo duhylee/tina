@@ -1,0 +1,86 @@
+/*
+ * Allwinner Technology CO., Ltd. sun8iw18p1 std board.
+ *
+ * soc board support.
+ */
+
+/dts-v1/;
+
+#include "sun8iw18p1.dtsi"
+
+/{
+	soc@03000000 {
+		twi1: twi@0x05002400 {
+			status = "okay";
+			es7243:es7243@0{
+				compatible = "mi,es7243";
+				reg = <0x13>;
+				status = "okay";
+			};
+		};
+
+		gpio_ir_rx {
+			compatible = "allwinner,gpio-ir-rx";
+			gpio-rx = <&pio PB 0 6 1 1 1>;
+			status = "disabled";
+		};
+
+		gpio_ir_tx {
+			compatible = "allwinner,gpio-ir-tx";
+			gpio-tx = <&pio PB 1 1 1 1 1>;
+			status = "disabled";
+		};
+
+		snddaudio0:sound@1 {
+			status = "okay";
+			sunxi,snddaudio-codec = "es7243";
+			sunxi,snddaudio-codec-dai = "es7243-codec-dai";
+		};
+	};
+
+	cpu_opp_l_table0: opp_l_table0 {
+		/* compatible = "operating-points-v2"; */
+		compatible = "allwinner,opp_l_table0";
+		opp_count = <3>;
+		opp-shared;
+
+
+		opp00 {
+			opp-hz = /bits/ 64 <720000000>;
+			opp-microvolt = <820000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+		opp01 {
+			opp-hz = /bits/ 64 <1008000000>;
+			opp-microvolt = <900000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+
+		opp02 {
+			opp-hz = /bits/ 64 <1200000000>;
+			opp-microvolt = <1000000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};
+
+		/*opp03 {
+			opp-hz = /bits/ 64 <1512000000>;
+			opp-microvolt = <1100000>;
+			axi-bus-divide-ratio = <3>;
+			clock-latency-ns = <2000000>;
+		};*/
+	};
+
+	/*pwm config, use pwm to adapt volt; please cancel the comment
+	 *polarity-> 0:NORMAL 1:INVERSED*/
+	/*pwm_dvfs_info {
+		period_ns = <50000>;
+		polarity  = <0>;
+		pwm_id    = <7>;
+		vol_base  = <831000>;
+		vol_max   = <1102000>;
+	};*/
+
+};
