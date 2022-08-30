@@ -22,6 +22,19 @@
 			};
 		};
 
+		spi1: spi@05011000 {
+			status = "okay";
+			ethernet@0 {
+			    compatible = "davicom,dm9051";
+			    reg = <0>; /* spi chip select */
+			    local-mac-address = [00 00 00 00 00 00];
+			    interrupt-parent = <&pio>;
+			    interrupts = <PB 7 IRQ_TYPE_LEVEL_HIGH>; /*PB7 - intr, PB13 - n_reset */
+			    reset-gpios = <&pio PB 13 1 1 1 1>;
+			    spi-max-frequency = <40000000>;
+			};
+		};
+
 		gpio_ir_rx {
 			compatible = "allwinner,gpio-ir-rx";
 			gpio-rx = <&pio PB 0 6 1 1 1>;

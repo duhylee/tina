@@ -21,3 +21,14 @@ config DM9000_FORCE_SIMPLE_PHY_POLL
 	  bit to determine if the link is up or down instead of the more
 	  costly MII PHY reads. Note, this will not work if the chip is
 	  operating with an external PHY.
+
+config DM9051
+	tristate "DM9051 support"
+	depends on SPI
+	select CRC32
+	select MII
+	---help---
+	  Support for DM9051 SPI to Ethernet chipset.
+
+	  To compile this driver as a module, choose M here.  The module
+	  will be called dm9051.
