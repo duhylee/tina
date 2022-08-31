@@ -21,4 +21,10 @@ amixer -c 3 set 'Ch2' 210
 #setusbconfig
 /bin/setusbconfig adb,uac2
 
+#add fixed ip 192.168.50.160
+ifconfig eth0 192.168.50.160 up
+route add default netmask 255.255.255.0 eth0
+route add default gw 192.168.50.1
+echo nameserver 8.8.8.8 8.8.4.4 > /etc/resolv.conf
+
 exit 0
