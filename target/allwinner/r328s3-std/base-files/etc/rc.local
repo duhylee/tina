@@ -21,6 +21,10 @@ amixer -c 3 set 'Ch2' 210
 #setusbconfig
 /bin/setusbconfig adb,uac2
 
+#Set USB audio
+arecord -D AS_USB_SPK -r 48000 -c 2 -f s16_le | aplay -D AS_USB_SPK &
+arecord -D AS_USB_MIC -r 16000 -c 8 -f s16_le | aplay -D AS_USB_MIC &
+
 #add fixed ip 192.168.50.160
 ifconfig eth0 192.168.50.160 up
 route add default netmask 255.255.255.0 eth0
