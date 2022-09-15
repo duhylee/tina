@@ -43,8 +43,8 @@
 //static snd_pcm_t *alsa_handle = NULL;
 //static snd_pcm_hw_params_t *alsa_params = NULL;
 
-//static char *alsa_out_dev = "default";
-static char *alsa_out_dev = "plug:dmix";
+static char *alsa_out_dev = "default";
+//static char *alsa_out_dev = "plug:dmix";
 
 static void stop(ao_device_t *device);
 
