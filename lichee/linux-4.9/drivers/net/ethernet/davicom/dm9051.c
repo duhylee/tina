@@ -846,28 +846,28 @@ static int dm_chipid_detect(struct board_info *db)
 	return -ENODEV;
 }
 
-static int dm9051_hw_reset(struct device *dev)
+static int dm9051_hw_reset(struct device *dev, struct board_info *db)
 {
 	struct gpio_config config;
-	int reset_gpio, ret;
+	int ret;
 
-	reset_gpio = of_get_named_gpio_flags(dev->of_node, "reset-gpios", 0,
+	db->reset_gpio = of_get_named_gpio_flags(dev->of_node, "reset-gpios", 0,
 			(enum of_gpio_flags *)&config);
 
-	if (reset_gpio < 0) {
+	if (db->reset_gpio < 0) {
 		pr_err("%s fail to get reset-gpios pin from dts!\n", __func__);
 		return -1;
 	} else {
-		pr_info("%s reset_gpio = %d!\n", __func__, reset_gpio);
+		pr_info("%s reset_gpio = %d!\n", __func__, db->reset_gpio);
 	}
 
-	ret = devm_gpio_request_one(dev, reset_gpio, GPIOF_OUT_INIT_HIGH, "dm9051-reset-gpio");
+	ret = devm_gpio_request_one(dev, db->reset_gpio, GPIOF_OUT_INIT_HIGH, "dm9051-reset-gpio");
 	if (ret < 0)
 		return -1;
 
-	gpio_direction_output(reset_gpio, GPIOF_OUT_INIT_LOW);
+	gpio_direction_output(db->reset_gpio, GPIOF_OUT_INIT_LOW);
 	mdelay(1);
-	gpio_direction_output(reset_gpio, GPIOF_OUT_INIT_HIGH);
+	gpio_direction_output(db->reset_gpio, GPIOF_OUT_INIT_HIGH);
 	mdelay(1);
 
 	pr_info("%s - done !\n", __func__);
@@ -881,7 +881,7 @@ static int dm9051_probe(struct spi_device *spi)
 	struct board_info *db;
 	int ret = 0;
 
-	dm9051_hw_reset(dev);
+//	dm9051_hw_reset(dev);
 
 	ndev = alloc_etherdev(sizeof(struct board_info));
 	if (!ndev)
@@ -894,6 +894,8 @@ static int dm9051_probe(struct spi_device *spi)
 	db->spidev = spi;
 	db->ndev = ndev;
 	dm_netdev_and_db(ndev, db);
+
+	dm9051_hw_reset(dev, db);
 
 	dm_spimsg_addtail(db);
 	dm_control_init(db); /* init_delayed_works */
@@ -916,6 +918,70 @@ err_netdev:
 	return ret;
 }
 
+static int
+dm9051_drv_suspend(struct device *dev)
+{
+	struct net_device *ndev = dev_get_drvdata(dev);
+	struct board_info *db = netdev_priv(ndev);
+
+	printk("=====> +++ [%s] start !\n",__func__);
+	if (ndev) {
+		db = netdev_priv(ndev);
+		db->in_suspend = 1;
+
+		if (!netif_running(ndev))
+		{
+			gpio_set_value(db->reset_gpio, 0);
+			return 0;
+		}
+
+		netif_device_detach(ndev);
+#if 0
+		/* only shutdown if not using WoL */
+		if (!db->wake_state)
+			dm9000_shutdown(ndev);
+#endif
+	}
+
+	gpio_set_value(db->reset_gpio, 0);
+	printk("=====> --- [%s] end !\n",__func__);
+	return 0;
+}
+
+static int
+dm9051_drv_resume(struct device *dev)
+{
+	struct net_device *ndev = dev_get_drvdata(dev);
+	struct board_info *db = netdev_priv(ndev);
+
+	printk("=====> +++ [%s] start !\n",__func__);
+	gpio_set_value(db->reset_gpio, 1);
+
+	if (ndev) {
+		if (netif_running(ndev)) {
+#if 0
+			/* reset if we were not in wake mode to ensure if
+			 * the device was powered off it is in a known state */
+			if (!db->wake_state) {
+				dm9000_init_dm9000(ndev);
+				dm9000_unmask_interrupts(db);
+			}
+#endif
+			netif_device_attach(ndev);
+		}
+
+		db->in_suspend = 0;
+	}
+
+	printk("=====> --- [%s] end !\n",__func__);
+	return 0;
+}
+
+static const struct dev_pm_ops dm9051_drv_pm_ops = {
+	.suspend	= dm9051_drv_suspend,
+	.resume		= dm9051_drv_resume,
+};
+
 static int dm9051_drv_remove(struct spi_device *spi)
 {
 	struct device *dev = &spi->dev;
@@ -930,6 +996,7 @@ static int dm9051_drv_remove(struct spi_device *spi)
 static struct spi_driver dm9051_driver = {
 	.driver = {
 		.name = DRVNAME_9051,
+		.pm = &dm9051_drv_pm_ops,
 		.of_match_table = dm9051_match_table,
 	},
 	.probe = dm9051_probe,

@@ -233,6 +233,8 @@ struct board_info {
 #if NEW_KT515
 	char				spi_trans_buf[1600] ____cacheline_aligned;
 #endif
+	unsigned int			in_suspend:1;
+	int reset_gpio;
 };
 
 #define	DM_RXHDR_SIZE			sizeof(struct dm9051_rxhdr)

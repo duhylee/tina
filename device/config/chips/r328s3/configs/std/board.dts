@@ -58,6 +58,19 @@
 			sunxi,snddaudio-codec = "ad82584f.1-0031";
 			sunxi,snddaudio-codec-dai = "ad82584f-dai";
 		};
+
+		gpio-keys {
+			compatible = "gpio-keys";
+			autorepeat;
+
+			powerkey {
+				label = "power_key";
+				linux,code = <116>;
+				gpios = <&pio PB 0 6 1 1 1>;
+				wakeup-source;
+			};
+		};
+
 	};
 
 	cpu_opp_l_table0: opp_l_table0 {
