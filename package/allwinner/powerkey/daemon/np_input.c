@@ -122,22 +122,25 @@ static void *scanPowerKey(void *arg)
 		for (i = 0; i < nevents; i++) {
 			if (read(events[i].data.fd, &key_event, sizeof(struct input_event)) == sizeof(struct input_event)) {
 				if (key_event.type == EV_KEY && key_event.code == KEY_POWER) {
-					/* printf("---------KEY_POWER,value=%d---------\n", key_event.value); */
+					printf("---------KEY_POWER,value=%d---------\n", key_event.value); 
 					if (key_event.value == 1) {
 						if (has_sleep) {
 							set_sleep_state(0);
 							powerkey_down_ms = 0;
 						} else
-							powerkey_down_ms = curr_time_ms();
+							{
+							  powerkey_down_ms = curr_time_ms();
+							}
+						/* system("reboot"); */
 					} else if (key_event.value == 0 && powerkey_down_ms != 0) {
 						uint64_t now = 0;
 						now = curr_time_ms();
 						if (now <= powerkey_down_ms)
 							powerkey_down_ms = 0;
-						else if (now - powerkey_down_ms > 2000UL) {
+						/* else if (now - powerkey_down_ms > 2000UL) {
 							system("poweroff");
-						} else if (powerkey_down_ms != 0) {
-							/* printf("get suspend key event!\n"); */
+						}*/ else if (powerkey_down_ms != 0) {
+							printf("get suspend key event!\n"); 
 							/*if (goToSleep(key_event.time.tv_sec, 0, 0) == 0)
 								set_sleep_state(1);*/
 							system("echo mem > /sys/power/state");
