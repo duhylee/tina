@@ -79,6 +79,23 @@ static uint64_t curr_time_ms(void)
 	return tm.tv_sec * MSEC_PER_SEC + (tm.tv_nsec / NSEC_PER_MSEC);
 }
 
+static void prefunction_of_enter_to_sleep(void)
+{
+  printf("prefunction_of_enter_to_sleep");
+  
+  system("ifconfig eth0 down");
+}
+
+static void postfunction_of_wakeup(void)
+{
+  printf("postfunction_of_wakeup");
+  
+  system("ifconfig eth0 192.168.50.160 up");
+  system("route add default netmask 255.255.255.0 eth0");
+  system("route add default gw 192.168.50.1");
+  system("echo nameserver 8.8.8.8 8.8.4.4 > /etc/resolv.conf");
+}
+
 /*=============================================================
  * Function: scanPowerKey
  * Descriptions:
@@ -127,11 +144,11 @@ static void *scanPowerKey(void *arg)
 						if (has_sleep) {
 							set_sleep_state(0);
 							powerkey_down_ms = 0;
+						    postfunction_of_wakeup();
 						} else
 							{
 							  powerkey_down_ms = curr_time_ms();
 							}
-						/* system("reboot"); */
 					} else if (key_event.value == 0 && powerkey_down_ms != 0) {
 						uint64_t now = 0;
 						now = curr_time_ms();
@@ -141,8 +158,10 @@ static void *scanPowerKey(void *arg)
 							system("poweroff");
 						}*/ else if (powerkey_down_ms != 0) {
 							printf("get suspend key event!\n"); 
+						    prefunction_of_enter_to_sleep();
 							/*if (goToSleep(key_event.time.tv_sec, 0, 0) == 0)
 								set_sleep_state(1);*/
+							set_sleep_state(1);
 							system("echo mem > /sys/power/state");
 						}
 					}
