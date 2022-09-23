@@ -918,7 +918,7 @@ err_netdev:
 	return ret;
 }
 
-static int dm9051_all_stop(board_info *db) {
+static int dm9051_all_stop(struct board_info *db) {
 	dm_stopcode_lock(db);
 	return 0;
 }
@@ -954,7 +954,7 @@ dm9051_drv_suspend(struct device *dev)
 	return 0;
 }
 
-static int dm9051_all_start(board_info *db) {
+static int dm9051_all_start(struct board_info *db) {
 	dm_opencode_lock(db->ndev, db);
 	dm_imr_enable_lock_essential(db);
 	return 0;
