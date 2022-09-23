@@ -918,6 +918,11 @@ err_netdev:
 	return ret;
 }
 
+static int dm9051_all_stop(board_info *db) {
+	dm_stopcode_lock(db);
+	return 0;
+}
+
 static int
 dm9051_drv_suspend(struct device *dev)
 {
@@ -936,6 +941,7 @@ dm9051_drv_suspend(struct device *dev)
 		}
 
 		netif_device_detach(ndev);
+		dm9051_all_stop(db);
 #if 0
 		/* only shutdown if not using WoL */
 		if (!db->wake_state)
@@ -945,6 +951,12 @@ dm9051_drv_suspend(struct device *dev)
 
 	gpio_set_value(db->reset_gpio, 0);
 	printk("=====> --- [%s] end !\n",__func__);
+	return 0;
+}
+
+static int dm9051_all_start(board_info *db) {
+	dm_opencode_lock(db->ndev, db);
+	dm_imr_enable_lock_essential(db);
 	return 0;
 }
 
@@ -967,6 +979,7 @@ dm9051_drv_resume(struct device *dev)
 				dm9000_unmask_interrupts(db);
 			}
 #endif
+            dm9051_all_start(db);
 			netif_device_attach(ndev);
 		}
 
