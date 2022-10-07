@@ -15,8 +15,8 @@ amixer -D hw:audiocodec cset name='MIC3 gain volume' 0
 
 #AD82584F
 amixer -c 3 set 'Master' 204
-amixer -c 3 set 'Ch1' 210
-amixer -c 3 set 'Ch2' 210 
+amixer -c 3 set 'Ch1' 220
+amixer -c 3 set 'Ch2' 220 
 
 #setusbconfig
 /bin/setusbconfig adb,uac2
