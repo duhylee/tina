@@ -618,9 +618,9 @@ static int sunxi_init_gpio_probe(struct platform_device *pdev)
 	int gpio;
 	char gpio_name[32];
 	int ret;
-	const char *normal_led_pin_str = NULL;
-	const char *standby_led_pin_str = NULL;
-	const char *network_led_pin_str = NULL;
+	const char *led_r_pin_str = NULL;
+	const char *led_g_pin_str = NULL;
+	const char *led_b_pin_str = NULL;
 
 	node = pdev->dev.of_node;
 	if (!node)
@@ -639,14 +639,14 @@ static int sunxi_init_gpio_probe(struct platform_device *pdev)
 		easy_light_used = 0;
 		pr_err("failed to get easy_light_used assign\n");
 	}
-	if (of_property_read_string(node, "normal_led", &normal_led_pin_str))
-		pr_err("failed to get normal led pin assign\n");
+	if (of_property_read_string(node, "led_r", &led_r_pin_str))
+		pr_err("failed to get red led pin assign\n");
 
-	if (of_property_read_string(node, "standby_led", &standby_led_pin_str))
-		pr_err("failed to get standby led pin assign\n");
+	if (of_property_read_string(node, "led_g", &led_g_pin_str))
+		pr_err("failed to get green led pin assign\n");
 
-	if (of_property_read_string(node, "network_led", &network_led_pin_str))
-		pr_err("failed to get standby led pin assign\n");
+	if (of_property_read_string(node, "led_b", &led_b_pin_str))
+		pr_err("failed to get blue led pin assign\n");
 
 	ret = of_property_read_u32(node, "gpio_num", &cnt);
 	if (ret || !cnt) {
@@ -682,21 +682,21 @@ static int sunxi_init_gpio_probe(struct platform_device *pdev)
 		}
 
 		sprintf(sw_pdata[i]->name, "gpio_pin_%d", i + 1);
-		if (normal_led_pin_str
-		       && !strcmp(sw_pdata[i]->name, normal_led_pin_str)) {
-			sprintf(sw_pdata[i]->link, "%s", "normal_led");
+		if (led_r_pin_str
+		       && !strcmp(sw_pdata[i]->name, led_r_pin_str)) {
+			sprintf(sw_pdata[i]->link, "%s", "led_r");
 			if (easy_light_used)
-				of_property_read_u32(node, "normal_led_light",  &sw_pdata[i]->light);
-		} else if (standby_led_pin_str
-			   && !strcmp(sw_pdata[i]->name, standby_led_pin_str)) {
-			sprintf(sw_pdata[i]->link, "%s", "standby_led");
+				of_property_read_u32(node, "led_r_light",  &sw_pdata[i]->light);
+		} else if (led_g_pin_str
+			   && !strcmp(sw_pdata[i]->name, led_g_pin_str)) {
+			sprintf(sw_pdata[i]->link, "%s", "led_g");
 			if (easy_light_used)
-				of_property_read_u32(node, "standby_led_light",  &sw_pdata[i]->light);
-		} else if (network_led_pin_str
-			   && !strcmp(sw_pdata[i]->name, network_led_pin_str)) {
-			sprintf(sw_pdata[i]->link, "%s", "network_led");
+				of_property_read_u32(node, "led_g_light",  &sw_pdata[i]->light);
+		} else if (led_b_pin_str
+			   && !strcmp(sw_pdata[i]->name, led_b_pin_str)) {
+			sprintf(sw_pdata[i]->link, "%s", "led_b");
 			if (easy_light_used)
-				of_property_read_u32(node, "network_led_light",  &sw_pdata[i]->light);
+				of_property_read_u32(node, "led_b_light",  &sw_pdata[i]->light);
 		}
 
 		gpio_sw_dev[i]->name = "gpio_sw";

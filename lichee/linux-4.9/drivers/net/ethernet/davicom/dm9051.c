@@ -923,34 +923,23 @@ static int dm9051_all_stop(struct board_info *db) {
 	return 0;
 }
 
-static int
-dm9051_drv_suspend(struct device *dev)
-{
+static int dm9051_drv_suspend(struct device *dev) {
 	struct net_device *ndev = dev_get_drvdata(dev);
 	struct board_info *db = netdev_priv(ndev);
 
-	printk("=====> +++ [%s] start !\n",__func__);
+	printk("=====> [%s] +++ start !\n",__func__);
+	
 	if (ndev) {
-		db = netdev_priv(ndev);
-		db->in_suspend = 1;
+		if (netif_running(ndev)) {
+			netif_carrier_off(ndev);
+			netif_device_detach(ndev);
+			dm9051_all_stop(db);
 
-		if (!netif_running(ndev))
-		{
-			gpio_set_value(db->reset_gpio, 0);
-			return 0;
+			printk("=====> [%s] done... \n",__func__);
 		}
-
-		netif_device_detach(ndev);
-		dm9051_all_stop(db);
-#if 0
-		/* only shutdown if not using WoL */
-		if (!db->wake_state)
-			dm9000_shutdown(ndev);
-#endif
 	}
 
-	gpio_set_value(db->reset_gpio, 0);
-	printk("=====> --- [%s] end !\n",__func__);
+	printk("=====> [%s] --- end !\n",__func__);
 	return 0;
 }
 
@@ -960,40 +949,27 @@ static int dm9051_all_start(struct board_info *db) {
 	return 0;
 }
 
-static int
-dm9051_drv_resume(struct device *dev)
-{
+static int dm9051_drv_resume(struct device *dev) {
 	struct net_device *ndev = dev_get_drvdata(dev);
 	struct board_info *db = netdev_priv(ndev);
-
-	printk("=====> +++ [%s] start !\n",__func__);
-	gpio_set_value(db->reset_gpio, 1);
+	
+	printk("=====> [%s] +++ start !\n",__func__);
 
 	if (ndev) {
 		if (netif_running(ndev)) {
-#if 0
-			/* reset if we were not in wake mode to ensure if
-			 * the device was powered off it is in a known state */
-			if (!db->wake_state) {
-				dm9000_init_dm9000(ndev);
-				dm9000_unmask_interrupts(db);
-			}
-#endif
-            dm9051_all_start(db);
+			dm9051_all_start(db);
 			netif_device_attach(ndev);
-		}
+			netif_carrier_off(ndev);
 
-		db->in_suspend = 0;
+			printk("=====> [%s] done... \n",__func__);
+		}
 	}
 
-	printk("=====> --- [%s] end !\n",__func__);
+	printk("=====> [%s] --- end !\n",__func__);
 	return 0;
 }
 
-static const struct dev_pm_ops dm9051_drv_pm_ops = {
-	.suspend	= dm9051_drv_suspend,
-	.resume		= dm9051_drv_resume,
-};
+static SIMPLE_DEV_PM_OPS(dm9051_drv_pm_ops, dm9051_drv_suspend, dm9051_drv_resume);
 
 static int dm9051_drv_remove(struct spi_device *spi)
 {

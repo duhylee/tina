@@ -69,6 +69,13 @@
 				gpios = <&pio PB 0 6 1 1 1>;
 				wakeup-source;
 			};
+
+			wolkey {
+				label = "wol_key";
+				linux,code = <143>;
+				gpios = <&pio PB 6 6 1 1 1>;
+				wakeup-source;
+			};
 		};
 
 	};
