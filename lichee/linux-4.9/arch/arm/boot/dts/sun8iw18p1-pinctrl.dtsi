@@ -300,7 +300,7 @@
 						"PB11", "PB12";
 				allwinner,function = "dmic";
 				allwinner,muxsel = <3>;
-				allwinner,drive = <1>;
+				allwinner,drive = <2>;
 				allwinner,pull = <0>;
 			};
 
