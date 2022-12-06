@@ -1,7 +1,7 @@
 ;A31 PAD application
 ;---------------------------------------------------------------------------------------------------------
-; 说明： 脚本中的字符串区分大小写，用户可以修改"="后面的数值，但是不要修改前面的字符串
-; 描述gpio的形式：Port:端口+组内序号<功能分配><内部电阻状态><驱动能力><输出电平状态>
+; 说明： ?�?�中?�字符串?�分大�??�，?�户可以修??="?�?�的?�值�?但?�不要修?�前?�的字符串
+; ?��?pio?�形�?：Port:端??组?�序???�?�分?�><?�?�电阻状态><驱动能力><输?�电平?�态>
 ;---------------------------------------------------------------------------------------------------------
 
 [product]
@@ -497,19 +497,18 @@ smc_sda             =
 
 
 ;--------------------------------
-;[usbc0]：控制器0的配置。
-;usb_used：USB使能标志。置1，表示系统中USB模块可用,置0,则表示系统USB禁用。
-;usb_port_type：USB端口的使用情况。 0：device only;1：host only;2：OTG
-;usb_detect_type：USB端口的检查方式。0：不做检测;1：vbus/id检查;2：id/dpdm检查
-;usb_id_gpio：USB ID pin脚配置。具体请参考gpio配置说明。
-;usb_det_vbus_gpio：USB DET_VBUS pin脚配置。具体请参考gpio配置说明。
-;usb_drv_vbus_gpio：USB DRY_VBUS pin脚配置。具体请参考gpio配置说明。
-;usb_det_vbus_gpio: "axp_ctrl",表示axp 提供
-;usb_restrict_gpio  usb限流控制pin
-;usb_restric_flag:  usb限流标置
+;[usbc0]：?�制�??�?�置?�
+;usb_used：USB使能标志?�置1，表示系�?中USB模块?�??置0,?�表示系�?USB禁?�。
+;usb_port_type：USB端?�的使用情?�。 0：device only;1：host only;2：OTG
+;usb_detect_type：USB端?�的检?�方�??�0：不?�检测;1：vbus/id检??2：id/dpdm检??;usb_id_gpio：USB ID pin?�?�置?�?��?请参?�gpio?�置说明?�
+;usb_det_vbus_gpio：USB DET_VBUS pin?�?�置?�?��?请参?�gpio?�置说明?�
+;usb_drv_vbus_gpio：USB DRY_VBUS pin?�?�置?�?��?请参?�gpio?�置说明?�
+;usb_det_vbus_gpio: "axp_ctrl",表示axp ?�供
+;usb_restrict_gpio  usb?�流?��?in
+;usb_restric_flag:  usb?�流?�置
 ;--------------------------------
 ;--------------------------------
-;---       USB0控制标志
+;---       USB0?�制标志
 ;--------------------------------
 [usbc0]
 usbc0_used          = 1
@@ -713,22 +712,20 @@ rx_data_mode 		= 0
 ;         if register the sound card snddaudio2.
 ;-----------------------------------------------------------------------------
 [snddaudio2]
-snddaudio2_used = 0
-sunxi,snddaudio-codec =
-sunxi,snddaudio-codec-dai =
+snddaudio2_used = 1
 daudio_master		= 1
-audio_format		= 5
-signal_inversion	= 2
+audio_format		= 1
+signal_inversion	= 1
 
 [daudio2]
-daudio2_used		= 0
-slot_width_select 	= 16
-pcm_lrck_period		= 32
-msb_lsb_first		= 1
+daudio2_used		= 1
+slot_width_select 	= 32
+pcm_lrck_period		= 64
+msb_lsb_first		= 0
 sign_extend 		= 0
 frametype 		= 0
-mclk_div		= 1
-tdm_config		= 0
+mclk_div		= 0
+tdm_config		= 1
 tx_data_mode 		= 0
 rx_data_mode 		= 0
 

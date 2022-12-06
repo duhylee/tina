@@ -45,6 +45,14 @@
 			sunxi,snddaudio-codec = "ad82584f.1-0031";
 			sunxi,snddaudio-codec-dai = "ad82584f-dai";
 		};
+
+		snddaudio2:sound@3 {
+			status = "okay";
+			sunxi,snddaudio-codec = "snd-soc-dummy";
+			sunxi,snddaudio-codec-dai = "snd-soc-dummy-dai";
+		};
+
+
 	};
 
 	cpu_opp_l_table0: opp_l_table0 {
