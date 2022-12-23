@@ -719,8 +719,8 @@ signal_inversion	= 1
 
 [daudio2]
 daudio2_used		= 1
-slot_width_select 	= 32
-pcm_lrck_period		= 64
+slot_width_select 	= 16
+pcm_lrck_period		= 32
 msb_lsb_first		= 0
 sign_extend 		= 0
 frametype 		= 0
