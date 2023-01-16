@@ -21,4 +21,6 @@ amixer -c 3 set 'Ch2' 220
 #setusbconfig
 /bin/setusbconfig adb,uac2
 
+amixer -c 3 set 'sunxi daudio loopback debug' on
+
 exit 0

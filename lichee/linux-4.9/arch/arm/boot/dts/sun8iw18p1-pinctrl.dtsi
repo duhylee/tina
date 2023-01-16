@@ -218,12 +218,10 @@
 			};
 
 			daudio0_pins_b: daudio0@1 {
-				allwinner,pins = "PB4";
-						/*, "PB6", "PB7";*/
+				allwinner,pins = "PB4", "PB6", "PB7";
 				allwinner,function = "i2s0";
-				allwinner,pname= "i2s0_dout0";
-						/*"i2s0_dout2","i2s0_dout3";*/
-				allwinner,muxsel = <4>;
+				allwinner,pname= "i2s0_din1","i2s0_din3","i2s0_din2";
+				allwinner,muxsel = <5>;
 				allwinner,drive = <1>;
 				allwinner,pull = <0>;
 			};

@@ -59,7 +59,8 @@ static const struct sunxi_desc_pin sun8iw18p1_pins[] = {
 		SUNXI_FUNCTION(0x1, "gpio_out"),
 		SUNXI_FUNCTION(0x3, "pwm4"),
 		SUNXI_FUNCTION(0x4, "i2s0"),		/* DOUT0 */
-		SUNXI_FUNCTION(0x5, "i2s0_b"),		/* DIN1 */
+//		SUNXI_FUNCTION(0x5, "i2s0_b"),		/* DIN1 */
+		SUNXI_FUNCTION(0x5, "i2s0"),		/* DIN1 */
 		SUNXI_FUNCTION(0x7, "io_disabled"),
 		SUNXI_FUNCTION_IRQ_BANK(0x6, 0, 4)),	/* PB_EINT4 */
 	SUNXI_PIN(SUNXI_PINCTRL_PIN(B, 5),

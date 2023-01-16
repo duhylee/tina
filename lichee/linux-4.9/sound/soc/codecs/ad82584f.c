@@ -746,14 +746,20 @@ static struct snd_soc_dai_driver ad82584f_dai = {
 	.name = "ad82584f-dai",
 	.playback = {
 		.stream_name = "HIFI Playback",
-		.channels_min = 2,
-		.channels_max = 8,
+		.channels_min = 1,
+		.channels_max = 2,
+		.rates = AD82584F_RATES,
+		.formats = AD82584F_FORMATS,
+	},
+	.capture = {
+		.stream_name = "HIFI Capture",
+		.channels_min = 1,
+		.channels_max = 2,
 		.rates = AD82584F_RATES,
 		.formats = AD82584F_FORMATS,
 	},
 	.ops = &ad82584f_dai_ops,
 };
-
 
 static int ad82584f_set_eq_drc(struct snd_soc_codec *codec)
 {
